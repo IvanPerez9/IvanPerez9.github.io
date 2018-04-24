@@ -298,5 +298,17 @@ p {
     top: 1px;
   }
 }
+.redimensionar{
+/*    border: 2px solid;*/
+/*    padding: 20px; */
+/*    width: 300px;*/
+/*    resize: both;*/
+/*    overflow: auto;*/
+}
+
+#alejar{
+    padding-top: 700px
+}
+
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
