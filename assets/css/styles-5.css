@@ -272,6 +272,7 @@ p {
   }
   .main-wrapper {
     padding: 30px;
+    min-height: 1900px;
   }
   .main-wrapper .time {
     position: static;
@@ -308,7 +309,12 @@ p {
 }
 
 #bottom{
-    padding-top: 8 rem;
+    padding-top: 5rem;
+}
+
+#wordcloud{
+  max-height:40rem;
+  max-width: 80rem;
 }
 
 /* Large devices (large desktops, 1200px and up) */
