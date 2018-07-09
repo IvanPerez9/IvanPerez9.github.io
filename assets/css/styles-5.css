@@ -235,6 +235,7 @@ p {
 .main-wrapper .projects-section .item {
   margin-bottom: 15px;
 }
+
 .skillset .item {
   margin-bottom: 15px;
   overflow: hidden;
@@ -313,7 +314,7 @@ p {
 }
 
 #wordcloud{
-  max-height:40rem;
+  max-height:35rem;
   max-width: 80rem;
 }
 
