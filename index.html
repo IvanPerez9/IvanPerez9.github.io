@@ -6,13 +6,12 @@
 <!--<![endif]-->
 
 <head>
-    <title>Iván Pérez Huete - Portfolio </title>
+    <title>description</title>
     <!-- Meta (Ojo esto si sale en la descripcion y eso ) -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Iván Pérez Huete - Portfolio ">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <meta name="description" content="description">
 
     <!-- Link-->
     <link rel="shortcut icon" href="assets/images/orange.png" title="LogoIcon">
@@ -37,8 +36,8 @@
         <div class="sidebar-wrapper">
             <div class="profile-container">
                 <img class="profile" src="assets/images/ivan.jpg" alt="profileImg" />
-                <h1 class="name">Iván Pérez Huete</h1>
-                <h2 class="tagline">Software Engineer </h2>
+                <h1 class="name" data-i18n-attr="description" > nombre </h1>
+                <h2 class="tagline" data-i18n="description">Software Engineer </h2>
             </div>
 
             <!--//profile-container-->
@@ -161,6 +160,18 @@
         <!--//sidebar-wrapper-->
 
         <div class="main-wrapper">
+
+            <!-- <form>
+                <fieldset>
+                  <legend>Choose a language:</legend>
+          
+                  <label>
+                    <input type="radio" name="lang" value="en" checked /> English
+                  </label>
+                  <label> <input type="radio" name="lang" value="de" /> German </label>
+                  <label> <input type="radio" name="lang" value="es" /> Spanish </label>
+                </fieldset>
+              </form> -->
 
             <section class="section summary-section">
                 <h2 class="section-title">
@@ -467,7 +478,7 @@
     <script src="assets/plugins/jquery-1.11.3.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom js -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" type="module"></script>
 </body>
 
 </html>
