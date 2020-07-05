@@ -1,4 +1,63 @@
 {
-    "title": "Prueba Dic",
-    "description" : "Iván Pérez Huete - Portfolio"
+    "title": "Iván Pérez Huete - Portfolio",
+    "tagline" : "Software Engineer",
+    "location" : "Madrid Area, Spain",
+    "education" : {
+      "title" : "Education",
+      "degree1" : "Software Engineering Degree"
+    },
+    "languajes" : {
+      "title" : "Languajes",
+      "es" : "Spanish",
+      "en" : "English",
+      "native" : "Native"
+    },
+    "interest":{
+      "title" : "Interests",
+      "algorithm" : "Algorithm",
+      "cp" : "Competitive Programing"
+    },
+    "hobbies":{
+      "r" : "Reading",
+      "s": "Sports",
+      "vg": "Videogames"
+    },
+    "summary":{
+      "title" : "Career Profile",
+      "t1": "Energetic software engineer. An enthusiastic team player and deep creative thinker.",
+      "t2": "Right now, I am working on my degree final project, focused on developing and working with TSP algorithms with the oficial TSPLib."
+    },
+    "personalProfile":{
+      "title":"Personal Profile",
+      "p1": "Team player software engineer with a can-do attitude, phenomenal time management skills, and a strong user focus.",
+      "p2": "I have develop software in many languajes, especially in Java, C and Python. I have always had a keen interest in IT and pay great attention to detail work that I do.",
+      "job1": "Freelance Software Engineer",
+      "job2": "Software Developer",
+      "date1": "2016 - Present",
+      "date2": "Dec 2018 - Present",
+      "company1": "Personal and Collaborative projects",
+      "company2": "Work4Data | I+D Software Lab",
+      "details":{
+        "p1": "Compose an android app simulating the game Space Invaders then apply and try out different testing tools.",
+        "p2": "Collaborating on developing a Telegram bot to automate multiple task.",
+        "p3": "Working with Java + Spring framework for multiple projects. Building an RESTful API for an online GYM with this tecnology.",
+        "p11": "Frontend and Backend development. Work with Spring Boot, AngularJS, Bootstrap, PostgreSQL, OracleSQL." ,
+        "p12": "Hibernate/JPA implementation, Java/Maven development.",
+        "p13" : "General knowledge of RESTful APIs and JSON. Demonstrates good judgment and problem solving skills."
+      }
+    },
+    "projectsCourses":{
+      "title": "Projects and Courses",
+      "description1": "Side projects and MOOCs I have done.",
+      "description2": "You can follow everything I am working on at the moment on my Github, feel free to check it out. Account: ",   
+      "description3" : "Right now, I am working on my degree final project. Focused on developing and working with TSP algorithms with the oficial TSPLib.",
+      "fiturjc": "A responsive website template designed to simulate a GYM, using Spring FrameWork, Angular 5, SQL, Bootstrap Template and HTML/CSS.",
+      "competitive": "Solve problems of online judge such as SPOJ or 'Acepta el reto' as hobby",
+      "onlineCourses": {
+        "title": "Online Courses",
+        "course1": "Pursued my passion for Java and Python languaje.",
+        "course2": "Best practices for software development and testing."
+      }
+    
+    }
   }
