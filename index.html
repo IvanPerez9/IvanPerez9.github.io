@@ -68,7 +68,7 @@
                     </li>
                     <li class="location">
                         <em class="fa fa-map-marker"></em>
-                        <a title="location" data-i18n="location">Madrid Area, Spain</a>
+                        <a title="location" data-i18n="location" >Madrid Area, Spain</a>
                     </li>
                     <!-- TWITTER 
                     <li class="twitter">
@@ -82,9 +82,9 @@
             <!--//contact-container-->
 
             <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
+                <h2 class="container-block-title" data-i18n="education.title">Education</h2>
                 <div class="item">
-                    <h3 class="degree">Software Engineering Degree</h3>
+                    <h3 class="degree" data-i18n="education.degree1" >Software Engineering Degree</h3>
                     <h4 class="meta">Universidad Rey Juan Carlos</h4>
                     <div class="time">2014 - 2019</div>
                 </div>
@@ -106,12 +106,14 @@
             <!--//education-container-->
 
             <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
+                <h2 class="container-block-title" data-i18n="languages.title">Languages</h2>
                 <ul class="list-unstyled interests-list">
-                    <li>Spanish
-                        <span class="lang-desc">(Native)</span>
+                    <li>
+                        <span data-i18n="languages.es">Spanish</span>
+                        <span class="lang-desc" data-i18n="languages.native">Native</span>
                     </li>
-                    <li>English
+                    <li>
+                        <span data-i18n="languages.en"> English</span>
                         <span class="lang-desc">(B2)</span>
                     </li>
                 </ul>
@@ -120,23 +122,23 @@
             <!--//interests-->
 
             <div class="interests-container container-block">
-                <h2 class="container-block-title">Interests</h2>
+                <h2 class="container-block-title" data-i18n="interest.title">Interests</h2>
                 <ul class="list-unstyled interests-list">
-                    <li> &#9679 Algorithm</li>
+                    <li data-i18n="interest.algorithm"> &#9679 Algorithm</li>
                     <li> &#9679 Testing and QA</li>
                     <li> &#9679 Back-end</li>
-                    <li> &#9679 Competitive Programing</li>
+                    <li data-i18n="interest.cp"> &#9679 Competitive Programing</li>
                 </ul>
             </div>
 
              <!--//Hobbies-->
 
              <div class="interests-container container-block">
-                <h2 class="container-block-title">Hobbies</h2>
+                <h2 class="container-block-title" >Hobbies</h2>
                 <ul class="list-unstyled interests-list">
-                    <li> &#9679 Reading</li>
-                    <li> &#9679 Sports</li>
-                    <li> &#9679 Videogames</li>
+                    <li data-i18n="hobbies.r"> &#9679 Reading</li>
+                    <li data-i18n="hobbies.t"> &#9679 Travelling</li>
+                    <li data-i18n="hobbies.vg"> &#9679 Videogames</li>
                 </ul>
             </div>
 
@@ -149,6 +151,7 @@
             </div><br>
             -->
             
+            <!--WAI level AA -->
             <div class="icons" id="bottom">
                 <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" style="padding-left: 50px;" title="Explanation of Level Double-A Conformance">
                     <img height="31" src="http://www.w3.org/WAI/wcag1AA" alt="Level Double-A conformance icon, W3C-WAI Web Content Accessibility Guidelines 1.0">
@@ -161,25 +164,27 @@
 
         <div class="main-wrapper">
 
+            <!-- Choose language -->
+
             <form>
                 <fieldset>
-                  <legend>Choose a language:</legend>
-          
+                  <legend data-i18n="languages.choose">Choose a language:</legend>
                   <label>
                     <input type="radio" name="lang" value="en" checked /> English
                   </label>
-                  <label> <input type="radio" name="lang" value="de" /> German </label>
                   <label> <input type="radio" name="lang" value="es" /> Spanish </label>
                 </fieldset>
               </form>
 
             <section class="section summary-section">
                 <h2 class="section-title">
-                    <em class="fa fa-user"></em>Career Profile</h2>
+                    <em class="fa fa-user"></em>
+                    <span class="section-title" data-i18n="summary.title"> Career Profile</span>
+                </h2>
                 <div class="item">
                     <div class="summary">
-                        <p> Energetic software engineer. An enthusiastic team player and deep creative thinker. </p>
-                        <p> Right now, I am working on my degree final project, focused on developing and working with TSP algorithms with the oficial TSPLib.</p>
+                        <p data-i18n="summary.t1"> Energetic software engineer. An enthusiastic team player and deep creative thinker. </p>
+                        <p data-i18n="summary.t2"> Currently I am working on my degree final project, focused on developing and working with TSP algorithms with the oficial TSPLib.</p>
                     </div>
                 </div>
                 <!--//summary-->
@@ -188,15 +193,17 @@
 
             <section class="section experiences-section">
                 <h2 class="section-title">
-                    <em class="fa fa-briefcase"></em>Personal Profile</h2>
+                    <em class="fa fa-briefcase"></em>
+                    <span class="section experiences-section" data-i18n="personalProfile.title" > Personal Profile</span>
+                </h2>
 
                 <!--//item-->    
                 <div class="item">
                     
                     <!--//details-->
                     <div class="details">
-                        <p>Team player software engineer with a can-do attitude, phenomenal time management skills, and a strong user focus. </p>
-                        <p>I have develop software in many languajes, especially in Java, C and Python. I have always had a keen interest in IT and pay great attention to detail work that I do.</p>
+                        <p data-i18n="personalProfile.p1">Team player software engineer with a can-do attitude, phenomenal time management skills, and a strong user focus. </p>
+                        <p data-i18n="personalProfile.p2">I have develop software in many languajes, especially in Java, C and Python. I have always had a keen interest in IT and pay great attention to detail work that I do.</p>
                         
                     </div>
                     
@@ -205,17 +212,17 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Freelance Software Engineer</h3>
-                            <div class="time">2016 - Present</div>
+                            <h3 class="job-title" data-i18n="personalProfile.job1">Freelance Software Engineer</h3>
+                            <div class="time" data-i18n="personalProfile.date1">2016 - Present</div>
                         </div>
                         <!--//upper-row-->
-                        <div class="company">Personal and Collaborative projects</div>
+                        <div class="company" data-i18n="personalProfile.company1">Personal and Collaborative projects</div>
                     </div>
                     <!--//meta-->
                     <div class="details">
-                        <p>Compose an android app simulating the game "Space Invaders" then apply and try out different testing tools. </p>
-                        <p>Collaborating on developing a Telegram bot to automate multiple task. </p>
-                        <p>Working with Java + Spring framework for multiple projects. Building an RESTful API for an online GYM with this tecnology. </p>
+                        <p data-i18n="personalProfile.p1">Compose an android app simulating the game "Space Invaders" then apply and try out different testing tools. </p>
+                        <p data-i18n="personalProfile.p2">Collaborating on developing a Telegram bot to automate multiple task. </p>
+                        <p data-i18n="personalProfile.p3">Working with Java + Spring framework for multiple projects. Building an RESTful API for an online GYM with this tecnology. </p>
                     </div>
                     <!--//details-->
                 </div>
@@ -354,7 +361,7 @@
                     <div class="item">
                         <h3 class="level-title">Angular</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="60%">
+                            <div class="level-bar-inner" data-level="50%">
                             </div>
                         </div>
                         <!--//level-bar-->
@@ -374,7 +381,7 @@
                     <div class="item">
                         <h3 class="level-title">C</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="70%">
+                            <div class="level-bar-inner" data-level="65%">
                             </div>
                         </div>
                         <!--//level-bar-->
@@ -384,7 +391,7 @@
                     <div class="item">
                         <h3 class="level-title">SQL</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="60%">
+                            <div class="level-bar-inner" data-level="65%">
                             </div>
                         </div>
                         <!--//level-bar-->
@@ -404,7 +411,7 @@
                     <div class="item">
                         <h3 class="level-title">Python</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="70%">
+                            <div class="level-bar-inner" data-level="65%">
                             </div>
                         </div>
                         <!--//level-bar-->
