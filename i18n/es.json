@@ -1,10 +1,10 @@
 {
-    "title": "Iván Pérez Huete - Portfolio",
-    "tagline" : "Software Engineer",
-    "location" : "Madrid Area, Spain",
+    "title": "Portfolio - Iván Pérez Huete",
+    "tagline" : "Ingeniero de Software",
+    "location" : "Madrid, Spain",
     "education" : {
-      "title" : "Education",
-      "degree1" : "Software Engineering Degree"
+      "title" : "Educación",
+      "degree1" : "SGrado en Ingenieria del Software"
     },
     "languages" : {
       "title" : "Languages",
