@@ -12,7 +12,7 @@ translator.load();
 
 document.querySelector("form").addEventListener("click", function(evt) {
     if (evt.target.tagName === "INPUT") {
-      translator.load(evt.target.value);
+      translator.load(evt.target.alt);
     }
   });
 
@@ -33,7 +33,4 @@ jQuery(document).ready(function($) {
         });
 
     });
-   
-    
-
 });

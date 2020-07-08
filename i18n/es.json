@@ -4,24 +4,24 @@
     "location" : "Madrid, Spain",
     "education" : {
       "title" : "Educación",
-      "degree1" : "SGrado en Ingenieria del Software"
+      "degree1" : "Grado en Ingenieria del Software"
     },
     "languages" : {
-      "title" : "Languages",
-      "choose" : "Choose a language:",
-      "es" : "Spanish",
-      "en" : "English",
-      "native" : "(Native)"
+      "title" : "Idiomas",
+      "choose" : "Elija el idioma:",
+      "es" : "Español",
+      "en" : "Inglés",
+      "native" : "(Nativo)"
     },
     "interest":{
-      "title" : "Interests",
-      "algorithm" : "&#9679 Algorithm",
-      "cp" : "&#9679 Competitive Programing"
+      "title" : "Intereses",
+      "algorithm" : "&#9679 Algoritmia",
+      "cp" : "&#9679 Programacion Competitiva"
     },
     "hobbies":{
-      "r" : "&#9679 Reading",
-      "t": "&#9679 Traveling",
-      "vg": "&#9679 Videogames"
+      "r" : "&#9679 Leer",
+      "t": "&#9679 Viajar",
+      "vg": "&#9679 Videojuegos"
     },
     "summary":{
       "title" : "Career Profile",
