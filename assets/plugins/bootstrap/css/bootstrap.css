@@ -3137,7 +3137,6 @@ fieldset[disabled] .btn-default.focus {
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #286090;
-  border-color: #204d74;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3150,7 +3149,6 @@ fieldset[disabled] .btn-default.focus {
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
   background-color: #204d74;
-  border-color: #122b40;
 }
 .btn-primary:active,
 .btn-primary.active,

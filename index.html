@@ -7,7 +7,6 @@
 
 <head>
     <title data-i18n="title">Iván Pérez Huete - Portfolio</title>
-    <!-- Meta (Ojo esto si sale en la descripcion y eso ) -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,19 +44,18 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="nav navbar-brand navbar-nav navbar-nav-primary" href="#">Portfolio</a>
-          </div>
+            <button class="dropbtn dropdown-toggle" onclick="window.location.href='/index.html';" type="button" > Home </button>
+            <button class="dropbtn dropdown-toggle" onclick="window.location.href='Students.html';" type="button" > Contact </button>
+        </div>
       
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right navbar-nav-primary">
 
-                <li><button class="dropbtn dropdown-toggle" onclick="window.location.href='Students.html';" type="button" > Prueba </button></li>
-                <li><button class="dropbtn dropdown-toggle" onclick="window.location.href='Students.html';" type="button" > Contact </button></li>
-                
+                <!--<li><button class="dropbtn dropdown-toggle" onclick="window.location.href='Students.html';" type="button" > Prueba </button></li> -->
                 <li>
                      <div class="dropdown">
-                      <button class="dropbtn dropdown-toggle" type="button" data-toggle="dropdown">Language Option <i class="arrow down"></i> </button>
+                      <button class="dropbtn dropdown-toggle" type="button" data-toggle="dropdown">Language Option <a class="arrow down" id="flecha"></a> </button>
                       <ul class="dropdown-menu">
                         <form>
                             <fieldset>
@@ -68,7 +66,7 @@
                                 <label class="dropdown-content"> 
                                     <input class="dropdown-content" type="button"  alt="es" name="lang" value="Español"/> 
                                 </label>
-                                </fieldset>
+                             </fieldset>
                         </form>
                       </ul>
                     </div>
@@ -78,7 +76,6 @@
         </div><!-- /.container-fluid -->
       </nav>
     <!--Fin navbar -->
-    <div></div>
 
     <div class="wrapper">
         <div class="sidebar-wrapper">
