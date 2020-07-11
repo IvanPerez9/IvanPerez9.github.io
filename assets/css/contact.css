@@ -21,26 +21,98 @@ body {
   }
 
 #left {
-    background: yellowgreen;
+    background: white;
     float:left;
     width: 50%;
     height: 100%;
 }
 #right {
-    background: #f47c03;
+    background: white;
     float:right;
     width: 50%;
     height: 100%;
+    text-align: center;
 }
 #bottom {
     clear: both;
 }
 
-.profileImg{
-    border-radius: 5%;
-    padding: 4rem;
+.contact-list .fa {
+    margin-right: 5px;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+.contact-list li {
+    margin-bottom: 15px;
+  }
+ .contact-list li:last-child {
+    margin-bottom: 0;
+  }
+ .contact-list .email .fa {
+    font-size: 14px;
+  }
+
+.personal_text h1{
+  font-size: 26px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #222222;
 }
-.download{
-    position: relative;
-    left: 40%;
+
+#left .personal_text h1{
+  padding-left: 16rem;
+}
+
+#right .personal_text h1{
+  padding-right: 10rem;
+}
+
+.personal_text span{
+   color: #f47c03 ;
+ }
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+.contact-container #email:hover {
+    color: #a85502;
+}
+
+.contact-container{
+    color: #f47c03 ;
+}
+
+.contact-container a {
+    color: #f47c03;
+    text-decoration: none;
+}
+
+.contact-container {
+  padding: 7rem;
+  font-size: 18px;
+  padding-left: 15rem;
+}
+
+.imgEmail{
+  transform: rotate(20deg);
+  -ms-transform: rotate(20deg); /*IE 9*/
+  margin-left: 12rem;
+  padding-bottom: 5rem;
+}
+
+.formulario {
+  padding: 5rem;
+}
+
+.enviar{
+  margin-right: 5rem;
+  position: relative;
+  color: white;
+  background-color:  #f47c03;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
