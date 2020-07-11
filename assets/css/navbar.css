@@ -45,3 +45,5 @@
   .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: white;}
+
+  .dropbtn span:hover {color : #f47c03;}

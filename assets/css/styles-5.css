@@ -327,5 +327,3 @@ p {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
-.arrow :hover #flecha {color: #f47c03;}
