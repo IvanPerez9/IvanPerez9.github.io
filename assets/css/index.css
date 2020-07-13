@@ -38,7 +38,9 @@ body {
 }
 
 .profileImg{
-    border-radius:12%;
+    border-radius:15%;
+    width: 400;
+    height: 300;
     padding: 5rem;
 }
 .download{
@@ -48,6 +50,13 @@ body {
     background-color:  #f47c03;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
+}
+
+.download button:hover{
+  background-image: -moz-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
+  background-image: -webkit-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
+  background-image: -ms-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .contact-list .fa {
@@ -115,7 +124,6 @@ body {
 
 .personal_social {
   margin-top: 9rem;
-
  }
 .personal_social li {
     display: inline-block;
@@ -125,7 +133,7 @@ body {
 .personal_social li a {
       line-height: 40px;
       width: 40px;
-      background: #e8e8e8;
+      background: #f47b0398;
       border-radius: 5px;
       display: inline-block;
       text-align: center;
@@ -134,4 +142,5 @@ body {
 .personal_social li:hover a {
       background-image: -moz-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
       background-image: -webkit-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
-      background-image: -ms-linear-gradient(0deg, #f47c03 0%, #FDA246 100%); }
+      background-image: -ms-linear-gradient(0deg, #f47c03 0%, #FDA246 100%); 
+  }

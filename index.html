@@ -13,7 +13,7 @@
     <meta name="description" content="Iván Pérez Huete - Portfolio">
 
     <!-- Link-->
-    <link rel="shortcut icon" href="assets/images/orange.png" title="LogoIcon">
+    <link rel="shortcut icon" href="assets/images/iconAbout.png" title="LogoIcon">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
         rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
 
     <!-- Theme CSS , 5 for orange -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles-5.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/index.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/navbar.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,8 +44,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <button class="dropbtn dropdown-toggle" onclick="window.location.href='/about.html';" type="button" > <span>About</span></button>
-            <button class="dropbtn dropdown-toggle" onclick="window.location.href='/index.html';" type="button" ><span>Home</span></button>
+            <button class="dropbtn dropdown-toggle" onclick="window.location.href='/index.html';" type="button" > <span>About</span></button>
+            <button class="dropbtn dropdown-toggle" onclick="window.location.href='/home.html';" type="button" ><span>Home</span></button>
             <button class="dropbtn dropdown-toggle" onclick="window.location.href='/contact.html';" type="button" ><span>Contact</span></button>
         </div>
       
@@ -53,10 +53,9 @@
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right navbar-nav-primary">
 
-                <!--<li><button class="dropbtn dropdown-toggle" onclick="window.location.href='Students.html';" type="button" > Prueba </button></li> -->
                 <li>
                      <div class="dropdown">
-                      <button class="dropbtn dropdown-toggle" type="button" data-toggle="dropdown">Language Option <a class="arrow down" id="flecha"></a> </button>
+                     <button class="dropbtn dropdown-toggle" type="button" data-toggle="dropdown" data-i18n="language">Language Option </button>
                       <ul class="dropdown-menu">
                         <form>
                             <fieldset>
@@ -79,441 +78,61 @@
     <!--Fin navbar -->
 
     <div class="wrapper">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <h1 class="name" >Iván Pérez Huete </h1>
-                <h2 class="tagline" data-i18n="tagline">Software Engineer</h2>
-            </div>
 
-            <!--//profile-container-->
+        <div id="left">
+            <img class="profileImg" src="assets/images/ivan2.jpg" alt="ivanPerezImage">
+            
+            <a href="./abcf32x.pdf" download="cv.pdf">
+                <button class="btn btn-outline-primary download"><i class="fa fa-download"></i> Download CV</button>
+            </a>
+            
+        </div>
+
+
+        <div id="right">
+
+            <div class="personal_text">
+                <h6 data-i18n="hello">Hello! I am</h6>
+                <h1 class="name" >Iván Pérez Huete </h1>
+                <h4 class="tagline" data-i18n="tagline">Software Engineer</h4>
+                <p data-i18n="summary.t1"> I am team player software engineer with a can-do attitude, phenomenal time management skills, and a strong user focus. Energetic and deep creative thinker. </p>
+            </div>
 
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
-                    <li class="email">
-                        <em class="fa fa-envelope"></em>
-                        <a href="mailto:iperezhuete@gmail.com" title="Email: iperezhuete@gmail.com">iperezhuete@gmail.com</a>
-                    </li>
-                    <!--
-
-                    <li class="phone">
-                        <em class="fa fa-phone"></em>
-                        <a href="tel:0123456789" title="Telefono: 0123 456 789">0123 456 789</a>
-                    </li>
-                    
-                    -->
-                    <!--<li class="website"><i class="fa fa-globe"></i><a href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/" target="_blank">portfoliosite.com</a></li> -->
-                    <li class="linkedin">
-                        <em class="fa fa-linkedin"></em>
-                        <a href="https://es.linkedin.com/in/iv%C3%A1n-p%C3%A9rez-huete-09a52515b" target="_blank"
-                        title="linkedin">Iván Pérez Huete</a>
-                    </li>
-                    <li class="github">
-                        <em class="fa fa-github"></em>
-                        <a href="https://github.com/IvanPerez9" target="_blank" title="github">github.com/IvanPerez9</a>
+                    <li class="age">
+                        <em class="fa fa-calendar"></em>
+                        <a title="age" data-i18n="age" data-i18n="age">June 12th, 1995</a>
                     </li>
                     <li class="location">
                         <em class="fa fa-map-marker"></em>
                         <a title="location" data-i18n="location" >Madrid Area, Spain</a>
                     </li>
-                    <!-- TWITTER 
-                    <li class="twitter">
-                        <em class="fa fa-twitter"></em>
-                        <a href="https://twitter.com/Ivan_Prz12" target="_blank" title="Twitter">@Ivan_Prz12</a>
-                    </li>
-                    -->
-                </ul>
-            </div>
-
-            <!--//contact-container-->
-
-            <div class="education-container container-block">
-                <h2 class="container-block-title" data-i18n="education.title">Education</h2>
-                <div class="item">
-                    <h3 class="degree" data-i18n="education.degree1" >Software Engineering Degree</h3>
-                    <h4 class="meta">Universidad Rey Juan Carlos</h4>
-                    <div class="time">2014 - 2019</div>
-                </div>
-                <!--//item-->
-                <div class="item">
-                    <h3 class="degree">Bachillerato Ciencias-Tecnológico</h3>
-                    <h4 class="meta">Colegio La Salle Griñón</h4>
-                    <div class="time">2012 - 2014</div>
-                </div>
-                <!--//item-->
-                <div class="item">
-                    <h3 class="degree">Graduado de la E.S.O.</h3>
-                    <h4 class="meta">Colegio Villa de Griñón</h4>
-                    <div class="time">2008 - 2012</div>
-                </div>
-                <!--//item-->
-            </div>
-
-            <!--//education-container-->
-
-            <div class="languages-container container-block">
-                <h2 class="container-block-title" data-i18n="languages.title">Languages</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>
-                        <span data-i18n="languages.es">Spanish</span>
-                        <span class="lang-desc" data-i18n="languages.native">Native</span>
-                    </li>
-                    <li>
-                        <span data-i18n="languages.en"> English</span>
-                        <span class="lang-desc">(B2)</span>
+                    <li class="email">
+                        <em class="fa fa-envelope"></em>
+                        <a id="email" href="mailto:iperezhuete@gmail.com" title="Email: iperezhuete@gmail.com">iperezhuete@gmail.com</a>
                     </li>
                 </ul>
             </div>
 
-            <!--//interests-->
+            <div>
 
-            <div class="interests-container container-block">
-                <h2 class="container-block-title" data-i18n="interest.title">Interests</h2>
-                <ul class="list-unstyled interests-list">
-                    <li data-i18n="interest.algorithm"> &#9679 Algorithm</li>
-                    <li> &#9679 Testing and QA</li>
-                    <li> &#9679 Back-end</li>
-                    <li data-i18n="interest.cp"> &#9679 Competitive Programing</li>
+                <ul class="list personal_social">
+                    <li><a href="https://github.com/IvanPerez9"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://es.linkedin.com/in/iv%C3%A1n-p%C3%A9rez-huete-09a52515b"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
-            </div>
 
-             <!--//Hobbies-->
-
-             <div class="interests-container container-block">
-                <h2 class="container-block-title" >Hobbies</h2>
-                <ul class="list-unstyled interests-list">
-                    <li data-i18n="hobbies.r"> &#9679 Reading</li>
-                    <li data-i18n="hobbies.t"> &#9679 Travelling</li>
-                    <li data-i18n="hobbies.vg"> &#9679 Videogames</li>
-                </ul>
-            </div>
-
-            <!-- Video presentation -->
-
-            <!-- 
-            <div class="interests-container container-block ">
-                <h2 class="container-block-title ">Video Presentation</h2>
-                <img class="definition img-fluid"src="assets/images/CodigoQR.png" alt="Código de tipo QR para acceder al video presentación de este curriculum vitae."/>
-            </div><br>
-            -->
-            
-            <!--WAI level AA -->
-            <div class="icons" id="bottom">
-                <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" style="padding-left: 50px;" title="Explanation of Level Double-A Conformance">
-                    <img height="31" src="http://www.w3.org/WAI/wcag1AA" alt="Level Double-A conformance icon, W3C-WAI Web Content Accessibility Guidelines 1.0">
-                </a>
             </div>
 
         </div>
-
-        <!--//sidebar-wrapper-->
-
-        <div class="main-wrapper">
-
-            <!-- SUMMARY -->
-
-            <section class="section summary-section">
-                <h2 class="section-title">
-                    <em class="fa fa-user"></em>
-                    <span class="section-title" data-i18n="summary.title"> Career Profile</span>
-                </h2>
-                <div class="item">
-                    <div class="summary">
-                        <p data-i18n="summary.t1"> Energetic software engineer. I am enthusiastic team player and deep creative thinker. </p>
-                        <p data-i18n="summary.t2"> Currently I am working on my degree's final project, focused on developing and working with TSP algorithms with the oficial TSPLib.</p>
-                    </div>
-                </div>
-                <!--//summary-->
-            </section>
-            <!--//section-->
-
-            <section class="section experiences-section">
-                <h2 class="section-title">
-                    <em class="fa fa-briefcase"></em>
-                    <span class="section experiences-section" data-i18n="personalProfile.title" > Personal Profile</span>
-                </h2>
-
-                <!--//item-->    
-                <div class="item">
-                    
-                    <!--//details-->
-                    <div class="details">
-                        <p data-i18n="personalProfile.p1">I am team player software engineer with a can-do attitude, phenomenal time management skills, and a strong user focus. </p>
-                        <p data-i18n="personalProfile.p2">I have developed software in many languajes, especially in Java, C and Python.</p>
-                        
-                    </div>
-                    
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title" data-i18n="personalProfile.job1">Freelance Software Engineer</h3>
-                            <div class="time" data-i18n="personalProfile.date1">2016 - Present</div>
-                        </div>
-                        <!--//upper-row-->
-                        <div class="company" data-i18n="personalProfile.company1">Personal and Collaborative projects</div>
-                    </div>
-                    <!--//meta-->
-                    <div class="details">
-                        <p data-i18n="personalProfile.details.p1">Composed an android app simulating the game Space Invaders then apply and try out different testing tools, like Selenium and implemented BDD through Cucumber. </p>
-                        <p data-i18n="personalProfile.details.p2">Collaborating on developing a Telegram bot to automate multiple task. </p>
-                        <p data-i18n="personalProfile.details.p3">Worked with Java + Spring framework for multiple projects. I built a RESTful API for an online GYM with this tecnology. </p>
-                    </div>
-                    <!--//details-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title" data-i18n="personalProfile.job2">Software Developer</h3>
-                            <div class="time" data-i18n="personalProfile.date2">Dec 2018 - Present</div>
-                        </div>
-                        <!--//upper-row-->
-                        <div class="company">Work4Data | I+D Software Lab</div>
-                    </div>
-                    <!--//meta-->
-                    <div class="details">
-                        <p data-i18n="personalProfile.details.p11">Frontend and Backend development. Work with Spring Boot, AngularJS, Bootstrap, PostgreSQL, OracleSQL, MSSQL. </p>
-                        <p data-i18n="personalProfile.details.p12">Hibernate/JPA implementation, Java/Maven development.  </p>
-                        <p data-i18n="personalProfile.details.p13">General knowledge of RESTful APIs and JSON. Experience in Webservices (REST and SOAP).</p>
-                        <p data-i18n="personalProfile.details.p14">Agile Development Experience. Continuous Integration / Continuous Delivery using DevOps tools and workflows such as Git, GitLab, Jira, and Jenkins.</p>
-                    </div>
-                    <!--//details-->
-                </div>
-                <!--//item-->
-
-            </section>
-            <!--//section-->
-
-            <section class="section projects-section">
-                <h2 class="section-title">
-                    <em class="fa fa-archive"></em>
-                    <span class="section projects-section" data-i18n="projectsCourses.title" > Projects & Courses</span>
-                </h2>
-                <div class="intro">
-                    <p data-i18n="projectsCourses.description1">Side projects and MOOCs I have done.</p>
-                    <p data-i18n="projectsCourses.description2">You can follow everything I am working on at the moment on my Github, feel free to check it out.</p>
-                    <p>Github: <a href="https://github.com/IvanPerez9/" target="_blank">IvanPerez9</a></p>
-                </div>
-                <!--//intro-->
-            
-                <div class="item">
-                    <span class="project-title">
-                        <a href="https://github.com/IvanPerez9/FitURJC" target="_blank">FitURJC</a>
-                    </span> -
-                    <span class="project-tagline" data-i18n="projectsCourses.fiturjc">A responsive website template designed to simulate a GYM, using Spring FrameWork, Angular 5, MySQL, Bootstrap Template and HTML/CSS.</span> <br>
-                        <span class="project-tagline"> </span>
-                </div>
-
-                <!--//item-->
-                <div class="item">
-                        <span class="project-title">
-                            <a href="https://github.com/IvanPerez9/ProgramacionCompetitiva"  target="_blank">Competitive Programing Repository</a>
-                        </span> - 
-                        <span class="project-tagline" data-i18n="projectsCourses.competitive">Solving problems of multiples online judges such as SPOJ or 'Acepta el reto' as hobby.</span><br>
-                        <span class="project-tagline"> </span>
-                    </div>
-                    <!--//item-->
-
-                <!--//item-->
-                <div class="item">
-                    <span class="project-title">
-                        <a  target="_blank" data-i18n="projectsCourses.onlineCourses.title">Online Courses</a>
-                    </span>
-                    <span class="project-tagline" data-i18n="projectsCourses.onlineCourses.course1">Pursued my passion for Java and Python languaje.
-                    </span> 
-                    <span class="project-tagline" data-i18n="projectsCourses.onlineCourses.course2">Best practices for software development and testing. </span>
-                </div>
-                <!--//item-->
-                <div class="item">
-                    <span class="project-title">
-                        <a href="https://urjcx.urjc.es/courses" target="_blank">MOOC:Ciberseguridad ataques y contramedidas </a>
-                    </span> -
-                    <span class="project-tagline" data-i18n="projectsCourses.onlineCourses.course3">Learn basic concepts of cybersecurity, the main attacks and the necessary countermeasures to deal with
-                        it.</span>
-                </div>
-                <!--//item-->
-                <div class="item">
-                    <span class="project-title">
-                        <a href="https://urjcx.urjc.es/courses" target="_blank">MOOC:Cómo gestionar el desarrollo tecnológico de una startup </a>
-                    </span> -
-                    <span class="project-tagline" data-i18n="projectsCourses.onlineCourses.course4">Technology and business model based on the Web, agility and mobility.</span>
-                </div>
-                <!--//item-->
-                <!--//item-->
-                <div class="item">
-                    <span class="project-title">
-                        <a href="https://www.scrumstudy.com/certification/scrum-fundamentals-certified" target="_blank">Scrum Fundamentals Certified </a>
-                    </span> -
-                    <span class="project-tagline" data-i18n="projectsCourses.onlineCourses.course5"> Basic understanding of the Scrum framework.</span>
-                </div>
-                <!--//item-->
-                <!--//item-->
-                <div class="item">
-                    <span class="project-title">
-                        <a href="" target="_blank">Curso de programación competitiva URJC 2019</a>
-                    </span> -
-                    <span class="project-tagline" data-i18n="projectsCourses.onlineCourses.course6"> Initialization to participate in real competition: Ability to write efficient, reliable, and compact code. I also lernt how to manage time well when it is limited, apply basic algorithmic ideas to real problems.</span>
-                </div>
-                <!--//item-->
-                <!--//item-->
-                <div class="item">
-                    <span class="project-title">
-                        <a href="https://www.udemy.com/certificate/UC-PCNCZBPE/" target="_blank" data-i18n="projectsCourses.onlineCourses.course7">Introduction to Git Course</a>
-                    </span> -
-                    <span class="project-tagline" data-i18n="projectsCourses.onlineCourses.course8"> Initialization to git, learn the basic about git workflow and git commands.</span>
-                </div>
-                <!--//item-->
-            </section>
-            <!--//section-->
-
-            <section class="skills-section section">
-                <h2 class="section-title">
-                    <em class="fa fa-rocket"></em>
-                    <span class="skills-section section" data-i18n="skills.title"> Skills & Proficiency</span>
-                </h2>
-                <div class="skillset">
-                    <div> 
-                        <span class="project-tagline"> 
-                            <p data-i18n="skills.p1">Backend developer with passion for APIs. Great interest in Testing, Problem solving, Datastructures and Algorithms.</p>
-                            <p data-i18n="skills..p2">Solid working knowledge of source control management systems (i.e. Git) and effective code branching/merging strategies.</p>
-                            <p data-i18n="skills.p3">Experience using Agile development methodology and Continuous Integration/Delivery.</p>
-                            <p data-i18n="skills.p4"> General knowledge of Spring and the Spring ecosystem (Spring Boot, Spring REST, Spring MVC, Spring Security)</p>
-                    </div>
-            </span>
-
-                <br>
-                <br>
-
-                    <div class="item">
-                        <h3 class="level-title">Java</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="90%">
-                            </div>
-                        </div>
-                        <!--//level-bar-->
-                    </div>
-                    <!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Angular</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="50%">
-                            </div>
-                        </div>
-                        <!--//level-bar-->
-                    </div>
-                    <!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">HTML5 &amp; CSS</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="90%">
-                            </div>
-                        </div>
-                        <!--//level-bar-->
-                    </div>
-                    <!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">C</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="65%">
-                            </div>
-                        </div>
-                        <!--//level-bar-->
-                    </div>
-                    <!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">SQL</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="65%">
-                            </div>
-                        </div>
-                        <!--//level-bar-->
-                    </div>
-                    <!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Spring Framework</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="68%">
-                            </div>
-                        </div>
-                        <!--//level-bar-->
-                    </div>
-                    <!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Python</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="65%">
-                            </div>
-                        </div>
-                        <!--//level-bar-->
-                    </div>
-                    <!--//item-->
-                    
-                    <br>
-                    <!-- 
-                    <div class="summary">
-                        <img id="wordcloud" class="definition img-fluid col-xs-12 col-md-12 col-sm-12 col-lg-12" src="assets/images/wordcloud.png" alt="CSS,HTML,AGILE,WEB,JAVA,ANGULAR,JAVASCRIPT,SPRING,DOCKER,PASCAL" />
-                    </div>
-                    -->
-
-                </div>
-            </section>
-            <!--//skills-section-->
-
-            <!--//Summary-->
-
-            <!-- 
-            <section class="section summary-section ">
-                <h2 class="section-title">
-                    <em class="fa fa-street-view"></em>Who am I?</h2>
-                <div class="summary">
-                    <img class="definition img-fluid col-xs-12 col-md-12 col-sm-12 col-lg-12" src="assets/images/ComoMeDefino.png" alt="HARD-WORKER, HONEST, EASY-GOING, SELF-CONFIDENT, CHEERFUL."    />
-                </div>
-            </section>
-            -->
-
-            <!--//Nube de palabras WordCloud alfa 1.0 -->
-
-            <!--
-
-            <section class="section summary-section ">
-                <h2 class="section-title">
-                    <em class="fa fa-cloud"></em>My habilities</h2>
-                <div class="summary">
-                    <img id="wordcloud" class="definition img-fluid col-xs-12 col-md-12 col-sm-12 col-lg-12" src="assets/images/wordcloud.png" alt="CSS,HTML,AGILE,WEB,JAVA,ANGULAR,JAVASCRIPT,SPRING,DOCKER,PASCAL" />
-                </div>
-            </section>
-
-            -->
-            
-        </div>
-        <!--//main-body-->
-
+        
     </div>
-
-    <footer class="footer">
-        <div class="text-center">
-            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-            <!--
-                <small class="copyright">Designed with <em class="fa fa-heart"></em> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-                -->
-        </div>
-        <!--//container-->
-    </footer>
-    <!--//footer-->
 
     <!-- Javascript -->
     <script src="assets/plugins/jquery-1.11.3.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js" type="module"></script>
-    <script src="assets/js/navbar.js" type="module"></script>
 </body>
 
 </html>

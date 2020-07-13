@@ -1,7 +1,10 @@
 {
+    "language": "Choose language",
     "title": "Iván Pérez Huete - Portfolio",
+    "hello": "Hello! I am",
     "tagline" : "Software Engineer",
     "location" : "Madrid Area, Spain",
+    "age" : "June 12th, 1995",
     "education" : {
       "title" : "Education",
       "degree1" : "Software Engineering Degree"
@@ -25,7 +28,7 @@
     },
     "summary":{
       "title" : "Career Profile",
-      "t1": "Energetic software engineer. I am enthusiastic team player and deep creative thinker.",
+      "t1": "I am team player software engineer with a can-do attitude, phenomenal time management skills, and a strong user focus. Energetic and deep creative thinker.",
       "t2": "Currently I am working on my degree's final project, focused on developing and working with TSP algorithms with the oficial TSPLib."
     },
     "personalProfile":{
@@ -72,5 +75,18 @@
       "p2": "Solid working knowledge of source control management systems (i.e. Git) and effective code branching/merging strategies.",
       "p3": "Experience using Agile development methodology and Continuous Integration/Delivery.",
       "p4": "General knowledge of Spring and the Spring ecosystem (Spring Boot, Spring REST, Spring MVC, Spring Security)"
+    },
+
+    "contact":{
+      "touch1": "Get in touch",
+      "touch2": "touch",
+      "contact1": "Contact form ",
+      "contact2": "Form",
+      "name" : "Enter your name:",  
+      "email": "Enter email address:",
+      "subject": "Enter subject:",
+      "message": "Enter message:",
+      "send": "Send Message"
     }
+
   }

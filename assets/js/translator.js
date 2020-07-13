@@ -12,7 +12,7 @@ class Translator {
   
       var stored = localStorage.getItem("language");
   
-      if (this._options.persist && stored) {
+      if (true && stored) {
         return stored;
       }
   
@@ -40,7 +40,7 @@ class Translator {
           this.translate(translation);
           this.toggleLangTag();
   
-          if (this._options.persist) {
+          if (true) {
             localStorage.setItem("language", this._lang);
           }
         })
@@ -74,9 +74,9 @@ class Translator {
   
     get defaultConfig() {
       return {
-        persist: false,
-        languages: ["en"],
-        defaultLanguage: "en",
+        persist: true,
+        languages: ["en,es"],
+        defaultLanguage: localStorage,
         filesLocation: "/i18n"
       };
     }

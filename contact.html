@@ -13,7 +13,7 @@
     <meta name="description" content="Iván Pérez Huete - Portfolio">
 
     <!-- Link-->
-    <link rel="shortcut icon" href="assets/images/orange.png" title="LogoIcon">
+    <link rel="shortcut icon" href="assets/images/iconContact.png" title="LogoIcon">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
         rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
@@ -44,8 +44,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <button class="dropbtn dropdown-toggle" onclick="window.location.href='/about.html';" type="button" > <span>About</span></button>
-            <button class="dropbtn dropdown-toggle" onclick="window.location.href='/index.html';" type="button" ><span>Home</span></button>
+            <button class="dropbtn dropdown-toggle" onclick="window.location.href='/index.html';" type="button" > <span>About</span></button>
+            <button class="dropbtn dropdown-toggle" onclick="window.location.href='/home.html';" type="button" ><span>Home</span></button>
             <button class="dropbtn dropdown-toggle" onclick="window.location.href='/contact.html';" type="button" ><span>Contact</span></button>
         </div>
       
@@ -55,7 +55,7 @@
 
                 <li>
                      <div class="dropdown">
-                      <button class="dropbtn dropdown-toggle" type="button" data-toggle="dropdown">Language Option <a class="arrow down" id="flecha"></a> </button>
+                     <button class="dropbtn dropdown-toggle" type="button" data-toggle="dropdown" data-i18n="language">Language Option </button>
                       <ul class="dropdown-menu">
                         <form>
                             <fieldset>
@@ -82,7 +82,7 @@
         <div id="left">
 
             <div class="personal_text">
-                <h1 class="name" >Get in <span> touch </span> </h1>
+                <h1 class="name" data-i18n="contact.touch1" >Get in <span data-i18n="contact.touch2"> touch </span> </h1>
             </div>  
 
             <div class="contact-container container-block">
@@ -90,6 +90,10 @@
                     <li class="email">
                         <em class="fa fa-envelope"></em>
                         <a href="mailto:iperezhuete@gmail.com" title="Email: iperezhuete@gmail.com">iperezhuete@gmail.com</a>
+                    </li>
+                    <li class="email">
+                        <em class="fa fa-envelope"></em>
+                        <a href="mailto:iperezhuete@gmail.com" title="Email: ivan.perezhu@protonmail.com">ivan.perezhu@protonmail.com</a>
                     </li>
                     <!--
 
@@ -131,32 +135,32 @@
         <div id="right">
 
             <div class="personal_text">
-                <h1 class="name" >Contact <span> Form </span> </h1>
+                <h1 class="name" data-i18n="contact.contact1" >Contact <span data-i18n="contact.contact2"> Form </span> </h1>
             </div>
 
             <div class="formulario" >
                 <form class="row contact_form" action="mailto:iperezhu@gmail.com" method="post" enctype="text/plain" id="contactForm" novalidate="novalidate">
                     <div class="col-md-10">
                         <div class="form-group">
-                            <span>Enter your name:</span>
+                            <span data-i18n="contact.name">Enter your name:</span>
                             <input type="text" class="form-control" id="name" name="name">
                         </div>
                         <div class="form-group">
-                            <span>Enter email address:</span>
+                            <span data-i18n="contact.email">Enter email address:</span>
                             <input type="email" class="form-control" id="email" name="email">
                         </div>
                         <div class="form-group">
-                            <span>Enter subject:</span>
+                            <span data-i18n="contact.subject">Enter subject:</span>
                             <input type="text" class="form-control" id="subject" name="subject">
                         </div>
                         <div>
                             <div class="form-group">
-                                <span>Enter message:</span>
+                                <span data-i18n="contact.message">Enter message:</span>
                                 <textarea class="form-control" name="message" id="message" rows="4" ></textarea>
                             </div>
                         </div>
                     </div>
-                        <button type="submit" value="submit" class="btn submit_btn enviar">Send Message</button>
+                        <button type="submit" value="submit" class="btn submit_btn enviar" data-i18n="contact.send">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -170,7 +174,6 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js" type="module"></script>
-    <script src="assets/js/navbar.js" type="module"></script>
 </body>
 
 </html>
