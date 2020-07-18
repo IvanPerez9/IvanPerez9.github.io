@@ -1,5 +1,6 @@
 import Translator from "./translator.js";
 
+/* Translator */
 var translator = new Translator({
     persist: false,
     languages: ["en", "es"],
@@ -15,6 +16,22 @@ document.querySelector("form").addEventListener("click", function(evt) {
       translator.load(evt.target.alt);
     }
   });
+
+/* Transition */
+$('html, body').hide();
+
+$(document).ready(function() {
+    $('html, body').fadeIn(600, function() {
+        $('a[href], button[href]').click(function(event) {
+            var url = $(this).attr('href');
+            if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+            event.preventDefault();
+            $('html, body').fadeOut(600, function() {
+                window.location = url;
+            });
+        });
+    });
+});
 
 jQuery(document).ready(function($) {
     /*======= Skillset *=======*/
