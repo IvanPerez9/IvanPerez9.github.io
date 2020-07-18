@@ -40,13 +40,13 @@
     outline: none;
   }
   
-  .dropdown-content input:hover {color: #f47c03;}
+  .dropdown-content input:hover {color: #f0575f;}
 
   .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: white;}
 
-  .dropbtn span:hover {color : #f47c03;}
+  .dropbtn span:hover {color : #f0575f;}
 
 
   /* Language arrow */

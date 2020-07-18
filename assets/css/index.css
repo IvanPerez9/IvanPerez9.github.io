@@ -1,9 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #545E6C;
-  background-image: -moz-linear-gradient(0deg, #f18416 0%, #fcbd7e 100%);
-  background-image: -webkit-linear-gradient(0deg, #f18416 0%, #fcbd7e 100%);
-  background-image: -ms-linear-gradient(0deg, #f18416 0%, #fcbd7e 100%);
+  background-image: -moz-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
+  background-image: -webkit-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
+  background-image: -ms-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -58,13 +58,13 @@ body {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  background: #f47c03;
+  background: #f0575f;
 }
 
 .download button:hover {
-  background-image: -moz-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
-  background-image: -webkit-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
-  background-image: -ms-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
+  background-image: -moz-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+  background-image: -webkit-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+  background-image: -ms-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -136,15 +136,15 @@ body {
 }
 
 .contact-container #email:hover {
-  color: #a85502;
+  color: #AB3E43;
 }
 
 .contact-container {
-  color: #f47c03;
+  color: #f0575f;
 }
 
 .contact-container a {
-  color: #f47c03;
+  color: #f0575f;
   text-decoration: none;
 }
 
@@ -165,7 +165,7 @@ body {
 .personal_social li a {
   line-height: 40px;
   width: 40px;
-  background: #f47b0398;
+  background: #f0575f;
   border-radius: 5px;
   display: inline-block;
   text-align: center;
@@ -174,9 +174,11 @@ body {
 }
 
 .personal_social li:hover a {
-  background-image: -moz-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
-  background-image: -webkit-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
-  background-image: -ms-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
+  color: black;
+  background-image: -moz-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+  background-image: -webkit-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+  background-image: -ms-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {

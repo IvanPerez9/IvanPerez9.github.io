@@ -1,9 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #545E6C;
-  background-image: -moz-linear-gradient(0deg, #f18416 0%, #fcbd7e 100%);
-  background-image: -webkit-linear-gradient(0deg, #f18416 0%, #fcbd7e 100%);
-  background-image: -ms-linear-gradient(0deg, #f18416 0%, #fcbd7e 100%);
+  background-image: -moz-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
+  background-image: -webkit-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
+  background-image: -ms-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -59,6 +59,11 @@ body {
   font-size: 14px;
 }
 
+.contact-list a:hover {
+  text-decoration: underline;
+  color: #AB3E43;
+}
+
 .personal_text h1 {
   font-size: 26px;
   font-weight: 500;
@@ -69,7 +74,7 @@ body {
 }
 
 .personal_text span {
-  color: #f47c03;
+  color: #f0575f;
 }
 
 .list {
@@ -79,26 +84,24 @@ body {
 }
 
 .contact-container #email:hover {
-  color: #a85502;
+  color: #AB3E43;
 }
 
 .contact-container {
-  color: #f47c03;
+  color: #f0575f;
   font-size: 18px;
   margin-top: 3rem;
 }
 
 .contact-container a {
-  color: #f47c03;
+  color: #f0575f;
   text-decoration: none;
 }
 
 .imgEmail {
-  transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  /*IE 9*/
-  margin-left: 18rem;
-  padding-bottom: 6rem;
+  width: 50%;
+  height: 50%;
+  margin: 5rem;
 }
 
 .formulario {
@@ -108,9 +111,26 @@ body {
 .enviar {
   position: relative;
   color: white;
-  background-color: #f47c03;
+  background-color: #f0575f;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+}
+
+.boton {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton button:hover {
+  background-image: -moz-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+  background-image: -webkit-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+  background-image: -ms-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Extra small devices (phones, less than 768px) */
