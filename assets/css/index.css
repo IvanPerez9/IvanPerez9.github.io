@@ -12,7 +12,6 @@ body {
 .wrapper {
     background: #ffffff;
     max-width: 1000px;
-    height: 60rem;
     margin: 0 auto;
     position: relative;
     -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -21,35 +20,37 @@ body {
   }
 
 #left {
-    background: white;
-    float:left;
+    background: red;
+    position: absolute;
+    min-height: 600px;
+    left: 0;
     width: 50%;
     height: 100%;
 }
 #right {
-    background: white;
-    float:right;
-    width: 50%;
-    height: 100%;
-    text-align: center;
-}
-#bottom {
-    clear: both;
+    background: yellow;
+    padding: 60px;
+    padding-right: 300px;
 }
 
-.profileImg{
-    border-radius:15%;
-    width: 400;
-    height: 300;
-    padding: 5rem;
+#left .profileImg {
+  padding: 30px;
+  text-align: center; 
+  color: #fff;
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
 }
+
+
+
 .download{
-    position: relative;
     left: 40%;
     color: white;
     background-color:  #f47c03;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
+    margin-bottom: 30px;
 }
 
 .download button:hover{
@@ -124,6 +125,7 @@ body {
 
 .personal_social {
   margin-top: 9rem;
+  margin-bottom: 30px;
  }
 .personal_social li {
     display: inline-block;
@@ -144,3 +146,21 @@ body {
       background-image: -webkit-linear-gradient(0deg, #f47c03 0%, #FDA246 100%);
       background-image: -ms-linear-gradient(0deg, #f47c03 0%, #FDA246 100%); 
   }
+
+  .footer {
+    padding: 30px;
+    padding-top: 60px;
+  }
+
+  /* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  #left {
+    position: static;
+    width: inherit;
+    min-height: 400px;
+  }
+  #right {
+    padding: 30px;
+    min-height: 800px;
+  }
+}
