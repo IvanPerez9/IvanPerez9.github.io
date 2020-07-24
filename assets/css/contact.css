@@ -73,6 +73,10 @@ body {
   color: #222222;
 }
 
+textarea {
+  resize: vertical;
+}
+
 .personal_text span {
   color: #f0575f;
 }
