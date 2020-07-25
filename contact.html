@@ -134,12 +134,12 @@
                 <form class="row contact_form" action="mailto:iperezhu@gmail.com" method="post" enctype="text/plain" id="contactForm" novalidate="novalidate">
                     <div class="col-md-8">
                         <div class="form-group">
-                            <span data-i18n="contact.name">Enter your name:</span>
-                            <input type="text" class="form-control" id="name" name="name">
+                            <span data-i18n="contact.name" class="required">Enter your name:</span>
+                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <span data-i18n="contact.email">Enter email address:</span>
-                            <input type="email" class="form-control" id="email" name="email">
+                            <span data-i18n="contact.email" class="required">Enter email address:</span>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <span data-i18n="contact.subject">Enter subject:</span>
@@ -147,8 +147,8 @@
                         </div>
                         <div>
                             <div class="form-group">
-                                <span data-i18n="contact.message">Enter message:</span>
-                                <textarea class="form-control"  name="message" id="message" rows="4" ></textarea>
+                                <span data-i18n="contact.message" class="required" >Enter message:</span>
+                                <textarea class="form-control"  name="message" id="message" rows="4"  required></textarea>
                             </div>
                         </div>
                         <div class="boton">
