@@ -1,4 +1,9 @@
 {
+  "navbar":{
+    "home":"Home",
+    "about":"About me",
+    "contact":"Contact"
+  },
   "language": "Choose language",
   "title": "Iván Pérez - Portfolio",
   "hello": "Hello! I am",
