@@ -76,8 +76,9 @@ body {
 .required:after {
   color: #e32;
   content: ' *';
-  display:inline;
+  display: inline;
 }
+
 textarea {
   resize: vertical;
 }

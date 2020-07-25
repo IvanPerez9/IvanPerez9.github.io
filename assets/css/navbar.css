@@ -1,62 +1,70 @@
 .banner {
-    background: #fff;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom:  2rem;
-    position: relative;
-    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  background: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
- /* languaje */
+/* languaje */
 
- .dropbtn {
-    background-color:white;
-    font-family: Lato, sans-serif;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    border: none;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: relative;
-    background-color: white;
-    min-width: 160px;
-    border: none;
-  }
-  
-  .dropdown-content input {
-    color:  rgba(0, 0, 0, 0.5);
-    padding: 12px 16px;
-    text-decoration: none;
-    border: none;
-    outline: none;
-  }
-  
-  .dropdown-content input:hover {color: #f0575f;}
+.dropbtn {
+  background-color: white;
+  font-family: Lato, sans-serif;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-  .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: white;}
+.dropdown {
+  position: relative;
+  border: none;
+}
 
-  .dropbtn span:hover {color : #f0575f;}
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: white;
+  min-width: 160px;
+  border: none;
+}
 
+.dropdown-content input {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 12px 16px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
 
-  /* Language arrow */
+.dropdown-content input:hover {
+  color: #f0575f;
+}
+
+.dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.dropbtn span:hover {
+  color: #f0575f;
+}
+
+/* Language arrow */
 
 .arrow {
-  border: solid rgba(0, 0, 0, 0.5);
+  border: solid #f0575f;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 3.5px;
 }
+
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
