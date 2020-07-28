@@ -1,7 +1,7 @@
 {
   "navbar":{
     "home":"Inicio",
-    "about":"Sobre mi",
+    "about":"Sobre mí",
     "contact":"Contacto"
   },
   "language": "Elija un idioma",
@@ -36,7 +36,7 @@
   },
   "summary": {
     "title": "Perfil profesional",
-    "t1": "Soy una persona a la que le gusta trabajar en equipo, con una estupenda gestión del tiempo y un enfoque pensado en el usuario. Me considero un ingeniero creativo y energético.",
+    "t1": "Soy una persona a la que le gusta trabajar en equipo, con una estupenda gestión del tiempo y un enfoque pensado en el usuario. Me considero un ingeniero creativo, resolutivo y con iniciativa.",
     "t2": "Actualmente estoy trabajando en el proyecto final de grado, enfocado en desarrollar y trabajar con algoritmos TSP junto con su libreria oficial."
   },
   "personalProfile": {
@@ -55,7 +55,7 @@
       "p11": "Desarrollador Frontend y Backend. He trabajado con Spring Boot, AngularJS, Bootstrap, PostgreSQL, OracleSQL, MSSQL.",
       "p12": "Implementación con Hibernate/JPA, desarrollo con Java/Maven.",
       "p13": "Conocimiento general de APIs RESTful y JSON. Experiencia en Webservices (REST and SOAP).",
-      "p14": "Experiencia en el desarrollo ágil. Integración continuna / Entrega continua usando herramientas DevOps como Git, GitLab, Jira, y Jenkins."
+      "p14": "Experiencia en el desarrollo ágil. Integración contínua / Entrega contínua usando herramientas DevOps como Git, GitLab, Jira, y Jenkins."
     }
   },
   "projectsCourses": {
@@ -63,15 +63,15 @@
     "description1": "Otros proyectos, cursos y MOOCs que he hecho",
     "description2": "Puedes ver todo lo que estoy haciendo en mi Github.",
     "fiturjc": "Una web responsive simulando el funcionamiento de un gimnasio, usando Spring FrameWork, Angular 5, MySQL, Bootstrap Template y HTML/CSS para el desarrollo.",
-    "competitive": "Repositorio para resolver distinto problemas de programación competitiva, de multiples jueces online como SPOJ o 'Acepta el reto' ,por hobby.",
+    "competitive": "Repositorio para resolver distintos problemas de programación competitiva, de multiples jueces online como SPOJ o 'Acepta el reto', por hobby.",
     "onlineCourses": {
       "title": "Cursos Online",
       "course1": "Cursos sobre Java y Python.",
-      "course2": "Mejores practicas en el desarollo de software y testing.",
-      "course3": "Conceptos basicos de ciberseguridad, los principales ataques y sus contramedidas.",
-      "course4": "Conceptos basicos y avanzados sobre el desarrollo ágil en todas sus etapas, así como su historia",
-      "course5": "Conocimiento básico sobre Scrum, etapas y roles dentro del modelo",
-      "course6": "Iniciación para participar en competiciones reales: Capacidad para escribir codigo eficiente, seguro y breve. También aprendí a administraerme el tiempo y a aplicar conceptos de algoritmia a problemas reales.",
+      "course2": "Mejores prácticas en el desarrollo de software y testing.",
+      "course3": "Conceptos básicos de ciberseguridad, los principales ataques y sus contramedidas.",
+      "course4": "Conceptos básicos y avanzados sobre el desarrollo ágil en todas sus etapas, así como su historia.",
+      "course5": "Conocimiento básico sobre Scrum, etapas y roles dentro del modelo.",
+      "course6": "Iniciación para participar en competiciones reales: Capacidad para escribir codigo eficiente, seguro y breve. También aprendí a administrarme el tiempo y a aplicar conceptos de algoritmia a problemas reales.",
       "course7": "Introducción a Git",
       "course8": "Iniciación a git, su workflow y comandos."
     }
@@ -80,14 +80,14 @@
     "title": "Habilidades & Competencia",
     "p1": "Desarrollador backend con pasión por las APIs. Con un gran interés en Estructura de datos, Algoritmia y la resolución de problemas",
     "p2": "Conocimiento sólido sobre los sistemas de control de versiones (Git) y estrategias eficientes de administración de ramas y mergeo.",
-    "p3": "Experiencia usando herramientas de desarrollo ágil e integracion continua.",
+    "p3": "Experiencia usando herramientas de desarrollo ágil e integración continua.",
     "p4": "Conocimientos generales sobre el ecosistema de Spring (Spring Boot, Spring REST, Spring MVC, Spring Security)"
   },
   "contact": {
     "touch1": "Pongámonos en contacto",
     "touch2": "contacto",
     "name": "Introduce tu nombre:",
-    "email": "Introduce tu email:",
+    "email": "Introduce tu correo electrónico:",
     "subject": "Introduce el asunto:",
     "message": "Introduce el mensaje:",
     "send": "Enviar mensaje"
