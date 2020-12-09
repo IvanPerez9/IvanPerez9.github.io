@@ -14,7 +14,7 @@
     "title": "Education",
     "degree1": "Software Engineering Degree",
     "degree2": "High School diploma",
-    "uni": "King Juan Carlos University",
+    "uni": "Rey Juan Carlos University",
     "school": "La Salle Griñón School"
   },
   "languages": {
@@ -45,7 +45,7 @@
     "job1": "Freelance Developer",
     "job2": "Software Developer",
     "date1": "2016 - Present",
-    "date2": "Dec 2018 - Present",
+    "date2": "Dec 2018 - Dec 2020",
     "company1": "Personal and Collaborative projects",
     "company2": "Work4Data | I+D Software Lab",
     "details": {
@@ -73,7 +73,9 @@
       "course5": "Basic understanding of the Scrum framework.",
       "course6": "Initialization to participate in real competition: Ability to write efficient, reliable, and compact code. I also lernt how to manage time well when it is limited, apply basic algorithmic ideas to real problems.",
       "course7": "Introduction to Git Course",
-      "course8": "Initialization to git, learn the basic about git workflow and git commands"
+      "course8": "Initialization to git, learn the basic about git workflow and git commands",
+      "course9": "Docker & Kubernetes",
+      "course10": "Deploy Docker applications manually, with managed services or with Kubernetes/AWS"
     }
   },
   "skills": {

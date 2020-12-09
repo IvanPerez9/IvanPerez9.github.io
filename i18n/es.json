@@ -36,8 +36,7 @@
   },
   "summary": {
     "title": "Perfil profesional",
-    "t1": "Soy una persona a la que le gusta trabajar en equipo, con una estupenda gestión del tiempo y un enfoque pensado en el usuario. Me considero un ingeniero creativo, resolutivo y con iniciativa.",
-    "t2": "Actualmente estoy trabajando en el proyecto final de grado, enfocado en desarrollar y trabajar con algoritmos TSP junto con su libreria oficial."
+    "t1": "Soy una persona a la que le gusta trabajar en equipo, con una estupenda gestión del tiempo y un enfoque pensado en el usuario. Me considero creativo, resolutivo y con iniciativa."
   },
   "personalProfile": {
     "title": "Perfil personal",
@@ -45,7 +44,7 @@
     "job1": "Desarrollador independiente",
     "job2": "Desarrollador de Software",
     "date1": "2016 - Hoy",
-    "date2": "Dec 2018 - Hoy",
+    "date2": "Dic 2018 - Dic 2020",
     "company1": "Proyectos personales y colaborativos",
     "company2": "Work4Data | I+D Software Lab",
     "details": {
@@ -73,7 +72,9 @@
       "course5": "Conocimiento básico sobre Scrum, etapas y roles dentro del modelo.",
       "course6": "Iniciación para participar en competiciones reales: Capacidad para escribir codigo eficiente, seguro y breve. También aprendí a administrarme el tiempo y a aplicar conceptos de algoritmia a problemas reales.",
       "course7": "Introducción a Git",
-      "course8": "Iniciación a git, su workflow y comandos."
+      "course8": "Iniciación a git, su workflow y comandos.",
+      "course9": "Docker & Kubernetes",
+      "course10": "Utilizacion de docker y kubernetes junto con AWS para contener y desplegar aplicaciones"
     }
   },
   "skills": {
