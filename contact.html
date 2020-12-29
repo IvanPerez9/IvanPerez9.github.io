@@ -131,7 +131,7 @@
                     -->
                 </ul>
 
-                <div class="">
+                <div>
                     <img src="/assets/images/message.png" alt="imgEmail" height="100" width="100" class="imgEmail">
                 </div>
 
@@ -150,7 +150,7 @@
                         </div>
                         <div class="form-group">
                             <span data-i18n="contact.email" class="required">Enter email address:</span>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <input type="email" class="form-control" id="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
                         </div>
                         <div class="form-group">
                             <span data-i18n="contact.subject">Enter subject:</span>
@@ -163,14 +163,14 @@
                             </div>
                         </div>
                         <div class="boton">
-                            <button type="submit" value="submit" class="btn enviar" data-i18n="contact.send">
+                            <button type="submit" value="submit" onclick="location.href='https://ivanperez9.github.io/confirmation.html'" class="btn enviar" data-i18n="contact.send">
                                 Send Message</button>
                         </div>
                     </div>
                     <!-- Honey Pot -->
                     <div style="position: absolute; left: -5000px;">
                         <input type="checkbox" name="excellent_aqua_spotted_gloves" value="1" tabindex="-1" autocomplete="no">
-                      </div>
+                    </div>
                 </form>
             </div>
 

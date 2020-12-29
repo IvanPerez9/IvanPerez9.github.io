@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    font-size: 14px;
+    padding: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .personal_text {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .personal_text h4 {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #222222;
+  }
+  
+  .personal_text h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #222222;
+  }
+
+  .boton {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .boton button:hover {
+    background-image: -moz-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+    background-image: -webkit-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+    background-image: -ms-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .enviar {
+    position: relative;
+    color: white;
+    background-color: #f0575f;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+  }
