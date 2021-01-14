@@ -146,11 +146,11 @@
                     <div class="col-md-8">
                         <div class="form-group">
                             <span data-i18n="contact.name" class="required">Enter your name:</span>
-                            <input type="text" class="form-control" id="name" name="name" required>
+                            <input type="text" class="form-control" id="name" name="name" onkeyup="checkForm()" required>
                         </div>
                         <div class="form-group">
                             <span data-i18n="contact.email" class="required">Enter email address:</span>
-                            <input type="email" class="form-control" id="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                            <input type="email" class="form-control" id="email" name="email" onkeyup="checkForm()" required>
                         </div>
                         <div class="form-group">
                             <span data-i18n="contact.subject">Enter subject:</span>
@@ -159,11 +159,11 @@
                         <div>
                             <div class="form-group">
                                 <span data-i18n="contact.message" class="required">Enter message:</span>
-                                <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="4" onkeyup="checkForm()" required></textarea>
                             </div>
                         </div>
                         <div class="boton">
-                            <button type="submit" value="submit" onclick="location.href='/confirmation.html'"  class="btn enviar" data-i18n="contact.send">
+                            <button disabled="disabled" id="myButton" type="submit" value="submit" class="btn enviar" data-i18n="contact.send">
                                 Send Message</button>
                         </div>
                     </div>
@@ -181,6 +181,27 @@
     <!-- Javascript -->
     <script src="assets/plugins/jquery-1.11.3.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Disable button when form is not complete -->
+    <script type="text/javascript">
+        function checkForm() {
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var message = document.getElementById("message");
+            var reg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+            var cansubmit= true;
+            if(name.value.length == 0 || email.value.length == 0 || message.value.length == 0)
+            {
+                    cansubmit = false;
+            } else {
+                if (reg.test(email.value) == false)
+                {
+                    cansubmit = false;
+                }
+            }
+            document.getElementById("myButton").disabled = !cansubmit;  
+        };
+    </script>
     <!-- custom js -->
     <script src="assets/js/main.js" type="module"></script>
 </body>
