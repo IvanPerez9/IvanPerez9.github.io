@@ -19,11 +19,11 @@ document.querySelector("form").addEventListener("click", function(evt) {
 
 function changeDownloadCV () {
     var hrefEN = "./PDFs/sample.pdf";
+    var lang = localStorage.getItem("language");
     if (document.documentElement.lang == "en"){
         document.getElementById("downloadCV").setAttribute("href",hrefEN);
     }
 }
-changeDownloadCV();
 
 /* Transition */
 $('body').hide();

@@ -4,6 +4,17 @@ class Translator {
       this._lang = this.getLanguage();
       this._elements = document.querySelectorAll("[data-i18n]");
     }
+
+    changeDownloadCV () {
+      var hrefEN = "./PDFs/sample.pdf";
+      var hrefES = "./PDFs/IvanPerezHuete_CV.pdf";
+      var lang = localStorage.getItem("language");
+      if (lang == "en"){
+          document.getElementById("downloadCV").setAttribute("href",hrefEN);
+      } else {
+        document.getElementById("downloadCV").setAttribute("href",hrefES);
+      }
+    }
   
     getLanguage() {
       if (!this._options.detectLanguage) {
@@ -42,6 +53,7 @@ class Translator {
   
           if (true) {
             localStorage.setItem("language", this._lang);
+            this.changeDownloadCV();
           }
         })
         .catch(err => {
