@@ -4,7 +4,7 @@ import Translator from "./translator.js";
 var translator = new Translator({
     persist: false,
     languages: ["en", "es"],
-    defaultLanguage: "en",
+    defaultLanguage: "es",
     detectLanguage: true,
     filesLocation: "/i18n"
   });
@@ -16,6 +16,14 @@ document.querySelector("form").addEventListener("click", function(evt) {
       translator.load(evt.target.alt);
     }
   });
+
+function changeDownloadCV () {
+    var hrefEN = "./PDFs/sample.pdf";
+    if (document.documentElement.lang == "en"){
+        document.getElementById("downloadCV").setAttribute("href",hrefEN);
+    }
+}
+changeDownloadCV();
 
 /* Transition */
 $('body').hide();
