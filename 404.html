@@ -1,28 +1,29 @@
 <html lang="en">
+  <head>
+    <title data-i18n="title">404 - ivanperez9.github.io</title>
+    <link id="theme-style" rel="stylesheet" href="assets/css/404.css" />
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+  </head>
 
-<head>
-    <title data-i18n="title">404 - ivanperez9.github.io </title>
-    <link id="theme-style" rel="stylesheet" href="assets/css/404.css">
-</head>
-
-<body>
-
-    <div class="noise"></div>
-    <div class="overlay"></div>
-    <div class="terminal">
-        <h1>Error <span class="errorcode">404</span></h1>
-        <p class="output">The page you are looking for might have been removed, had its name changed or is temporarily
-            unavailable.</p>
-        <p class="output">Please try to <a onclick="goBack()">go back</a> or <a
-                href="https://ivanperez9.github.io/">return to the homepage</a>.</p>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="box">
+          <div class="text-404">404</div>
+          <div class="text-not">Page Not Found</div>
+         <!-- <a onclick="history.back(-1)" class="">Go Back</a> -->
+        </div>
+        <div class="boton">
+            <a id="myButton" type="submit" value="submit" class="myBTN enviar"> Go Home </a>
+        </div>
+      </div>
     </div>
-
-</body>
-
-<script>
-    function goBack() {
-        window.history.back();
-    }
-</script>
-
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "https://ivanperez9.github.io/";
+        };
+    </script>
+    <!-- custom js -->
+    <script src="assets/js/404.js" type="module"></script>
+  </body>
 </html>
