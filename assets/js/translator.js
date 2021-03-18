@@ -6,7 +6,7 @@ class Translator {
     }
 
     changeDownloadCV () {
-      var hrefEN = "./PDFs/sample.pdf";
+      var hrefEN = "./PDFs/IvanPerezHuete_CV_en.pdf";
       var hrefES = "./PDFs/IvanPerezHuete_CV.pdf";
       var lang = localStorage.getItem("language");
       if (lang == "en"){
