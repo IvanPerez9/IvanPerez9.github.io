@@ -1,4 +1,5 @@
 class Translator {
+  
     constructor(options = {}) {
       this._options = Object.assign({}, this.defaultConfig, options);
       this._lang = this.getLanguage();

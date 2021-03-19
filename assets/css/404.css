@@ -16,10 +16,29 @@ html {
   font-size: 8rem;
   border-right: 8px solid #000;
   padding-right: 1rem;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
 }
+
 .text-not {
   padding-left: 1rem;
   font-size: 7rem;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+/* */
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .enviar {
