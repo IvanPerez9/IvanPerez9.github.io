@@ -1,8 +1,20 @@
 class Translator {
+  
     constructor(options = {}) {
       this._options = Object.assign({}, this.defaultConfig, options);
       this._lang = this.getLanguage();
       this._elements = document.querySelectorAll("[data-i18n]");
+    }
+
+    changeDownloadCV () {
+      var hrefEN = "./PDFs/IvanPerezHuete_CV_en.pdf";
+      var hrefES = "./PDFs/IvanPerezHuete_CV.pdf";
+      var lang = localStorage.getItem("language");
+      if (lang == "en"){
+          document.getElementById("downloadCV").setAttribute("href",hrefEN);
+      } else {
+        document.getElementById("downloadCV").setAttribute("href",hrefES);
+      }
     }
   
     getLanguage() {
@@ -42,6 +54,7 @@ class Translator {
   
           if (true) {
             localStorage.setItem("language", this._lang);
+            this.changeDownloadCV();
           }
         })
         .catch(err => {

@@ -4,7 +4,7 @@ import Translator from "./translator.js";
 var translator = new Translator({
     persist: false,
     languages: ["en", "es"],
-    defaultLanguage: "en",
+    defaultLanguage: "es",
     detectLanguage: true,
     filesLocation: "/i18n"
   });
