@@ -46,8 +46,10 @@
     "job2": "Software Developer",
     "date1": "2016 - Present",
     "date2": "Dec 2018 - Dec 2020",
+    "date3": "Feb 2021 - Present",
     "company1": "Personal and Collaborative projects",
     "company2": "Work4Data | I+D Software Lab",
+    "company3": "VIEWNEXT",
     "details": {
       "p1": "Composed an android app simulating the game Space Invaders then apply and try out different testing tools, like Selenium and implemented BDD through Cucumber.",
       "p2": "Collaborating on developing a Telegram bot to automate multiple task.",
@@ -55,7 +57,12 @@
       "p11": "Frontend and Backend development. Work with Spring Boot, AngularJS, Bootstrap, PostgreSQL, OracleSQL, MSSQL.",
       "p12": "Hibernate/JPA implementation, Java/Maven development.",
       "p13": "General knowledge of RESTful APIs and JSON. Experience in Webservices (REST and SOAP).",
-      "p14": "Agile Development Experience. Continuous Integration / Continuous Delivery using DevOps tools and workflows such as Git, GitLab, Jira, and Jenkins."
+      "p14": "Agile Development Experience. Continuous Integration / Continuous Delivery using DevOps tools and workflows such as Git, GitLab, Jira, and Jenkins.",
+      "p15": "Backend development. Worked with Spring Boot 2, Spring Framwork 5 applying mainly reactive programming methodologies, developing web applications.",
+      "p16": "Using Hibernate/JPA as ORM, Maven as project management tool and MonogoDB as database.",
+      "p17": "Test cases for unit and integration testing using JUnit and Mockito. Experience in SONAR systems to generate and review quality of code.",
+      "p18": "Assisted in facilitating the Scrum ceremonies such as: Product Increment planning, sprint planning, daily stand ups, sprint demos, and retrospectives.",
+      "p19": "Continuous Integration / Continuous Delivery using tools such as Git, Github, Jira and Kanban board."
     }
   },
   "projectsCourses": {
