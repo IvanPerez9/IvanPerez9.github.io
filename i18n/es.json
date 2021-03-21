@@ -45,8 +45,10 @@
     "job2": "Desarrollador de Software",
     "date1": "2016 - Hoy",
     "date2": "Dic 2018 - Dic 2020",
+    "date3": "Feb 2021 - Hoy",
     "company1": "Proyectos personales y colaborativos",
     "company2": "Work4Data | I+D Software Lab",
+    "company3": "VIEWNEXT",
     "details": {
       "p1": "Desarrollo de un 'space invaders' en android y luego aplicar con esta  BDD con Jenkins/Cucumber y diferentes heramientas de testing como Selenium. ",
       "p2": "Colaborando para desarrollar un bot de Telegram que facilita la automatización de tareas.",
@@ -54,7 +56,12 @@
       "p11": "Desarrollador Frontend y Backend. He trabajado con Spring Boot, AngularJS, Bootstrap, PostgreSQL, OracleSQL, MSSQL.",
       "p12": "Implementación con Hibernate/JPA, desarrollo con Java/Maven.",
       "p13": "Conocimiento general de APIs RESTful y JSON. Experiencia en Webservices (REST and SOAP).",
-      "p14": "Experiencia en el desarrollo ágil. Integración contínua / Entrega contínua usando herramientas DevOps como Git, GitLab, Jira, y Jenkins."
+      "p14": "Experiencia en el desarrollo ágil. Integración contínua / Entrega contínua usando herramientas DevOps como Git, GitLab, Jira, y Jenkins.",
+      "p15": "Desarrollo Backend. Trabajando con Spring Boot 2, Spring Framwork 5 principalmente aplicando metodologías de programación reactiva para el desarrollo de aplicaciones web.",
+      "p16": "Hibernate/JPA como ORM, Maven como sistema para construir el proyecto y MonogoDB como base de datos.",
+      "p17": "Casos de prueba, tanto unitario como de integración con JUnit y Mockito. Experiencia en SONAR para generar, asegurar y revisar la calidad del código.",
+      "p18": "Participación activa en las reuniones y actividades de metodología Scrum como: Incremento del valor del producto, sprint planning, dailies , sprint demos, y retrospectivas.",
+      "p19": "Integración contínua / Entrega contínua usando herramientas como Git, Github, Jira y tablero Kanban."
     }
   },
   "projectsCourses": {
