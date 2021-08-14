@@ -58,9 +58,11 @@
       "p12": "Hibernate/JPA implementation, Java/Maven development.",
       "p13": "General knowledge of RESTful APIs and JSON. Experience in Webservices (REST and SOAP).",
       "p14": "Agile Development Experience. Continuous Integration / Continuous Delivery using DevOps tools and workflows such as Git, GitLab, Jira, and Jenkins.",
-      "p15": "Backend development. Worked with Spring Boot 2, Spring Framwork 5 applying mainly reactive programming methodologies, developing web applications.",
+      "p15": "Java and Python microservices Backend Developer.",
+      "p151": "Worked with Java 8+, Spring Boot 2, Spring Framwork 5 applying mainly reactive programming methodologies, developing web applications.",
+      "p152": "Python microservices with Python 3 and Flask framework",
       "p16": "Using Hibernate/JPA as ORM, Maven as project management tool and MonogoDB as database.",
-      "p17": "Test cases for unit and integration testing using JUnit and Mockito. Experience in SONAR systems to generate and review quality of code.",
+      "p17": "Test cases for unit and integration testing using JUnit and Mockito. Experience in SONAR to generate and review quality of code.",
       "p18": "Assisted in facilitating the Scrum ceremonies such as: Product Increment planning, sprint planning, daily stand ups, sprint demos, and retrospectives.",
       "p19": "Continuous Integration / Continuous Delivery using tools such as Git, Github, Jira and Kanban board."
     }

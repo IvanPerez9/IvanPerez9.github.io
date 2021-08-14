@@ -41,53 +41,39 @@ html {
 	}
 }
 
-.enviar {
-  position: relative;
-  color: white;
-  width: 25rem;
-  height: 5rem;
-  background-color: #f0575f;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-}
-
 .boton {
   color: white;
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-bottom: 30px;
   display: flex;
-  height: 80px;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
-.boton a:hover {
-  text-decoration: none;
+.boton button {
+  display: block;
+  text-transform: uppercase;
+  width: 30rem;
+  height: 5rem;
 }
 
-.myBTN {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
+.icon{
+  position:absolute;
+  margin-left: 1rem;
+  margin-top: 0.33rem;
+  align-items: center;
+  
 }
 
-.boton a:hover {
+.backBtn {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background: #f0575f;
+}
+
+.boton button:hover  {
   background-image: -moz-linear-gradient(0deg, #f0575f 0%, #f69fa3 100%);
   background-image: -webkit-linear-gradient(0deg, #f0575f 0%, #f69fa3 100%);
   background-image: -ms-linear-gradient(0deg, #f0575f 0%, #f69fa3 100%);
