@@ -1,0 +1,207 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  background-image: -moz-linear-gradient(0deg, #50292b 0%, #111010 100%);
+  background-image: -webkit-linear-gradient(0deg, #300d0f 0%, #070606 100%);
+  background-image: -ms-linear-gradient(0deg, #330b0d 0%, #1f1a1b 100%);
+  font-size: 14px;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  background: #092c3e;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.582);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.589);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.795);
+}
+
+#left {
+  background: #0f4966;
+  position: absolute;
+  min-height: 600px;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+#right {
+  background: #0f4966;
+  padding: 60px;
+  padding-right: 300px;
+}
+
+#left .profileImg {
+  padding: 30px;
+  text-align: center;
+  color: #0f4966;
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.download {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadBtn {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background: #f0575f;
+}
+
+.download button:hover {
+  background-image: -moz-linear-gradient(0deg, #50292b 0%, #111010 100%);
+  background-image: -webkit-linear-gradient(0deg, #300d0f 0%, #070606 100%);
+  background-image: -ms-linear-gradient(0deg, #330b0d 0%, #1f1a1b 100%);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: whitesmoke;
+}
+
+.contact-list .fa {
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.contact-list li {
+  margin-bottom: 15px;
+}
+
+.contact-list li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-list .email .fa {
+  font-size: 14px;
+}
+
+#right .right_container {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal_text h6 {
+  font-size: 14px;
+  padding-top: 1rem;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  color: whitesmoke;
+}
+
+.personal_text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.personal_text h3 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: whitesmoke;
+}
+
+h1{
+  color: white;
+}
+
+.personal_text p {
+  font-family: "Roboto", sans-serif;
+  max-width: 400px;
+  color: whitesmoke;
+  margin-bottom: 40px;
+  padding-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contact-container #email:hover {
+  color: #AB3E43;
+}
+
+.contact-container {
+  color: #f0575f;
+}
+
+.contact-container a {
+  color: #f0575f;
+  text-decoration: none;
+}
+
+.personal_social {
+  margin-top: 9rem;
+  margin-bottom: 30px;
+}
+
+.personal_social li {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.personal_social li:last-child {
+  margin-right: 0px;
+}
+
+.personal_social li a {
+  line-height: 40px;
+  width: 40px;
+  background: #f0575f;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+
+.personal_social li:hover a {
+  color: white;
+  background-image: -moz-linear-gradient(0deg, #50292b 0%, #111010 100%);
+  background-image: -webkit-linear-gradient(0deg, #300d0f 0%, #070606 100%);
+  background-image: -ms-linear-gradient(0deg, #330b0d 0%, #1f1a1b 100%);
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer {
+  padding: 30px;
+  padding-top: 60px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+
+@media (max-width: 767px) {
+  #left {
+    position: static;
+    width: inherit;
+    min-height: 400px;
+  }
+  #right {
+    padding: 30px;
+    min-height: 600px;
+  }
+}

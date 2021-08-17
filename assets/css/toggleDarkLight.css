@@ -23,7 +23,6 @@ input[type="checkbox"]{
 /* Cambio de color con check */
 input[type="checkbox"]:checked ~ .check {
     background: #fff;
-    box-shadow:0 0 0 2000rem #092c3e;
 }
 
 /* La bolita de dentro del check */

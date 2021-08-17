@@ -33,20 +33,3 @@ $(document).ready(function() {
         });
     });
 });
-
-/*======== Toggle =========== */
-
-/*
-var bool = true;
-function getTheme() {
-    function changeTheme(theme){
-        let a = document.getElementById('style');
-        a.href = theme;
-    }
-    bool = !bool;
-    let prueba = localStorage.getItem('data-theme');
-    console.log(prueba)
-    var theme = bool ? 'assets/css/index.css' : 'assets/css/toggleDarkLight.css';
-    changeTheme()
-}
-*/

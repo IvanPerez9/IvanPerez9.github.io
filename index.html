@@ -114,7 +114,7 @@
                     <ul class="list-unstyled contact-list">
                         <li class="age">
                             <em class="fa fa-calendar"></em>
-                            <a title="age" data-i18n="age" data-i18n="age">June 12th, 1995</a>
+                            <a title="age" data-i18n="age">June 12th, 1995</a>
                         </li>
                         <li class="location">
                             <em class="fa fa-map-marker"></em>
@@ -160,11 +160,15 @@
                 a.href = theme;
             }
             bool = !bool;
-            let prueba = localStorage.getItem('data-theme');
-            console.log(prueba)
-            var theme = bool ? 'assets/css/index.css' : 'assets/css/toggleDarkLight.css';
-            changeTheme(theme)
-}
+            let darkOrLight = localStorage.getItem('data-theme');
+            if (bool){
+                changeTheme('assets/css/index.css')
+                localStorage.setItem('data-theme', 'light')
+            } else {
+                changeTheme('assets/css/indexDark.css')
+                localStorage.setItem('data-theme' , 'dark')
+            }
+}           
 
     </script>
 </body>
