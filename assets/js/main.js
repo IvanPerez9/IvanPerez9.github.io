@@ -34,22 +34,19 @@ $(document).ready(function() {
     });
 });
 
-/*======= Skillset *=======*/
-jQuery(document).ready(function($) {
-    
-    $('.level-bar-inner').css('width', '0');
-    
-    $(window).on('load', function() {
+/*======== Toggle =========== */
 
-        $('.level-bar-inner').each(function() {
-        
-            var itemWidth = $(this).data('level');
-            
-            $(this).animate({
-                width: itemWidth
-            }, 800);
-            
-        });
-
-    });
-});
+/*
+var bool = true;
+function getTheme() {
+    function changeTheme(theme){
+        let a = document.getElementById('style');
+        a.href = theme;
+    }
+    bool = !bool;
+    let prueba = localStorage.getItem('data-theme');
+    console.log(prueba)
+    var theme = bool ? 'assets/css/index.css' : 'assets/css/toggleDarkLight.css';
+    changeTheme()
+}
+*/
