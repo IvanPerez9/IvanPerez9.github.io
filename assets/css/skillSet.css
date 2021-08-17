@@ -36,7 +36,7 @@
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.459);
 }
 .bar::before {
-  content: attr(data-skill);
+  content: attr(data-skill); /* Pone como contenido lo que tenga en el attributo */
   background-color: #F69FA3;
   display: inline-block;
   padding: 5px 0 5px 10px;
