@@ -37,7 +37,7 @@
 
     <label>
         <input type="checkbox">
-        <span class="check" onclick="getTheme()"></span> 
+        <span class="check" id='toggle' onclick="getTheme()"></span> 
     </label>
 
     <!--Navbar -->
@@ -153,14 +153,30 @@
     <!-- custom js -->
     <script src="assets/js/main.js" type="module"></script>
     <script>
-        var bool = true;
-        function getTheme() {
-            function changeTheme(theme){
+
+        let theme = localStorage.getItem('data-theme');
+        let toggle = document.getElementById('toggle');
+
+        if (localStorage.getItem('data-theme')==null){
+            localStorage.setItem('data-theme','light');
+        }
+
+        if (theme == 'dark'){
+            changeTheme('assets/css/indexDark.css')
+            toggle.checked = false;
+        } else {
+            changeTheme('assets/css/index.css')
+            toggle.checked = true;
+        }
+
+        function changeTheme(theme){
                 let a = document.getElementById('style');
                 a.href = theme;
-            }
+        }
+
+        var bool = toggle.checked;
+        function getTheme() {
             bool = !bool;
-            let darkOrLight = localStorage.getItem('data-theme');
             if (bool){
                 changeTheme('assets/css/index.css')
                 localStorage.setItem('data-theme', 'light')
@@ -168,7 +184,8 @@
                 changeTheme('assets/css/indexDark.css')
                 localStorage.setItem('data-theme' , 'dark')
             }
-}           
+            
+        }  
 
     </script>
 </body>

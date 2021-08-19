@@ -12,17 +12,16 @@ input[type="checkbox"]{
     display: block;
     width: 40px;
     height: 20px;
-    background: #092c3e;
+    background: #fff;
     cursor: pointer;
     border-radius: 20px;
     overflow: hidden;
     transition: ease-in 0.5s;
 }
 
-/* Tamaño de toda la web ?? para el shadow */
 /* Cambio de color con check */
 input[type="checkbox"]:checked ~ .check {
-    background: #fff;
+    background: #f0575f;
 }
 
 /* La bolita de dentro del check */
@@ -49,7 +48,7 @@ input[type="checkbox"]:checked ~ .check::before{
     position: absolute;
     top: 2px;
     left: 2px;
-    background: #092c3e;
+    background: #f0575f;
     width: 16px;
     height: 16px;
     border-radius: 50%;
