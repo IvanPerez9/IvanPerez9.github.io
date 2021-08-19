@@ -21,7 +21,7 @@ input[type="checkbox"]{
 
 /* Cambio de color con check */
 input[type="checkbox"]:checked ~ .check {
-    background: #f0575f;
+    background: #fff;
 }
 
 /* La bolita de dentro del check */
@@ -48,7 +48,7 @@ input[type="checkbox"]:checked ~ .check::before{
     position: absolute;
     top: 2px;
     left: 2px;
-    background: #f0575f;
+    background: #0c3c53;
     width: 16px;
     height: 16px;
     border-radius: 50%;
