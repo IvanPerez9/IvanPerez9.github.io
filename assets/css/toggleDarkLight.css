@@ -30,7 +30,7 @@ input[type="checkbox"]:checked ~ .check {
     position: absolute;
     top: 2px;
     left: 2px;
-    background: #fff;
+    background: #0c3c53;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -48,7 +48,7 @@ input[type="checkbox"]:checked ~ .check::before{
     position: absolute;
     top: 2px;
     left: 2px;
-    background: #0c3c53;
+    background: #fff;
     width: 16px;
     height: 16px;
     border-radius: 50%;
