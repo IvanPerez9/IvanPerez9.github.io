@@ -8,10 +8,23 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #061e2b;
   background: #061e2b;
+  background-image: -moz-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+  background-image: -webkit-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+  background-image: -ms-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#mode{
+  color: whitesmoke;
+  padding-left: 1rem;
+  float: right;
+}
+
+#toggle{
+  float: left;
 }
 
 .wrapper {

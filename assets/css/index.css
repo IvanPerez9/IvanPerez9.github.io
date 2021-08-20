@@ -11,6 +11,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#mode {
+  color: #222222;
+  padding-left: 1rem;
+  float: right;
+}
+
+#toggle{
+  float: left;
+}
+
 .wrapper {
   background: #ffffff;
   max-width: 1000px;
