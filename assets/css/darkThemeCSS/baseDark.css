@@ -1,43 +1,35 @@
-/*   
- * Template Name: Orbit - Responsive Resume/CV Template for Developers
- * Version: 1.0
- * Author: Xiaoying Riley
- * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
- * Website: http://themes.3rdwavemedia.com/
-*/
-
-/* ADD */
-
 .profile {
   border-radius: 50%;
 }
 
-#mode {
-  color: #222222;
-  padding-left: 1rem;
-  float: right;
-}
-
-#toggle{
-  float: left;
-}
-
-/* ======= Base ======= */
+#mode{
+    color: whitesmoke;
+    padding-left: 1rem;
+    float: right;
+  }
+  
+  #toggle{
+    float: left;
+  }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #545E6C;
-  background-image: -moz-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
-  background-image: -webkit-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
-  background-image: -ms-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
+  font-family: "Roboto", sans-serif;
+  color: #545e6c;
+  background-image: -moz-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+  background-image: -webkit-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+  background-image: -ms-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
 }
 
@@ -51,7 +43,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #AB3E43;
+  color: #ab3e43;
 }
 
 a:focus {
@@ -63,17 +55,17 @@ p {
 }
 
 .wrapper {
-  background: #ffffff;
+  background: #0c3c53;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 2px rgba(182, 167, 167, 0.795);
+  -moz-box-shadow: 2px 2px 2px rgba(182, 167, 167, 0.795);
+  box-shadow: 2px 2px 2px rgba(182, 167, 167, 0.795);
 }
 
 .sidebar-wrapper {
-  background: #3F4650;
+  background: #000000;
   position: absolute;
   right: 0;
   width: 240px;
@@ -198,9 +190,10 @@ p {
 }
 
 .main-wrapper {
-  background: #fff;
+  background: #0c3c53;
   padding: 60px;
   padding-right: 300px;
+  color: whitesmoke;
 }
 
 .main-wrapper .section-title {
@@ -250,7 +243,7 @@ p {
 }
 
 .main-wrapper .job-title {
-  color: #3F4650;
+  color: #f0575f;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
@@ -261,12 +254,12 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  color: #97AAC3;
+  color: #97aac3;
 }
 
 .main-wrapper .company {
   margin-bottom: 10px;
-  color: #97AAC3;
+  color: #97aac3;
 }
 
 .main-wrapper .project-title {
