@@ -153,6 +153,8 @@
     <!-- custom js -->
     <script src="assets/js/main.js" type="module"></script>
     <script>
+        
+        /* ==== DARK LIGHT THEME ==== */
 
         let theme = localStorage.getItem('data-theme');
         let toggle = document.getElementById('toggle');
@@ -162,7 +164,7 @@
         }
 
         if (theme == 'dark'){
-            changeTheme('assets/css/indexDark.css')
+            changeTheme('assets/css/darkThemeCSS/indexDark.css');
             toggle.checked = false;
         } else {
             changeTheme('assets/css/index.css')
@@ -181,10 +183,9 @@
                 changeTheme('assets/css/index.css')
                 localStorage.setItem('data-theme', 'light')
             } else {
-                changeTheme('assets/css/indexDark.css')
+                changeTheme('assets/css/darkThemeCSS/indexDark.css')
                 localStorage.setItem('data-theme' , 'dark')
             }
-            
         }  
 
     </script>
