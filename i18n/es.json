@@ -60,7 +60,7 @@
       "p15": "Desarrollo Backend con microservicios en Java y Python.",
       "p151": "Trabajando con Java 8+, Spring Boot 2, Spring Framwork 5 principalmente aplicando metodologías de programación reactiva para el desarrollo de aplicaciones web.",
       "p152": "Microservicios con Python 3 y el framework Flask.",
-      "p16": "Hibernate/JPA como ORM, Maven como sistema para construir el proyecto y MonogoDB como base de datos.",
+      "p16": "Repositorios reactivos de Spring Data y Maven como sistema para construir el proyecto y MonogoDB como base de datos.",
       "p17": "Casos de prueba, tanto unitario como de integración con JUnit y Mockito. Experiencia en SONAR para generar, asegurar y revisar la calidad del código.",
       "p18": "Participación activa en las reuniones y actividades de metodología Scrum como: Incremento del valor del producto, sprint planning, dailies , sprint demos, y retrospectivas.",
       "p19": "Integración contínua / Entrega contínua usando herramientas como Git, Github, Jira y tablero Kanban."

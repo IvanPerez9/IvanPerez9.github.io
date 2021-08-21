@@ -1,9 +1,15 @@
+/* 
+===========================
+=========== DARK ==========
+===========================
+ */
+
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #545E6C;
-  background-image: -moz-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
-  background-image: -webkit-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
-  background-image: -ms-linear-gradient(0deg, #AB3E43 0%, #FACFD1 100%);
+  font-family: "Roboto", sans-serif;
+  color: #545e6c;
+  background-image: -moz-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+  background-image: -webkit-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+  background-image: -ms-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -11,17 +17,17 @@ body {
 }
 
 #mode {
-  color: #222222;
+  color: whitesmoke;
   padding-left: 1rem;
   float: right;
 }
 
-#toggle{
+#toggle {
   float: left;
 }
 
 .wrapper {
-  background: #ffffff;
+  background: #0c3c53;
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
@@ -31,7 +37,8 @@ body {
 }
 
 #left {
-  background: #ffffff;
+  background: #0c3c53;
+  color: whitesmoke;
   position: absolute;
   min-height: 400px;
   right: 0;
@@ -40,7 +47,8 @@ body {
 }
 
 #right {
-  background: #ffffff;
+  background: #0c3c53;
+  color: whitesmoke;
   padding: 60px;
   padding-right: 300px;
 }
@@ -71,7 +79,7 @@ body {
 
 .contact-list a:hover {
   text-decoration: underline;
-  color: #AB3E43;
+  color: #ab3e43;
 }
 
 .personal_text h1 {
@@ -80,12 +88,12 @@ body {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #222222;
+  color: whitesmoke;
 }
 
 .required:after {
   color: #e32;
-  content: ' *';
+  content: " *";
   display: inline;
 }
 
@@ -104,7 +112,7 @@ textarea {
 }
 
 .contact-container #email:hover {
-  color: #AB3E43;
+  color: #ab3e43;
 }
 
 .contact-container {
@@ -119,14 +127,10 @@ textarea {
 }
 
 .imgEmail {
-  width: 50%;
-  height: 50%;
-  margin: 5rem;
-}
-
-.imgEmailBlue {
-  display: none;
-}
+    width: 50%;
+    height: 50%;
+    margin: 5rem;
+  }
 
 .formulario {
   padding: 1rem;
@@ -134,14 +138,14 @@ textarea {
 
 .enviar {
   position: relative;
-  color: white;
+  color: black;
   background-color: #f0575f;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
 .boton {
-  color: white;
+  color: black;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   margin-bottom: 30px;
@@ -151,10 +155,12 @@ textarea {
 }
 
 .boton button:hover {
-  background-image: -moz-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
-  background-image: -webkit-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
-  background-image: -ms-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-image: -moz-linear-gradient(0deg, #50292b 0%, #111010 100%);
+  background-image: -webkit-linear-gradient(0deg, #300d0f 0%, #070606 100%);
+  background-image: -ms-linear-gradient(0deg, #330b0d 0%, #1f1a1b 100%);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color:whitesmoke
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -172,7 +178,9 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }

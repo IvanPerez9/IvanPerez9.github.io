@@ -2,7 +2,7 @@
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="en" data-theme="light">
 <!--<![endif]-->
 
 <head>
@@ -23,8 +23,9 @@
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
 
     <!-- Theme CSS , 5 for orange -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/contact.css">
+    <link id="style" rel="stylesheet" href="assets/css/contact.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/navbar.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/toggleDarkLight.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -33,6 +34,13 @@
 </head>
 
 <body>
+
+    <!--Dark Light mode -->
+    <label>
+        <input type="checkbox">
+        <span class="check" id="toggle" onclick="getTheme()"></span>
+        <span id="mode">Dark/Light Mode</span>
+    </label>
 
     <!--Navbar -->
     <nav class="navbar navbar-default banner">
@@ -203,6 +211,44 @@
     </script>
     <!-- custom js -->
     <script src="assets/js/main.js" type="module"></script>
+
+    <script>
+        
+        /* ==== DARK LIGHT THEME ==== */
+
+        let theme = localStorage.getItem('data-theme');
+        let toggle = document.getElementById('toggle');
+
+        if (localStorage.getItem('data-theme')==null){
+            localStorage.setItem('data-theme','light');
+        }
+
+        if (theme == 'dark'){
+            changeTheme('assets/css/darkThemeCSS/contactDark.css');
+            toggle.checked = false;
+        } else {
+            changeTheme('assets/css/contact.css')
+            toggle.checked = true;
+        }
+
+        function changeTheme(theme){
+                let a = document.getElementById('style');
+                a.href = theme;
+        }
+
+        var bool = toggle.checked;
+        function getTheme() {
+            bool = !bool;
+            if (bool){
+                changeTheme('assets/css/contact.css')
+                localStorage.setItem('data-theme', 'light')
+            } else {
+                changeTheme('assets/css/darkThemeCSS/contactDark.css')
+                localStorage.setItem('data-theme' , 'dark')
+            }
+        }  
+
+    </script>
 </body>
 
 </html>

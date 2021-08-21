@@ -1,16 +1,22 @@
+/* 
+===========================
+=========== DARK ==========
+===========================
+ */
+
 .profile {
   border-radius: 50%;
 }
 
-#mode{
-    color: whitesmoke;
-    padding-left: 1rem;
-    float: right;
-  }
-  
-  #toggle{
-    float: left;
-  }
+#mode {
+  color: whitesmoke;
+  padding-left: 1rem;
+  float: right;
+}
+
+#toggle {
+  float: left;
+}
 
 body {
   font-family: "Roboto", sans-serif;
