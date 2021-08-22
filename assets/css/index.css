@@ -146,7 +146,8 @@ body {
   padding: 0px;
 }
 
-.contact-container #email:hover {
+.contact-container .email a:hover {
+  text-decoration: underline;
   color: #AB3E43;
 }
 

@@ -157,8 +157,9 @@ h1{
   padding: 0px;
 }
 
-.contact-container #email:hover {
-  color: #ffffff;
+.contact-container .email a:hover {
+  text-decoration: underline;
+  color: #AB3E43;
 }
 
 .contact-container {
