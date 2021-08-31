@@ -173,7 +173,16 @@ textarea {
   }
   #right {
     padding: 30px;
-    min-height: 400px;
+    min-height: 600px;
+  }
+  .circles{
+    top: 55rem;
+  }
+}
+
+@media (min-width: 767px)  {
+  .circles{
+    top:0;
   }
 }
 
@@ -194,7 +203,6 @@ textarea {
 
  .circles {
   position: absolute;
-  top: 200rem;
   left: 0;
   width: 100%;
   height: 100%;
