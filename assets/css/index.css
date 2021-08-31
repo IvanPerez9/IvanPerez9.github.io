@@ -218,9 +218,9 @@ body {
 ===========================
  */
 
-.circles {
+ .circles {
   position: absolute;
-  top: 0;
+  top: 200rem;
   left: 0;
   width: 100%;
   height: 100%;
@@ -231,64 +231,64 @@ body {
   position: absolute;
   display: block;
   list-style: none;
-  width: 20px;
-  height: 20px;
+  width: 4rem;
+  height: 4rem;
   background: #f0575f;
   animation: animate 25s linear infinite;
-  bottom: -150px;
+  bottom: -15rem;
 }
 
 .circles li:nth-child(1) {
   left: 90%;
-  width: 20px;
-  height: 20px;
+  width: 7rem;
+  height: 7rem;
   animation-delay: 2s;
   animation-duration: 16s;
 }
 
 .circles li:nth-child(2) {
   left: 80%;
-  width: 20px;
-  height: 20px;
+  width: 5rem;
+  height: 5rem;
   animation-delay: 0s;
 }
 
 .circles li:nth-child(3) {
   left: 75%;
-  width: 110px;
-  height: 110px;
+  width: 10rem;
+  height: 10rem;
   animation-delay: 10s;
   animation-duration: 22s;
 }
 
 .circles li:nth-child(4) {
   left: 63%;
-  width: 55px;
-  height: 55px;
+  width: 7rem;
+  height: 7rem;
   animation-delay: 15s;
   animation-duration: 45s;
 }
 
 .circles li:nth-child(5) {
   left: 85%;
-  width: 150px;
-  height: 150px;
+  width: 13rem;
+  height: 13rem;
   animation-delay: 4s;
   animation-duration: 33s;
 }
 
 .circles li:nth-child(6) {
   left: 94%;
-  width: 35px;
-  height: 35px;
+  width: 4rem;
+  height: 4rem;
   animation-delay: 0s;
   animation-duration: 14s;
 }
 
 .circles li:nth-child(7) {
   left: 67%;
-  width: 35px;
-  height: 35px;
+  width: 4rem;
+  height: 4rem;
   animation-delay: 2s;
   animation-duration: 15s;
 }
