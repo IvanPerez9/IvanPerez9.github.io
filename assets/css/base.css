@@ -312,6 +312,27 @@ p {
   }
   .main-wrapper .upper-row {
     margin-bottom: 0;
+  }  
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  .circles{
+    top: 19rem;
+  }
+}
+
+/* Tablet */
+@media (min-width:400px) and (max-width:769px){
+  .circles{
+    top: 240rem;
+  }
+}
+
+/* Screen */
+@media (min-width: 770px)  {
+  .circles{
+    top:200rem;
   }
 }
 
@@ -333,7 +354,6 @@ p {
 
 .circles {
   position: absolute;
-  top: 200rem;
   left: 0;
   width: 100%;
   height: 100%;

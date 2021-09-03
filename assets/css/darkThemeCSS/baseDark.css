@@ -309,6 +309,27 @@ p {
   }
 }
 
+/* Mobile */
+@media (max-width: 400px) {
+  .circles{
+    top: 19rem;
+  }
+}
+
+/* Tablet */
+@media (min-width:400px) and (max-width:769px){
+  .circles{
+    top: 240rem;
+  }
+}
+
+/* Screen */
+@media (min-width: 770px)  {
+  .circles{
+    top:200rem;
+  }
+}
+
 /* Small devices (tablets, 768px and up) */
 
 /* Medium devices (desktops, 992px and up) */
@@ -322,10 +343,6 @@ p {
   max-height: 35rem;
   max-width: 80rem;
 }
-
-/* Large devices (large desktops, 1200px and up) */
-
-/* Ex-Large devices (large desktops, 1200px and up) */
 
 /* 
 =========================== 
