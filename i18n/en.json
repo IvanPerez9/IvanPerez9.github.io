@@ -84,7 +84,9 @@
       "course7": "Introduction to Git Course",
       "course8": "Initialization to git, learn the basic about git workflow and git commands",
       "course9": "Docker & Kubernetes",
-      "course10": "Deploy Docker applications manually, with managed services or with Kubernetes/AWS"
+      "course10": "Deploy Docker applications manually, with managed services or with Kubernetes/AWS",
+      "course11": "Reactive Programming with Spring Boot 2 and Spring WebFlux",
+      "course12": "Building non-blocking and asynchronous reactive applications with Spring Boot 2 and Spring WebFlux. Connecting to NoSQL databases (MongoDB), testing with JUnit and WebTestClient and consuming services with WebClient and Spring Cloud Eureka."
     }
   },
   "skills": {
