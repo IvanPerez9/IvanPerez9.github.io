@@ -1,5 +1,5 @@
 
-![GitHub last commit (master)](https://img.shields.io/github/last-commit/google/skia/infra/config.svg)
+![GitHub last commit (master)](https://img.shields.io/github/last-commit/IvanPerez9/IvanPerez9)
 ![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
 
 ## 💻 Demo 
