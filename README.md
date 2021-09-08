@@ -19,9 +19,9 @@ Feel free to fork this repository to make your own portfolio, and if you liked t
 
 ## 🎨 Features
 
-- Multi-Page Layout
+- Multi-Page Layout (Support i18n)
 - Styled with Bootstrap and Css with easy to customize
-- Dark and Light mode
+- Support dark and light theme
 - Responsive look
 
 | Colors      |  Hex                                                                       |
