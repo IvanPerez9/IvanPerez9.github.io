@@ -2,6 +2,7 @@
   "navbar":{
     "home":"Inicio",
     "about":"Sobre mí",
+    "projects":"Proyectos",
     "contact":"Contacto"
   },
   "language": "Elija un idioma",
