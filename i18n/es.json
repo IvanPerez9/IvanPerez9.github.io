@@ -89,6 +89,40 @@
       "course12":"Contrucción de aplicaciones reactivas sin bloqueo y asincronas con Spring Boot 2 y Spring WebFlux. Conexion con bases de datos NoSQL (MongoDB) , testeo con JUnit y WebTestClient y consumición de servicios con WebClient y Spring Cloud Eureka."
     }
   },
+  "projects":{
+    "card1":{
+      "title": "Competitive Programing",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    },
+    "card2":{
+      "title": "Portfolio",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    },
+    "card3":{
+      "title": "FitURJC",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    },
+    "card4":{
+      "title": "My Shell",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    }
+  },
   "skills": {
     "title": "Habilidades & Competencia",
     "p1": "Desarrollador backend con pasión por las APIs. Con un gran interés en Estructura de datos, Algoritmia y la resolución de problemas",
