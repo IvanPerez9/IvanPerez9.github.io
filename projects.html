@@ -22,18 +22,20 @@
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
 
-    <!-- Theme CSS , 5 for orange -->
+    <!-- Theme CSS  -->
     <link id="style" rel="stylesheet" href="assets/css/projects.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/navbar.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/toggleDarkLight.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
+
+    <!--Dark Light mode -->
+    <label>
+        <input type="checkbox">
+        <span class="check" id="toggle" onclick="getTheme()"></span>
+        <span id="mode">Dark/Light Mode</span>
+    </label>
 
     <!--Navbar -->
     <nav class="navbar navbar-default banner">
@@ -98,7 +100,7 @@
                         </p>
                         <ol>
                             <li>Resolucion de problemas de Acepta el Reto, SPOJ, Kattis y otras web de problemas.</li>
-                            <li>Resolucion de problemas de diferentes concursos como Ada Byron</li>
+                            <li>Resolucion de problemas de diferentes concursos como Ada Byron, SWERC o 12 uvas</li>
                         </ol>
                     </header>
                     <div class="wrapper_button">
@@ -110,6 +112,33 @@
             </div>
 
             <div class="card card1">
+                <article class="card-body">
+                    <header>
+                        <div class="title">
+                            <h3>Portfolio</h3>
+                        </div>
+                        <p class="meta">
+                            <span class="pre-heading">Personal page</span>
+                            <br>
+                            <span class="author"> HTML5, CSS3, Javascript </span>
+                        </p>
+                        <ol>
+                            <li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li>
+                            <li>Worked to migrate Flipk that they load up instantly.</li>
+                            <li>Worked to ey load up instantly dsgsfgdfsgdfgdfgdggdgfdgdfgdfgdgfgdgdgdg.</li>
+                        </ol>
+                    </header>
+                    <div class="wrapper_button">
+                        <a href="https://github.com/IvanPerez9/IvanPerez9.github.io">
+                            <button class="btn boton"><i class="fa fa-github"></i> Git repository </button>
+                        </a>
+                    </div>
+                </article>
+                <img src="assets/images/web.jpg" class="featured-image">
+            </div>
+
+            <div class="card card1">
+                <img src="assets/images/logoFITURJC.png" class="featured-image">
                 <article class="card-body">
                     <header>
                         <div class="title">
@@ -133,34 +162,33 @@
                         </a>
                     </div>
                 </article>
-                <img src="assets/images/logoFITURJC.png" class="featured-image">
             </div>
-            
+
             <div class="card card1">
-                <img src="assets/images/web.jpg" class="featured-image">
                 <article class="card-body">
                     <header>
                         <div class="title">
-                            <h3>Portfolio</h3>
+                            <h3>My Shell</h3>
                         </div>
                         <p class="meta">
-                            <span class="pre-heading">Personal page</span>
+                            <span class="pre-heading">Minimum viable version of a real shell</span>
                             <br>
-                            <span class="author"> HTML5, CSS3, Javascript </span>
+                            <span class="author"> C </span>
                         </p>
                         <ol>
-                            <li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li>
-                            <li>Worked to migrate Flipk that they load up instantly.</li>
-                            <li>Worked to ey load up instantly dsgsfgdfsgdfgdfgdggdgfdgdfgdfgdgfgdgdgdg.</li>
+                            <li>The implemented minishell pretends to works as the original.The idea is to provide a basic personal minishell.</li>
+                            <li>The main goal is to have a good understanding of process creation and synchronisation using the C programmming language.</li>
                         </ol>
                     </header>
                     <div class="wrapper_button">
-                        <a href="https://github.com/IvanPerez9/IvanPerez9.github.io">
+                        <a href="https://github.com/IvanPerez9/MyShell">
                             <button class="btn boton"><i class="fa fa-github"></i> Git repository </button>
                         </a>
                     </div>
                 </article>
+                <img src="assets/images/terminal.png" class="featured-image">
             </div>
+            
         </div>
     </main>
 
@@ -169,6 +197,43 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js" type="module"></script>
+    <script>
+        
+        /* ==== DARK LIGHT THEME ==== */
+
+        let theme = localStorage.getItem('data-theme');
+        let toggle = document.getElementById('toggle');
+
+        if (localStorage.getItem('data-theme')==null){
+            localStorage.setItem('data-theme','light');
+        }
+
+        if (theme == 'dark'){
+            changeTheme('assets/css/darkThemeCSS/projectsDark.css');
+            toggle.checked = false;
+        } else {
+            changeTheme('assets/css/projects.css')
+            toggle.checked = true;
+        }
+
+        function changeTheme(theme){
+                let a = document.getElementById('style');
+                a.href = theme;
+        }
+
+        var bool = toggle.checked;
+        function getTheme() {
+            bool = !bool;
+            if (bool){
+                changeTheme('assets/css/projects.css')
+                localStorage.setItem('data-theme', 'light')
+            } else {
+                changeTheme('assets/css/darkThemeCSS/projectsDark.css')
+                localStorage.setItem('data-theme' , 'dark')
+            }
+        }  
+
+    </script>
     
 </body>
 
