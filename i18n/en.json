@@ -2,6 +2,7 @@
   "navbar":{
     "home":"Home",
     "about":"About me",
+    "projects": "Projects",
     "contact":"Contact"
   },
   "language": "Choose language",
@@ -87,6 +88,40 @@
       "course10": "Deploy Docker applications manually, with managed services or with Kubernetes/AWS",
       "course11": "Reactive Programming with Spring Boot 2 and Spring WebFlux",
       "course12": "Building non-blocking and asynchronous reactive applications with Spring Boot 2 and Spring WebFlux. Connecting to NoSQL databases (MongoDB), testing with JUnit and WebTestClient and consuming services with WebClient and Spring Cloud Eureka."
+    }
+  },
+  "projects":{
+    "card1":{
+      "title": "Competitive Programing",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    },
+    "card2":{
+      "title": "Portfolio",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    },
+    "card3":{
+      "title": "FitURJC",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    },
+    "card4":{
+      "title": "My Shell",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
     }
   },
   "skills": {

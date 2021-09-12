@@ -2,6 +2,7 @@
   "navbar":{
     "home":"Inicio",
     "about":"Sobre mí",
+    "projects":"Proyectos",
     "contact":"Contacto"
   },
   "language": "Elija un idioma",
@@ -86,6 +87,40 @@
       "course10": "Utilizacion de docker y kubernetes junto con AWS para contener y desplegar aplicaciones",
       "course11":"Programacion Reactiva con Spring Boot 2 y Spring WebFlux",
       "course12":"Contrucción de aplicaciones reactivas sin bloqueo y asincronas con Spring Boot 2 y Spring WebFlux. Conexion con bases de datos NoSQL (MongoDB) , testeo con JUnit y WebTestClient y consumición de servicios con WebClient y Spring Cloud Eureka."
+    }
+  },
+  "projects":{
+    "card1":{
+      "title": "Competitive Programing",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    },
+    "card2":{
+      "title": "Portfolio",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    },
+    "card3":{
+      "title": "FitURJC",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
+    },
+    "card4":{
+      "title": "My Shell",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"",
+      "line2":"",
+      "line3":""
     }
   },
   "skills": {
