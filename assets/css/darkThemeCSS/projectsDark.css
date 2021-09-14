@@ -79,8 +79,8 @@
   
   @media only screen and (min-width: 551px) {
     .card1:hover {
-      box-shadow: 2px 5px 10px rgba(255, 255, 255, 0.452), 3px 6px 11px rgba(255, 255, 255, 0.514),
-        4px 7px 13px rgba(255, 255, 255, 0.568), 5px 8px 10px rgba(255, 255, 255, 0.664);
+      box-shadow: 2px 5px 10px rgba(153, 152, 152, 0.199), 3px 6px 11px rgba(0, 0, 0, 16%),
+        4px 7px 13px rgba(0, 0, 0, 15%), 5px 8px 14px rgba(0, 0, 0, 14%);
     }
   }
   
