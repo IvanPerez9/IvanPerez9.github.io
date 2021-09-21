@@ -2,6 +2,7 @@
   "navbar":{
     "home":"Home",
     "about":"About me",
+    "projects": "Projects",
     "contact":"Contact"
   },
   "language": "Choose language",
@@ -87,6 +88,40 @@
       "course10": "Deploy Docker applications manually, with managed services or with Kubernetes/AWS",
       "course11": "Reactive Programming with Spring Boot 2 and Spring WebFlux",
       "course12": "Building non-blocking and asynchronous reactive applications with Spring Boot 2 and Spring WebFlux. Connecting to NoSQL databases (MongoDB), testing with JUnit and WebTestClient and consuming services with WebClient and Spring Cloud Eureka."
+    }
+  },
+  "projects":{
+    "card1":{
+      "title": "Competitive Programing",
+      "description": "Coding problems",
+      "languaje": "Java",
+      "line1":"A Repository for Competitive Coding Problems Solutions.",
+      "line2":"Solving problems from 'Acepta el Reto', SPOJ, Kattis and other problem websites.",
+      "line3":"Solving problems from different competitions such as Ada Byron, SWERC or '12 uvas'."
+    },
+    "card2":{
+      "title": "Portfolio",
+      "description": "Personal web",
+      "languaje": "HTML5, CSS3, Javascript",
+      "line1":"My personal portfolio which features some of my github projects as well as my resume, technical skills and ways to contact me.",
+      "line2":"This website was built with plain HTML/CSS and some Javascript.",
+      "line3":"Fully responsive, multi-page layout, styled with Bootstrap and CSS and support dark and light theme."
+    },
+    "card3":{
+      "title": "FitURJC",
+      "description": "A responsive website template designed to simulate a GYM",
+      "languaje": "Java 8, Spring Framework, Angular 5, MySQL",
+      "line1":"Worked with Spring FrameWork/Java, Angular 5, MySQL, Bootstrap Template and HTML/CSS.",
+      "line2":"Implemented a REST full integration for Login, Sing up and administrate users, courses and clases inside the gym.",
+      "line3":"Other tecnologies and tools used: Docker, Travis CI and UML diagrams.",
+      "line4":"Worked in a team of 4, implementing agile methologies such as Scrum and Kanban board."
+    },
+    "card4":{
+      "title": "My Shell",
+      "description": "MINIMUM VIABLE VERSION OF A REAL SHELL",
+      "languaje": "C",
+      "line1":"The implemented minishell pretends to works as the original.The idea is to provide a basic personal minishell.",
+      "line2":"The main goal is to have a good understanding of process creation and synchronisation using the C programmming language."
     }
   },
   "skills": {

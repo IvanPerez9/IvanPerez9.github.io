@@ -7,13 +7,16 @@ class Translator {
     }
 
     changeDownloadCV () {
-      var hrefEN = "./PDFs/IvanPerezHuete_CV_en.pdf";
-      var hrefES = "./PDFs/IvanPerezHuete_CV.pdf";
-      var lang = localStorage.getItem("language");
-      if (lang == "en"){
+      var downloadCV =  document.getElementById("downloadCV");
+      if (downloadCV != null){
+        var hrefEN = "./PDFs/IvanPerezHuete_CV_en.pdf";
+        var hrefES = "./PDFs/IvanPerezHuete_CV.pdf";
+        var lang = localStorage.getItem("language");
+        if (lang == "en"){
           document.getElementById("downloadCV").setAttribute("href",hrefEN);
-      } else {
-        document.getElementById("downloadCV").setAttribute("href",hrefES);
+        } else {
+          document.getElementById("downloadCV").setAttribute("href",hrefES);
+        }
       }
     }
   

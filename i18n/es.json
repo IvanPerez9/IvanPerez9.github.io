@@ -2,6 +2,7 @@
   "navbar":{
     "home":"Inicio",
     "about":"Sobre mí",
+    "projects":"Proyectos",
     "contact":"Contacto"
   },
   "language": "Elija un idioma",
@@ -86,6 +87,40 @@
       "course10": "Utilizacion de docker y kubernetes junto con AWS para contener y desplegar aplicaciones",
       "course11":"Programacion Reactiva con Spring Boot 2 y Spring WebFlux",
       "course12":"Contrucción de aplicaciones reactivas sin bloqueo y asincronas con Spring Boot 2 y Spring WebFlux. Conexion con bases de datos NoSQL (MongoDB) , testeo con JUnit y WebTestClient y consumición de servicios con WebClient y Spring Cloud Eureka."
+    }
+  },
+  "projects":{
+    "card1":{
+      "title": "Programacion Competitiva",
+      "description": "Problemas de programacion",
+      "languaje": "Java",
+      "line1":"Un repositorio de soluciones a distintos problemas de programacion.",
+      "line2":"Resolucion de problemas de 'Acepta el Reto', SPOJ, Kattis y otras web de problemas..",
+      "line3":"Resolucion de problemas de diferentes concursos como Ada Byron, SWERC o '12 uvas'."
+    },
+    "card2":{
+      "title": "Portfolio",
+      "description": "Web personal",
+      "languaje": "HTML5, CSS3, Javascript",
+      "line1":"Mi portfolio personal que presenta algunos de mis proyectos en github, así como mi currículum, habilidades técnicas y formas de contacto.",
+      "line2":"Construido con HTML/CSS y algo de Javascript.",
+      "line3":"Totalmente responsive, con un diseño multipagina y multilenguaje, estilos con Bootstrap y CSS, con soporte para temas oscuros y claros."
+    },
+    "card3":{
+      "title": "FitURJC",
+      "description": "Web responsive simulando un Gimnasio",
+      "languaje": "Java 8, Spring Framework, Angular 5, MySQL",
+      "line1":"Trabajé con Spring FrameWork/Java, Angular 5, MySQL, Bootstrap Template y HTML/CSS.",
+      "line2":"Implementación de una integración completa REST para Login, darte de alta y administración de usuarios, cursos y clases dentro del gimnasio.",
+      "line3":"Otras tecnologías y herramientas utilizadas: Docker, Travis CI y diagramas UML.",
+      "line4":"Trabajé en un equipo de 4 personas, implementando metodologías ágiles como Scrum y tablero Kanban."
+    },
+    "card4":{
+      "title": "My Shell",
+      "description": "Version minima viable de una shell real",
+      "languaje": "C",
+      "line1":"La minishell implementada pretende funcionar como la original. La idea es proporcionar un minishell personal básico.",
+      "line2":"El objetivo principal es tener una buena comprensión de la creación y sincronización de procesos utilizando el lenguaje de programación C."
     }
   },
   "skills": {
