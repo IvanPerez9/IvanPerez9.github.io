@@ -13,7 +13,7 @@
   "age": "June 12th, 1995",
   "education": {
     "title": "Education",
-    "degree1": "Software Engineering Degree",
+    "degree1": "Degree in Software Engineering",
     "degree2": "High School diploma",
     "uni": "Rey Juan Carlos University",
     "school": "La Salle Griñón School"
@@ -42,7 +42,7 @@
   },
   "personalProfile": {
     "title": "Personal Profile",
-    "p2": "I have developed software in many languajes, especially in Java, C and Python.",
+    "p2": "I have developed software in many languages, such as Java, C and Python.",
     "job1": "Freelance Developer",
     "job2": "Software Developer",
     "date1": "2016 - Present",
@@ -52,7 +52,7 @@
     "company2": "Work4Data | I+D Software Lab",
     "company3": "VIEWNEXT",
     "details": {
-      "p1": "Composed an android app simulating the game Space Invaders then apply and try out different testing tools, like Selenium and implemented BDD through Cucumber.",
+      "p1": "I composed an android app simulating the game Space Invaders then apply and try out different testing tools, like Selenium and I also implemented BDD through Cucumber.",
       "p2": "Collaborating on developing a Telegram bot to automate multiple task.",
       "p3": "Worked with Java + Spring framework for multiple projects. I built a RESTful API for an online GYM with this tecnology.",
       "p11": "Frontend and Backend development. Work with Spring Boot, AngularJS, Bootstrap, PostgreSQL, OracleSQL, MSSQL.",
@@ -76,14 +76,14 @@
     "competitive": "Solving problems of multiples online judges such as SPOJ or 'Acepta el reto' as a hobby.",
     "onlineCourses": {
       "title": "Online Courses",
-      "course1": "Pursued my passion for Java and Python languaje.",
+      "course1": "Pursued my passion for Java and Python language.",
       "course2": "Best practices for software development and testing.",
-      "course3": "Learn basic concepts of cybersecurity, the main attacks and the necessary countermeasures to deal with it.",
+      "course3": "Learned basic concepts of cybersecurity, the main attacks and the necessary countermeasures to deal with it.",
       "course4": "Technology and business model based on the Web, agility and mobility.",
       "course5": "Basic understanding of the Scrum framework.",
-      "course6": "Initialization to participate in real competition: Ability to write efficient, reliable, and compact code. I also lernt how to manage time well when it is limited, apply basic algorithmic ideas to real problems.",
+      "course6": "Initialization to participate in real competition: Ability to write efficient, reliable, and compact code. I also learnt how to manage time well when it is limited and how to apply basic algorithmic ideas to real problems.",
       "course7": "Introduction to Git Course",
-      "course8": "Initialization to git, learn the basic about git workflow and git commands",
+      "course8": "Initialization to git, learned the basic about git workflow and git commands",
       "course9": "Docker & Kubernetes",
       "course10": "Deploy Docker applications manually, with managed services or with Kubernetes/AWS",
       "course11": "Reactive Programming with Spring Boot 2 and Spring WebFlux",
