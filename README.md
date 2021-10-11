@@ -1,5 +1,5 @@
 
-![GitHub last commit (master)](https://img.shields.io/github/last-commit/IvanPerez9/IvanPerez9)
+![GitHub last commit (master)](https://img.shields.io/github/last-commit/IvanPerez9/IvanPerez9.github.io)
 ![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=IvanPerez9.github.io)
 
