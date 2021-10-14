@@ -121,6 +121,13 @@
       "languaje": "C",
       "line1":"La minishell implementada pretende funcionar como la original. La idea es proporcionar un minishell personal básico.",
       "line2":"El objetivo principal es tener una buena comprensión de la creación y sincronización de procesos utilizando el lenguaje de programación C."
+    },
+    "card5":{
+      "title": "Tema personalizado de VS Code",
+      "description": "Mi propio tema personalizado",
+      "languaje": "JSON y CSS",
+      "line1":"Tema inspirado en Halloween con naranja y morado como colores principales.",
+      "line2":"Publicado y disponible en el market place de Microsoft."
     }
   },
   "skills": {
