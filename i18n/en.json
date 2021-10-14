@@ -122,6 +122,13 @@
       "languaje": "C",
       "line1":"The implemented minishell pretends to works as the original.The idea is to provide a basic personal minishell.",
       "line2":"The main goal is to have a good understanding of process creation and synchronisation using the C programmming language."
+    },
+    "card5":{
+      "title": "VS Code Custom Theme",
+      "description": "My own customised vscode theme",
+      "languaje": "JSON & CSS",
+      "line1":"Halloween inspired theme with mainly orange and purple colours.",
+      "line2":"Available as an extension in the Microsoft market place."
     }
   },
   "skills": {
