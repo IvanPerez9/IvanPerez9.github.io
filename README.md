@@ -1,5 +1,5 @@
 ![Manintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/IvanPerez9/IvanPerez9.github.io?color=green)
+![GitHub last commit (master)](https://img.shields.io/github/last-commit/IvanPerez9/IvanPerez9.github.io)
 ![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=IvanPerez9.github.io)
 
