@@ -1,5 +1,5 @@
-![visitor badge](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=IvanPerez9.github.io&color=55acb7&style=flat)
 <!-- ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=IvanPerez9.github.io) -->
+![visitor badge](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=IvanPerez9.github.io&color=55acb7&style=flat)
 ![Manintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 ![GitHub last commit (master)](https://img.shields.io/github/last-commit/IvanPerez9/IvanPerez9.github.io)
 ![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
