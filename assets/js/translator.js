@@ -6,6 +6,7 @@ class Translator {
       this._elements = document.querySelectorAll("[data-i18n]");
     }
 
+    // Languaje link to download CV button
     changeDownloadCV () {
       var downloadCV =  document.getElementById("downloadCV");
       if (downloadCV != null){
@@ -20,6 +21,7 @@ class Translator {
       }
     }
   
+    // Default languaje from navigator
     getLanguage() {
       if (!this._options.detectLanguage) {
         return this._options.defaultLanguage;
@@ -35,7 +37,7 @@ class Translator {
         ? navigator.languages[0]
         : navigator.language;
   
-      return lang.substr(0, 2);
+      return lang.substring(0, 2);
     }
   
     load(lang = null) {
@@ -43,15 +45,16 @@ class Translator {
         if (!this._options.languages.includes(lang)) {
           return;
         }
-  
         this._lang = lang;
       }
-  
+      
+      // path to json
       var path = `${this._options.filesLocation}/${this._lang}.json`;
   
       fetch(path)
         .then(res => res.json())
         .then(translation => {
+          // Transalte elements
           this.translate(translation);
           this.toggleLangTag();
   
@@ -74,6 +77,7 @@ class Translator {
       }
     }
   
+    // Translate elements i18n
     translate(translation) {
       function replace(element) {
         var text = element.dataset.i18n
@@ -84,7 +88,6 @@ class Translator {
           element.innerHTML = text;
         }
       }
-  
       this._elements.forEach(replace);
     }
   
@@ -92,7 +95,7 @@ class Translator {
       return {
         persist: true,
         languages: ["en,es"],
-        defaultLanguage: localStorage,
+        defaultLanguage: "es",
         filesLocation: "/i18n"
       };
     }
