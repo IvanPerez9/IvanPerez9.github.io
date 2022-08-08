@@ -146,5 +146,9 @@
     "subject": "Enter subject:",
     "message": "Enter message:",
     "send": "Send Message"
+  },
+  "confirmation":{
+    "emailTitle": "Thank You !",
+    "emailMessage": "Your submission has been received."
   }
 }

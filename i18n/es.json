@@ -145,5 +145,9 @@
     "subject": "Introduce el asunto:",
     "message": "Introduce el mensaje:",
     "send": "Enviar mensaje"
+  },
+  "confirmation":{
+    "emailTitle": "¡Gracias!",
+    "emailMessage": "Email recibido correctamente."
   }
 }
