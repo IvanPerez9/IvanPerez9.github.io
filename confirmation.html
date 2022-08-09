@@ -6,21 +6,51 @@
 <!--<![endif]-->
 
 <head>
-    <link rel="shortcut icon" href="assets/images/resume.png" title="LogoIcon">
     <title data-i18n="title">Confirmation From - Ivan Perez </title>
-    <link id="theme-style" rel="stylesheet" href="assets/css/confirmation.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iván Pérez - Portfolio">
+
+    <!-- Link-->
+    <link rel="shortcut icon" href="assets/images/resume.png" title="LogoIcon">
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+
+    <!-- Theme CSS  -->
+    <link id="style" rel="stylesheet" href="assets/css/confirmation.css">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="personal_text">
-        <img class="img" src="./assets/images/emailSent.png" alt="email sent icon"/>
-        <h1> Your message was sent successfully </h1>
-        <h4> Thanks </h4>
-        <div class="boton">
-            <button class="btn enviar" onclick="location.href='/index.html'" > <span style="font-size:3rem;"> OK </span> </button>
+    <main class="container experience-cards">
+        <div class="main">
+            <div class="card card1">
+                <article class="card-body">
+                    <!-- <img class="img" src="./assets/images/emailSent.png" alt="email sent icon"/> -->
+                    <header>
+                        <div class="title">
+                            <h3 data-i18n="confirmation.emailTitle" > Thank You !</h3>
+                        </div>
+                        <p class="meta">
+                            <br>
+                            <span class="author" data-i18n="confirmation.emailMessage"> Your submission has been received </span>
+                        </p>
+                    </header>
+                    <div class="wrapper_button">
+                        <a href="https://ivanperez9.github.io/">
+                            <button class="btn boton"><i class="fa fa-undo icon"></i> Go back </button>
+                        </a>
+                    </div>
+                </article>
+            </div>
         </div>
-    </div>
+    </main>
 
     <!-- Javascript -->
     <script src="assets/plugins/jquery-1.11.3.min.js"></script>

@@ -146,5 +146,12 @@
     "subject": "Enter subject:",
     "message": "Enter message:",
     "send": "Send Message"
+  },
+  "confirmation":{
+    "emailTitle": "Thank You !",
+    "emailMessage": "Your submission has been received."
+  },
+  "404":{
+    "text":"Opps! Page Not Found"
   }
 }

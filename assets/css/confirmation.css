@@ -1,90 +1,117 @@
-  html, body {
-    margin: 0;
-    height: 100%;
-    text-align: center;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    position:fixed;
-    background-color: whitesmoke;
-    width:100%;
-    margin-left:auto;
-    margin-right:auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  .personal_text {
-    text-align: center;
-    vertical-align: middle;
-    height: 100%;
-    width: 100%;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .personal_text img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  .img {
-    width: 50rem;
-    height: 40rem;
-    margin: auto;
+body {
+  font-family: "Roboto", sans-serif;
+  color: #545e6c;
+  background-image: -moz-linear-gradient(0deg, #ab3e43 0%, #facfd1 100%);
+  background-image: -webkit-linear-gradient(0deg, #ab3e43 0%, #facfd1 100%);
+  background-image: -ms-linear-gradient(0deg, #ab3e43 0%, #facfd1 100%);
+  font-size: 14px;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-  
-  .personal_text h4 {
-    font-size: 3rem;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    color: #222222;
-  }
-  
-  .personal_text h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    color: #222222;
-  }
 
-  .boton {
-    color: white;
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 25rem;
-  }
-  
-  .boton button:hover {
-    background-image: -moz-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
-    background-image: -webkit-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
-    background-image: -ms-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  }
+.main{
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
 
-  .enviar {
-    position: relative;
-    color: white;
-    background-color: #f0575f;
-    font-family: "Roboto", sans-serif;
-    font-size: 77px;
-    width: 30%;
-    height: 30%;
-  }
+/* Cards */
 
-  /* Extra small devices (phones, less than 768px) */
+.card {
+  max-width: 1000px;
 
-  @media (max-width: 767px) {
-    body {
-      position: static;
-      width: inherit;
-      min-height: 200px;
-    }
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  max-height: 80%;
+  border: none;
+  border-radius: 13px;
+  contain: content;
+  margin: 2em auto 30px;
+  box-shadow: 1px 1px 6px rgb(0 0 0 / 15%), 2px 2px 7px rgb(0 0 0 / 14%), 3px 3px 8px rgb(0 0 0 / 13%), 4px 4px 9px rgb(0 0 0 / 12%);
+  z-index: 1;
+}
+
+.card1 .card-body {
+  display: inline-block;
+  flex-flow: row wrap;
+  padding: 18px;
+  color: var(--head-col);
+  border-radius: 0 13px 13px 0;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem
+}
+
+.card1 header {
+  flex: 100%;
+  margin: 0 0 10px;
+}
+
+.card1 .meta {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.card-body .meta {
+  color: var(--meta-col);
+  font-size: 16px;
+}
+
+.card-body .author {
+  font-size: 15px;
+}
+
+.card-body h3 {
+  font-size: 4rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--head-col);
+  text-align: center;
+}
+
+/* Experience cards */
+
+.experience-cards {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 550px){
+  .experience-cards {
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
   }
+}
+
+/* Botones */
+
+.boton {
+  position: relative;
+  color: white;
+  background-color: #f0575f;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.wrapper_button{
+  padding-top: 2rem;
+  text-align: center;
+}

@@ -145,5 +145,12 @@
     "subject": "Introduce el asunto:",
     "message": "Introduce el mensaje:",
     "send": "Enviar mensaje"
+  },
+  "confirmation":{
+    "emailTitle": "¡Gracias!",
+    "emailMessage": "Email recibido correctamente."
+  },
+  "404":{
+    "text":"¡Vaya! Página No Encontrada"
   }
 }
