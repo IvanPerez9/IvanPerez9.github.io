@@ -149,5 +149,8 @@
   "confirmation":{
     "emailTitle": "¡Gracias!",
     "emailMessage": "Email recibido correctamente."
+  },
+  "404":{
+    "text":"¡Vaya! Página No Encontrada"
   }
 }

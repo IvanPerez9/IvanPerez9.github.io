@@ -150,5 +150,8 @@
   "confirmation":{
     "emailTitle": "Thank You !",
     "emailMessage": "Your submission has been received."
+  },
+  "404":{
+    "text":"Opps! Page Not Found"
   }
 }

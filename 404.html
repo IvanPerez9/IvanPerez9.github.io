@@ -1,29 +1,48 @@
 <html lang="en">
   <head>
+    <title data-i18n="title">Confirmation From - Ivan Perez </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iván Pérez - Portfolio">
+
+    <!-- Link-->
     <link rel="shortcut icon" href="assets/images/resume.png" title="LogoIcon">
-    <title data-i18n="title">404 - ivanperez9.github.io</title>
-    <link id="theme-style" rel="stylesheet" href="assets/css/404.css" />
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+
+    <!-- Theme CSS  -->
+    <link id="style" rel="stylesheet" href="assets/css/404.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
   </head>
 
   <body>
     <div class="container">
       <div class="row justify-content-center">
         <div class="box">
-          <div class="text-404">404</div>
-          <div class="text-not">Page Not Found</div>
+          <div class="text-404">4 <span style="color:#f0575f">0</span> 4</div>
+          <br>
+          <div class="text-not" data-i18n="404.text">Opps! Page Not Found</div>
          <!-- <a onclick="history.back(-1)" class=""> Go Back</a>  Otra forma, otra en confirmation.html -->
         </div>
         <div class="boton">
-          <button class="btn backBtn" id="myButton">Go back <i class="fa fa-undo icon"></i></button>
+          <button class="btn backBtn" id="myButton">Go back <i class="fa fa-undo"></i></button>
         </div>
       </div>
     </div>
+    <!-- Javascript -->
     <script type="text/javascript">
         document.getElementById("myButton").onclick = function () {
             location.href = "https://ivanperez9.github.io/";
         };
     </script>
+    <!-- custom js -->
+    <script src="assets/js/main.js" type="module"></script>
+
   </body>
 </html>
