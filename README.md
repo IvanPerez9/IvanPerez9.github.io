@@ -3,6 +3,7 @@
 ![Manintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 ![GitHub last commit (master)](https://img.shields.io/github/last-commit/IvanPerez9/IvanPerez9.github.io)
 ![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
+[![pages-build-deployment](https://github.com/IvanPerez9/IvanPerez9.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/IvanPerez9/IvanPerez9.github.io/actions/workflows/pages/pages-build-deployment)
 
 
 ## 💻 Demo 
