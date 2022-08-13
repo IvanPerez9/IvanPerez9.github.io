@@ -29,11 +29,11 @@ Feel free to fork this repository to make your own portfolio, and if you liked t
 
 | Colors      |  Hex                                                                       |
 | ---------- | ------------------------------------------------------------------------- |
-| Red     | ![#f0575f](https://via.placeholder.com/15/f0575f/000000?text=+) `#f0575f` |
-| Light Red     | ![#e32](https://via.placeholder.com/15/e32/000000?text=+) `#e32` |
-| Light Gray  | ![#97aac3](https://via.placeholder.com/15/97aac3/000000?text=+) `#97aac3` |
-| Dark Gray | ![#545E6C](https://via.placeholder.com/15/545E6C/000000?text=+) `#545E6C` |
-| Dark Blue | ![#0c3c53](https://via.placeholder.com/15/0c3c53/000000?text=+) `#0c3c53` |
+| Red     | ![#f0575f](https://via.placeholder.com/15/f0575f/f0575f.png) `#f0575f` |
+| Light Red     | ![#e32](https://via.placeholder.com/15/e32/e32.png) `#e32` |
+| Light Gray  | ![#97aac3](https://via.placeholder.com/15/97aac3/97aac3.png) `#97aac3` |
+| Dark Gray | ![#545E6C](https://via.placeholder.com/15/545E6C/545E6C.png) `#545E6C` |
+| Dark Blue | ![#0c3c53](https://via.placeholder.com/15/0c3c53/0c3c53.png) `#0c3c53` |
 
 ---
 
