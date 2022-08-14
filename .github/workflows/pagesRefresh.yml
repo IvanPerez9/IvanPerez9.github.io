@@ -1,11 +1,13 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Custom Deploy - Refresh everyday
 
 on:
+  schedule:
+    - cron:  '0 5 * * *' # Runs every day at 5am UTC = 7 GMT+1
   # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-
+    
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
