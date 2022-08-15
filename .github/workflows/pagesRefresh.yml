@@ -4,7 +4,7 @@ name: Custom Deploymednt
 
 on:
   schedule:
-    - cron:'0 5 * * *' # Runs every day at 5am UTC = 7 GMT+1
+    - cron: '0 5 * * *' # Runs every day at 5am UTC = 7 GMT+1
   # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
