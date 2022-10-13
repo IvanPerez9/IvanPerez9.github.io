@@ -68,8 +68,8 @@ jobs:
   ################################
   ######## Clone Count  ##########
   ################################
-  github-clone-count:
-  	runs-on: ubuntu-latest
+  cloneCount:
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
