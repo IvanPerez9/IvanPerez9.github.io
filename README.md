@@ -1,5 +1,5 @@
 <!-- ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=IvanPerez9.github.io) -->
-![visitor badge](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=IvanPerez9.github.io&color=55acb7&style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FIvanPerez9%2FIvanPerez9.github.io&label=visitors&countColor=%23f47373&style=flat)
 [![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=orange&label=Clone&query=count&url=https://gist.githubusercontent.com/IvanPerez9/e4e3bb610367543b86adb9fb5af2bfa4/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
 ![Manintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 ![GitHub last commit (master)](https://img.shields.io/github/last-commit/IvanPerez9/IvanPerez9.github.io)
