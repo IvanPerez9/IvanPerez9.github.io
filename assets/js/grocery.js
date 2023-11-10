@@ -58,5 +58,14 @@ function showDataList(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
+/*
+Funcion para borrar toda la lista
+*/
+function clearAll (){
+    while (listContainer.firstChild) {
+        listContainer.removeChild(listContainer.firstChild);
+      }
+}
+
 // Llamada para recuperar siempre los datos
 showDataList();

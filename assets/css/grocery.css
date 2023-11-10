@@ -14,9 +14,9 @@
 
 .grocery-list{
   width: 100%;
-  max-width: 540px;
+  max-width: 640px;
   background: #fff;
-  margin: 80px auto 20px;
+  margin: 5px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 10px;
 }
@@ -52,7 +52,7 @@ input{
   font-weight: 14px;
 }
 
-button{
+.add{
   border: none;
   outline: none;
   padding: 16px 30px;
@@ -113,4 +113,22 @@ ul li span{
 
 ul li span:hover{
   background: #edeef0;
+}
+
+.navbar{
+  width: 100%;
+  max-width: 640px;
+  background: #ffffff00;
+  margin: 20px auto 10px;
+}
+
+.calendar{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background: #f0575f;
+  color: #fff;
+  border-radius: 40px;
+  margin-top: 1px;
+  margin-right: 2px;
 }

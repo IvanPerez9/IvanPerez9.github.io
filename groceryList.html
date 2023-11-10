@@ -4,17 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width"/>
+    <link rel="icon" href="assets/images/icon.png" title="icon">
     <title>Grocery List</title>
     <link rel="stylesheet" href="assets/css/grocery.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
 </head>
 <body>
 
     <div class="container">
+        <div class="navbar">
+            <button class="calendar" onclick="clearAll()"><i class="fa fa-trash"></i></button>
+            <button class="calendar"><i class="fa fa-calendar"></i></button>
+        </div>
         <div class="grocery-list">
             <h2> Mi lista de la compra <img src="assets/images/icon.png" alt="" ></h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Añadir producto">
-                <button onclick="addTask()">+</button>
+                <button class="add" onclick="addTask()">+</button>
             </div>
             <ul id="list-container"">
                 <li class="checked">Ejemplo</li>
