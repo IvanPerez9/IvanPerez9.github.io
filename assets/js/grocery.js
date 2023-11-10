@@ -64,7 +64,8 @@ Funcion para borrar toda la lista
 function clearAll (){
     while (listContainer.firstChild) {
         listContainer.removeChild(listContainer.firstChild);
-      }
+    }
+    saveData();
 }
 
 // Llamada para recuperar siempre los datos
