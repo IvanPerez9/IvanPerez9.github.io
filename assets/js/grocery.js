@@ -68,5 +68,16 @@ function clearAll (){
     saveData();
 }
 
+/*
+Funciona de confirmación del borrado completo
+*/
+function confirmClear() {
+    var isConfirmed = window.confirm("¿ Seguro que quiere borrar todos los elementos ?");
+  
+    if (isConfirmed) {
+        clearAll();
+    }
+}
+
 // Llamada para recuperar siempre los datos
 showDataList();
