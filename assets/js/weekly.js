@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const burgerBtn = document.getElementById("burgerBtn");
   burgerBtn.addEventListener("click", toggleBurgerMenu);
 
+  function toggleBurgerMenu() {
+    burgerMenu.classList.toggle("show");
+  }
+
   // Load elements from JSON and populate the burger menu
   fetch('assets/json/meals.json')
     .then(response => response.json())
@@ -42,10 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Append lunch and dinner lists to the burger menu
     burgerMenu.appendChild(lunchList);
     burgerMenu.appendChild(dinnerList);
-  }
-
-  function toggleBurgerMenu() {
-    burgerMenu.classList.toggle("show");
   }
 
   daysOfWeek.forEach(day => {

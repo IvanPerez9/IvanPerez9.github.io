@@ -16,10 +16,12 @@ body {
   position: absolute;
   top: 40px;
   left: 10px;
+  width: 200px; /* Set a fixed width for the burger menu */
   background-color: #fff;
   border: 1px solid #ccc;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .burger-menu.show {
@@ -58,5 +60,15 @@ h1 {
 @media only screen and (max-width: 600px) {
   .meal-input {
     width: 100%; /* Full width on small screens */
+  }
+}
+
+/*Responsive styles for burger menu */
+@media only screen and (max-width: 600px) {
+  .burger-menu {
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100%; /* Make the burger menu full width on small screens */
   }
 }
