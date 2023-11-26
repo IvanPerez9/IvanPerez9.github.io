@@ -4,23 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/weekly.css">
-  <title>Weekly Meal Planner</title>
+  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+  <title>Planning de comidas</title>
 </head>
 <body>
 
   <div class="top-buttons">
     <button id="burgerBtn">☰</button>
-    <button id="clearDataBtn">Clear All Data</button>
-    <button id="goToPageBtn" onclick="goToOtherPage()">Go to Other Page</button>
+    <button id="clearDataBtn"><i class="fa fa-trash"></i></button>
+    <button id="goToPageBtn"><i class="fa fa-cart-plus"></i></button>
   </div>
 
   <div class="burger-menu" id="burgerMenu">
-    <!-- List of elements from JSON will be added here -->
+    <!-- List de elementos leidos de JSON -->
   </div>
 
-  <div class="meal-planner">
-    <h1>Weekly Meal Planner</h1>
-    <div id="days-container"></div>
+  <div class="meal-planner" id="mealPlanner">
+    <h1>Planning de comidas</h1>
+    <div id="days-container" class="week-container">
+      <!-- Se va anadiendo los dias -->
+    </div>
   </div>
 
   <script src="assets/js/weekly.js"></script>

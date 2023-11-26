@@ -13,10 +13,10 @@ body {
 
 .burger-menu {
   display: none;
-  position: absolute;
+  position: fixed; /* Use 'fixed' instead of 'absolute' */
   top: 40px;
   left: 10px;
-  width: 200px; /* Set a fixed width for the burger menu */
+  width: 200px;
   background-color: #fff;
   border: 1px solid #ccc;
   padding: 10px;
@@ -53,22 +53,19 @@ h1 {
   width: calc(50% - 16px);
   padding: 8px;
   margin-top: 8px;
-  box-sizing: border-box; /* Ensure padding is included in the width */
+  box-sizing: border-box;
 }
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
   .meal-input {
-    width: 100%; /* Full width on small screens */
+    width: 100%;
   }
-}
-
-/*Responsive styles for burger menu */
-@media only screen and (max-width: 600px) {
+  
   .burger-menu {
     top: 60px;
     left: 0;
     right: 0;
-    width: 100%; /* Make the burger menu full width on small screens */
+    width: 100%;
   }
 }
