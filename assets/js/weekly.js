@@ -74,42 +74,42 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   function createMealInput(mealType, day) {
-    const mealInput = document.createElement("input");
-    mealInput.classList.add("meal-input");
-    mealInput.placeholder = `Ingresa ${mealType.toLowerCase()} para ${day}`;
-    mealInput.setAttribute('data-day', day);
-    mealInput.setAttribute('data-meal-type', mealType);
-  
-    // Load saved meals if available
-    mealInput.value = savedMeals[`${day}-${mealType}`] || "";
-  
-    // Event listener for both manual input and dropped items
-    mealInput.addEventListener("input", function() {
-      // Save the entered meal to local storage
-      savedMeals[`${day}-${mealType}`] = mealInput.value;
-      localStorage.setItem("weeklyMeals", JSON.stringify(savedMeals));
-    });
-  
-    // Event listener to handle the drop event
-    mealInput.addEventListener("drop", function(event) {
-      event.preventDefault();
-      const draggedItemText = event.dataTransfer.getData("text/plain");
-      mealInput.value = draggedItemText;
-  
-      // Save the entered meal to local storage
-      savedMeals[`${day}-${mealType}`] = mealInput.value;
-      localStorage.setItem("weeklyMeals", JSON.stringify(savedMeals));
-    });
-  
-    // Event listener to prevent the default behavior and allow drop events on the input field
-    mealInput.addEventListener("dragover", function(event) {
-      event.preventDefault();
-    });
-  
-    return mealInput;
+      const mealInput = document.createElement("input");
+      mealInput.classList.add("meal-input");
+      mealInput.placeholder = `Ingresa ${mealType.toLowerCase()} para ${day}`;
+      mealInput.setAttribute('data-day', day);
+      mealInput.setAttribute('data-meal-type', mealType);
+
+      // Load saved meals if available
+      mealInput.value = savedMeals[`${day}-${mealType}`] || "";
+
+      // Event listener for both manual input and dropped items
+      mealInput.addEventListener("input", function() {
+          // Save the entered meal to local storage
+          savedMeals[`${day}-${mealType}`] = mealInput.value;
+          localStorage.setItem("weeklyMeals", JSON.stringify(savedMeals));
+      });
+
+      // Event listener to handle the drop event
+      mealInput.addEventListener("drop", function(event) {
+          event.preventDefault();
+          const draggedItemText = event.dataTransfer.getData("text/plain");
+          mealInput.value = draggedItemText;
+
+          // Save the entered meal to local storage
+          savedMeals[`${day}-${mealType}`] = mealInput.value;
+          localStorage.setItem("weeklyMeals", JSON.stringify(savedMeals));
+      });
+
+      // Event listener to prevent the default behavior and allow drop events on the input field
+      mealInput.addEventListener("dragover", function(event) {
+          event.preventDefault();
+      });
+
+      return mealInput;
   }
-  
-  
+
+
 
   // Función para manejar el evento de inicio de arrastre
   function handleDragStart(event) {
@@ -145,14 +145,12 @@ document.addEventListener("DOMContentLoaded", function() {
   // Botón para borrar todos los datos
   const clearDataBtn = document.getElementById("clearDataBtn");
   clearDataBtn.addEventListener("click", function() {
-      localStorage.removeItem("weeklyMeals");
-      // Restablecer los valores de entrada
-      document.querySelectorAll(".meal-input").forEach(input => input.value = "");
+      var isConfirmed = window.confirm("¿ Seguro que quiere borrar todos los elementos ?");
+      if (isConfirmed) {
+          localStorage.removeItem("weeklyMeals");
+          // Restablecer los valores de entrada
+          document.querySelectorAll(".meal-input").forEach(input => input.value = "");
+      }
   });
 
-  // Botón para ir a otra página
-  function goToOtherPage() {
-      // Puedes reemplazar esto con la URL de la otra página
-      window.location.href = "otrapagina.html";
-  }
 });
