@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/weekly.css">
+  <title>Weekly Meal Planner</title>
+</head>
+<body>
+
+  <div class="top-buttons">
+    <button id="burgerBtn" onclick="toggleBurgerMenu()">☰</button>
+    <button id="clearDataBtn">Clear All Data</button>
+    <button id="goToPageBtn" onclick="goToOtherPage()">Go to Other Page</button>
+  </div>
+
+  <div class="burger-menu" id="burgerMenu">
+    <!-- List of elements from JSON will be added here -->
+  </div>
+
+  <div class="meal-planner">
+    <h1>Weekly Meal Planner</h1>
+    <div id="days-container"></div>
+  </div>
+
+  <script src="assets/js/weekly.js"></script>
+</body>
+</html>
