@@ -1,8 +1,9 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  color: #002765;
+  background: linear-gradient(135deg, #153677, #4e085f);
 }
 
 .top-buttons {
@@ -39,6 +40,7 @@ body {
 
 h1 {
   text-align: center;
+  color: #002765;
 }
 
 .day {
@@ -54,6 +56,39 @@ h1 {
   padding: 8px;
   margin-top: 8px;
   box-sizing: border-box;
+}
+
+#burgerBtn{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background: #f0575f;
+  color: #fff;
+  border-radius: 40px;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+#clearDataBtn{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background: #f0575f;
+  color: #fff;
+  border-radius: 40px;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+#goToPageBtn{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background: #f0575f;
+  color: #fff;
+  border-radius: 40px;
+  margin-top: 1px;
+  margin-right: 2px;
 }
 
 /* Responsive Styles */
