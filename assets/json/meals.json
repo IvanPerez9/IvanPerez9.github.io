@@ -1,11 +1,41 @@
 {
     "lunch":[
-       "comida 1",
-       "comida 2"
+       "Pulpo y verdura a la plancha",
+       "Ragú con arroz/patatas",
+       "Arroz a la cubana",
+       "Pollo a la plancha con verduras/arroz",
+       "Sopa",
+       "Puré",
+       "Ensalada de pasta",
+       "Ensalada de garbanzos",
+       "Pasta carbonara",
+       "Pasta con atun o pollo",
+       "Curry",
+       "Pollo marinado Thai o Miel/Mostaza",
+       "Tataki de salmon con aguacate",
+       "Gnokis con setas",
+       "Arroz frito con ternera",
+       "Lasaña de calabacin",
+       "Ensaladilla rusa",
+       "Salmon a la plancha y esparragos",
+       "Noodles de arroz y verduras",
+       "Pollo salteado con anacardos",
+       "Pimiento asado con ventresca de atun",
+       "Patatas alioli con algo",
+       "Cinta de lomo y patatas",
+       "San Jacobos o flamenquines",
+       "Albóndigas",
+       "Filete y batata frita"
     ],
     "dinner":[
-       "cena 1",
-       "cena 2",
-       "cena 3"
+       "Fajitas con pimiento y cebolla",
+       "Guacamole",
+       "Hummus con zanahoria",
+       "Pizza casera",
+       "Quesadilla",
+       "Tortilla francesa",
+       "Yogur con fruta",
+       "Perritos calientes",
+       "Hamburguesa"
     ]
  }
