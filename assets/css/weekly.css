@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   color: #002765;
+  min-height: 100vh;
+  width: 100%;
   background: linear-gradient(135deg, #153677, #4e085f);
 }
 
@@ -27,15 +29,19 @@ body {
 
 .burger-menu.show {
   display: block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  min-width: 40vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .meal-planner {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 540px;
+  margin: 5px auto 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 30px 70px;
 }
 
 h1 {
@@ -94,7 +100,7 @@ h1 {
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
   .meal-input {
-    width: 100%;
+    width: 90%;
   }
   
   .burger-menu {
