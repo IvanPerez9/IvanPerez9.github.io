@@ -80,40 +80,44 @@ document.addEventListener("DOMContentLoaded", function() {
       mealInput.setAttribute('data-day', day);
       mealInput.setAttribute('data-meal-type', mealType);
 
-      // Load saved meals if available
+      // Cargar comidas guardadas si están disponibles
       mealInput.value = savedMeals[`${day}-${mealType}`] || "";
 
-      // Event listener for both manual input and dropped items
+      // Evento oyente para la entrada manual y los elementos arrastrados
       mealInput.addEventListener("input", function() {
-          // Save the entered meal to local storage
+          // Guardar la comida ingresada en el almacenamiento local
           savedMeals[`${day}-${mealType}`] = mealInput.value;
           localStorage.setItem("weeklyMeals", JSON.stringify(savedMeals));
       });
-    
-      // Event listener to handle the drop event
+
+      // Evento oyente para manejar el evento de soltar (drop)
       mealInput.addEventListener("drop", function(event) {
+          //toggleBurgerMenu();
           event.preventDefault();
           const draggedItemText = event.dataTransfer.getData("text/plain");
           mealInput.value = draggedItemText;
 
-          // Save the entered meal to local storage
+          // Guardar la comida ingresada en el almacenamiento local
           savedMeals[`${day}-${mealType}`] = mealInput.value;
           localStorage.setItem("weeklyMeals", JSON.stringify(savedMeals));
       });
 
-      // Event listener to prevent the default behavior and allow drop events on the input field
+      // Evento oyente para prevenir el comportamiento predeterminado y permitir eventos de soltar en el campo de entrada
       mealInput.addEventListener("dragover", function(event) {
-        event.preventDefault();
+          event.preventDefault();
       });
 
       return mealInput;
   }
 
 
-
   // Función para manejar el evento de inicio de arrastre
   function handleDragStart(event) {
       event.dataTransfer.setData("text/plain", event.target.textContent);
+      // Delay para cerrar el menu cuando ya tengo seleccionado algo para drop
+      setTimeout(function() {
+          toggleBurgerMenu();
+      }, 500);
   }
 
   // Función para manejar el evento de fin de arrastre
