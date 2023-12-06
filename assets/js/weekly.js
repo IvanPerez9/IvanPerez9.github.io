@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
           savedMeals[`${day}-${mealType}`] = mealInput.value;
           localStorage.setItem("weeklyMeals", JSON.stringify(savedMeals));
       });
-
+    
       // Event listener to handle the drop event
       mealInput.addEventListener("drop", function(event) {
           event.preventDefault();
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Event listener to prevent the default behavior and allow drop events on the input field
       mealInput.addEventListener("dragover", function(event) {
-          event.preventDefault();
+        event.preventDefault();
       });
 
       return mealInput;
@@ -119,27 +119,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Función para manejar el evento de fin de arrastre
   function handleDragEnd(event) {
       // Agregar cualquier código de limpieza necesario aquí
-  }
-
-  // Función para manejar el evento de soltar
-  function handleDrop(event) {
-      event.preventDefault();
-      const draggedItemText = event.dataTransfer.getData("text/plain");
-
-      // Identificar el campo de entrada de destino
-      const targetInput = document.activeElement;
-
-      // Verificar si el elemento activo es un campo de entrada
-      if (targetInput.tagName === 'INPUT' && targetInput.classList.contains('meal-input')) {
-          // Establecer el valor del campo de entrada al texto arrastrado
-          targetInput.value = draggedItemText;
-
-          // Guardar la comida ingresada en el almacenamiento local
-          const day = targetInput.getAttribute('data-day');
-          const mealType = targetInput.getAttribute('data-meal-type');
-          savedMeals[`${day}-${mealType}`] = targetInput.value;
-          localStorage.setItem("weeklyMeals", JSON.stringify(savedMeals));
-      }
   }
 
   // Botón para borrar todos los datos
