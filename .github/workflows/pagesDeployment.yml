@@ -4,8 +4,8 @@
 name: Custom Deployment
 
 on:
-  #schedule:
-    #- cron: '0 6 * * *' # Runs every day at 6am UTC = 8 GMT+1
+  schedule:
+    - cron: '0 6 * * *' # Runs every day at 6am UTC = 8 GMT+1
   # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
@@ -68,15 +68,16 @@ jobs:
   ################################
   ########## Status job ##########
   ################################
-  report-build-status:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Report build status
-        uses: actions/deploy-pages@v4
-        with:
-          emit_telemetry: true
-          timeout: 600000
+  #report-build-status:
+    #needs: build
+    #runs-on: ubuntu-latest
+    #steps:
+      #- name: Report build status
+        #uses: actions/deploy-pages@v4
+        #with:
+          #emit_telemetry: true
+          #conclusion: success
+          #timeout: 600000
   ################################
   ######## Deployment job ########
   ################################
