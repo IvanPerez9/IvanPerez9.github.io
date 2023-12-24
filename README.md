@@ -53,7 +53,7 @@ And then go to: http://localhost:1337/index.html
 ## 🛠️ WIP
 
 ### Kanban:
-https://github.com/users/IvanPerez9/projects/1
+https://github.com/users/IvanPerez9/projects/4
 
 ### Issues:
 https://github.com/IvanPerez9/IvanPerez9.github.io/issues
