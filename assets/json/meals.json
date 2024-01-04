@@ -25,10 +25,11 @@
        "Cinta de lomo y patatas",
        "San Jacobos o flamenquines",
        "Albóndigas",
-       "Filete y batata frita"
+       "Filete y batata frita",
+       "Fideos de arroz con calabacin y zanahoria + soja y aceite sesamo"
     ],
     "dinner":[
-       "Fajitas con pimiento y cebolla",
+       "Fajitas con pimiento y cebolla caramelizada",
        "Guacamole",
        "Hummus con zanahoria",
        "Pizza casera",
@@ -38,6 +39,6 @@
        "Perritos calientes",
        "Hamburguesa",
        "Cinta de lomo",
-        "Mini pizzas de calabacin"
+       "Mini pizzas de calabacin"
     ]
  }
