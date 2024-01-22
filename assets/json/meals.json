@@ -26,7 +26,13 @@
        "San Jacobos o flamenquines",
        "Albóndigas",
        "Filete y batata frita",
-       "Fideos de arroz con calabacin y zanahoria + soja y aceite sesamo"
+       "Fideos de arroz con calabacin y zanahoria + soja y aceite sesamo",
+        "Guisantes con jamon",
+        "Lasagna o canelones",
+        "Judias pintas con rape",
+        "Filetes de pavo",
+        "Filetes cerdo empanados",
+        "Curry"
     ],
     "dinner":[
        "Fajitas con pimiento y cebolla caramelizada",
@@ -39,6 +45,7 @@
        "Perritos calientes",
        "Hamburguesa",
        "Cinta de lomo",
+       "Pavo a la plancha",
        "Mini pizzas de calabacin"
     ]
  }
