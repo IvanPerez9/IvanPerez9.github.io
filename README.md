@@ -7,7 +7,6 @@
 [![Custom Deployment](https://github.com/IvanPerez9/IvanPerez9.github.io/actions/workflows/pagesDeployment.yml/badge.svg)](https://github.com/IvanPerez9/IvanPerez9.github.io/actions/workflows/pagesDeployment.yml)
 
 
-
 ## 💻 Demo 
 
  **Live preview:** https://ivanperez9.github.io/
