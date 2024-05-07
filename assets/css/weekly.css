@@ -35,7 +35,7 @@ body {
   min-width: 40vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Establecer altura máxima y overflow */
-  max-height: 400px;
+  max-height: 320px;
   overflow-y: auto;
 }
 
