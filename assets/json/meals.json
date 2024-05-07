@@ -31,7 +31,9 @@
         "Lasagna o canelones",
         "Judias pintas con rape",
         "Filetes de pavo",
-        "Filetes cerdo empanados"
+        "Filetes cerdo empanados",
+        "Atun y wakame",
+        "Poke"
     ],
     "dinner":[
        "Fajitas con pimiento y cebolla caramelizada",
@@ -45,6 +47,11 @@
        "Hamburguesa",
        "Cinta de lomo",
        "Pavo a la plancha",
-       "Mini pizzas de calabacin"
+       "Mini pizzas de calabacin",
+       "Nuggets",
+       "Flautas",
+        "Revuelto",
+        "Verduras a la plancha",
+        "Tomate/Pimiento + Atun"
     ]
  }
