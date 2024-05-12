@@ -20,10 +20,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #545e6c;
-  background-image: -moz-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
-  background-image: -webkit-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
-  background-image: -ms-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+  background: #272729;
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -40,7 +37,7 @@ h6 {
 }
 
 a {
-  color: #f0575f;
+  color: #d5bef1;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -49,7 +46,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #ab3e43;
+  color: #BB86FC;
 }
 
 a:focus {
@@ -61,7 +58,6 @@ p {
 }
 
 .wrapper {
-  background: #0c3c53;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
@@ -71,7 +67,7 @@ p {
 }
 
 .sidebar-wrapper {
-  background: #000000;
+  background: #110e14;
   position: absolute;
   right: 0;
   width: 240px;
@@ -196,7 +192,7 @@ p {
 }
 
 .main-wrapper {
-  background: #0c3c53;
+  background: #1F1A24;
   padding: 60px;
   padding-right: 300px;
   color: whitesmoke;
@@ -206,7 +202,7 @@ p {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  color: #f0575f;
+  color: #BB86FC;
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
@@ -226,7 +222,7 @@ p {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #f0575f;
+  background: #BB86FC;
   text-align: center;
   padding-top: 8px;
   font-size: 16px;
@@ -249,7 +245,7 @@ p {
 }
 
 .main-wrapper .job-title {
-  color: #f0575f;
+  color: #d5bef1;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
@@ -365,7 +361,7 @@ p {
   list-style: none;
   width: 4rem;
   height: 4rem;
-  background: #f0575f;
+  background: #BB86FC;
   animation: animate 25s linear infinite;
   bottom: -15rem;
 }

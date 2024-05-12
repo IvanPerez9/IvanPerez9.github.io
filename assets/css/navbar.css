@@ -41,7 +41,7 @@
 }
 
 .dropdown-content input:hover {
-  color: #f0575f;
+  color: #6200EE;
 }
 
 .dropdown-content {
@@ -53,17 +53,17 @@
 }
 
 .dropbtn span:hover {
-  color: #f0575f;
+  color: #6200EE;
 }
 
 #currentPage {
-  color: #f0575f;
+  color: #6200EE;
 }
 
 /* Language arrow */
 
 .arrow {
-  border: solid #f0575f;
+  border: solid #6200EE;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3.5px;
