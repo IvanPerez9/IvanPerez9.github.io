@@ -28,9 +28,9 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #545e6c;
-  background-image: -moz-linear-gradient(0deg, #ab3e43 0%, #facfd1 100%);
-  background-image: -webkit-linear-gradient(0deg, #ab3e43 0%, #facfd1 100%);
-  background-image: -ms-linear-gradient(0deg, #ab3e43 0%, #facfd1 100%);
+  background-image: -moz-linear-gradient(0deg, #A8DADC 0%, #facfd1 100%);
+  background-image: -webkit-linear-gradient(0deg, #A8DADC 0%, #facfd1 100%);
+  background-image: -ms-linear-gradient(0deg, #A8DADC 0%, #facfd1 100%);
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;

@@ -21,9 +21,9 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #545e6c;
-  background-image: -moz-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
-  background-image: -webkit-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
-  background-image: -ms-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+  background-image: -moz-linear-gradient(0deg, #000000 0%, #023047 100%);
+  background-image: -webkit-linear-gradient(0deg, #000000 0%, #023047 100%);
+  background-image: -ms-linear-gradient(0deg, #000000 0%, #023047 100%);
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -196,7 +196,7 @@ p {
 }
 
 .main-wrapper {
-  background: #0c3c53;
+  background: #023047;
   padding: 60px;
   padding-right: 300px;
   color: whitesmoke;
