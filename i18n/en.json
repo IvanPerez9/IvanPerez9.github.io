@@ -60,12 +60,12 @@
       "p13": "General knowledge of RESTful APIs and JSON. Experience in Webservices (REST and SOAP).",
       "p14": "Agile Development Experience. Continuous Integration / Continuous Delivery using DevOps tools and workflows such as Git, GitLab, Jira, and Jenkins.",
       "p15": "Java and Python microservices Backend Developer.",
-      "p151": "Worked with Java 8+, Spring Boot 2, Spring Framwork 5 applying mainly reactive programming methodologies, developing web applications.",
+      "p151": "Worked with Java 11+, Spring Boot 2, Spring Framwork 5 applying mainly reactive programming methodologies, developing web applications.",
       "p152": "Python microservices with Python 3 and Flask framework",
-      "p16": "Reactive Spring Data repositories and Maven as project management tool and MonogoDB as database.",
+      "p16": "Reactive Spring Data repositories and Maven as project management tool and MonogoDB and OracleSQL as databases.",
       "p17": "Test cases for unit and integration testing using JUnit and Mockito. Experience in SONAR to generate and review quality of code.",
       "p18": "Assisted in facilitating the Scrum ceremonies such as: Product Increment planning, sprint planning, daily stand ups, sprint demos, and retrospectives.",
-      "p19": "Continuous Integration / Continuous Delivery using tools such as Git, Github, Jira and Kanban board."
+      "p19": "Continuous Integration / Continuous Delivery using tools such as Git, Github, Jenkins, Openshift, Jira and Kanban board."
     }
   },
   "projectsCourses": {
@@ -87,7 +87,8 @@
       "course9": "Docker & Kubernetes",
       "course10": "Deploy Docker applications manually, with managed services or with Kubernetes/AWS",
       "course11": "Reactive Programming with Spring Boot 2 and Spring WebFlux",
-      "course12": "Building non-blocking and asynchronous reactive applications with Spring Boot 2 and Spring WebFlux. Connecting to NoSQL databases (MongoDB), testing with JUnit and WebTestClient and consuming services with WebClient and Spring Cloud Eureka."
+      "course12": "Building non-blocking and asynchronous reactive applications with Spring Boot 2 and Spring WebFlux. Connecting to NoSQL databases (MongoDB), testing with JUnit and WebTestClient and consuming services with WebClient and Spring Cloud Eureka.",
+      "course13": "Review on versions 8 and 11 with the latest, and everything you need to know about the new versions of java (17/21) in a theoretical and practical way."
     }
   },
   "projects":{
@@ -129,6 +130,12 @@
       "languaje": "JSON & CSS",
       "line1":"Halloween inspired theme with mainly orange and purple colours.",
       "line2":"Available as an extension in the Microsoft market place."
+    },
+    "card6":{
+      "title": "Expiring on Netflix soon",
+      "languaje": "Python + WebScraping",
+      "line1":"Movies and series from Netflix 'My List' that are going to be removed soon.",
+      "line2":"Done with Python and WebScraping with Selenium webdriver."
     }
   },
   "skills": {

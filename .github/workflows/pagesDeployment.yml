@@ -32,19 +32,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
       - name: Setup Pages
-        uses: actions/configure-pages@v1
+        uses: actions/configure-pages@v4
+
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+        uses: actions/jekyll-build-pages@v1.0.9
         with:
           source: ./
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload entire repository
-          path: '.'
+        uses: actions/upload-pages-artifact@v3
+    
   ################################
   ########### Linter  ############
   ################################
@@ -68,15 +68,16 @@ jobs:
   ################################
   ########## Status job ##########
   ################################
-  report-build-status:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Report build status
-        uses: actions/deploy-pages@v1
-        with:
-          emit_telemetry: true
-          timeout: 600000
+  #report-build-status:
+    #needs: build
+    #runs-on: ubuntu-latest
+    #steps:
+      #- name: Report build status
+        #uses: actions/deploy-pages@v4
+        #with:
+          #emit_telemetry: true
+          #conclusion: success
+          #timeout: 600000
   ################################
   ######## Deployment job ########
   ################################
@@ -84,9 +85,9 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: report-build-status
     runs-on: ubuntu-latest
-    steps:       
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@v4
