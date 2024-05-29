@@ -30,7 +30,7 @@ input[type="checkbox"]:checked ~ .check {
     position: absolute;
     top: 2px;
     left: 2px;
-    background: #0c3c53;
+    background: #f0575f;
     width: 16px;
     height: 16px;
     border-radius: 50%;
