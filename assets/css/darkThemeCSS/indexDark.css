@@ -8,9 +8,9 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #061e2b;
   background: #061e2b;
-  background-image: -moz-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
-  background-image: -webkit-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
-  background-image: -ms-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+  background-image: -moz-linear-gradient(0deg, #000000 0%, #023047 100%);
+  background-image: -webkit-linear-gradient(0deg, #000000 0%, #023047 100%);
+  background-image: -ms-linear-gradient(0deg, #000000 0%, #023047 100%);
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -28,7 +28,7 @@ body {
 }
 
 .wrapper {
-  background: #0c3c53;
+  background: #023047;
   max-width: 1000px;
   margin: 0 auto;
   position: relative;

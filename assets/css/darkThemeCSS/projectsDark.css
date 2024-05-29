@@ -8,9 +8,9 @@
     font-family: 'Roboto', sans-serif;
     color: #061e2b;
     background: #061e2b;
-    background-image: -moz-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
-    background-image: -webkit-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
-    background-image: -ms-linear-gradient(0deg, #000000 0%, #0c3c53 100%);
+    background-image: -moz-linear-gradient(0deg, #000000 0%, #023047 100%);
+    background-image: -webkit-linear-gradient(0deg, #000000 0%, #023047 100%);
+    background-image: -ms-linear-gradient(0deg, #000000 0%, #023047 100%);
     font-size: 14px;
     padding: 30px;
     -webkit-font-smoothing: antialiased;
@@ -47,7 +47,7 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #0c3c53;
+    background-color: #023047;
     background-clip: border-box;
     border: 1px solid rgb(255, 255, 255);
     border-radius: .25rem;
