@@ -32,10 +32,10 @@ Feel free to fork this repository to make your own portfolio, and if you liked t
 | Colors      |  Hex                                                                       |
 | ---------- | ------------------------------------------------------------------------- |
 | Red     | ![#f0575f](https://via.placeholder.com/15/f0575f/f0575f.png) `#f0575f` |
-| Light Red     | ![#e32](https://via.placeholder.com/15/e32/e32.png) `#e32` |
-| Light Gray  | ![#97aac3](https://via.placeholder.com/15/97aac3/97aac3.png) `#97aac3` |
-| Dark Gray | ![#545E6C](https://via.placeholder.com/15/545E6C/545E6C.png) `#545E6C` |
-| Dark Blue | ![#0c3c53](https://via.placeholder.com/15/0c3c53/0c3c53.png) `#0c3c53` |
+| Light Red     | ![#facfd1](https://via.placeholder.com/15/facfd1/facfd1.png) `#facfd1` |
+| Light Blue  | ![#A8DADC](https://via.placeholder.com/15/A8DADC/A8DADC.png) `#A8DADC` |
+| Dark Blue | ![#023047](https://via.placeholder.com/15/023047/023047.png) `#023047` |
+| Black | ![#000000](https://via.placeholder.com/15/000000/000000.png) `#000000` |
 
 ---
 
