@@ -33,7 +33,13 @@
         "Filetes de pavo",
         "Filetes cerdo empanados",
         "Atun y wakame",
-        "Poke"
+        "Poke",
+        "Judias con calamares",
+        "Ensalada de tomate",
+        "Trucha",
+        "Ensalada quinoa, atún, cherry, queso, cebolla crunchy",
+        "Carne picada y patatas al hornor",
+        "Revuelto de patatas cocidas, huevo y jamón"
     ],
     "dinner":[
        "Fajitas con pimiento y cebolla caramelizada",
@@ -52,6 +58,7 @@
        "Flautas",
         "Revuelto",
         "Verduras a la plancha",
-        "Tomate/Pimiento + Atun"
+        "Ensalada Tomate/Pimiento + Atun",
+        "Totilla de patata"
     ]
  }
