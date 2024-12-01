@@ -6,11 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #061e2b;
-  background: #061e2b;
-  background-image: -moz-linear-gradient(0deg, #000000 0%, #023047 100%);
-  background-image: -webkit-linear-gradient(0deg, #000000 0%, #023047 100%);
-  background-image: -ms-linear-gradient(0deg, #000000 0%, #023047 100%);
+  background: #181B1E;
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -28,17 +24,15 @@ body {
 }
 
 .wrapper {
-  background: #023047;
+  background: #303235;
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
-  -webkit-box-shadow: 2px 2px 2px rgba(182, 167, 167, 0.795);
-  -moz-box-shadow: 2px 2px 2px rgba(182, 167, 167, 0.795);
-  box-shadow: 2px 2px 2px rgba(182, 167, 167, 0.795);
+  box-shadow: 2px 2px 2px rgba(65, 61, 61, 0.795);
 }
 
 #left {
-  background: #0c3c53;
+  background: #303235;
   position: absolute;
   min-height: 600px;
   right: 0;
@@ -47,7 +41,7 @@ body {
 }
 
 #right {
-  background: #0c3c53;
+  background: #303235;
   padding: 60px;
   padding-right: 300px;
 }
@@ -75,13 +69,13 @@ body {
   color: black;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  background: #f0575f;
+  background: #3AC499;
 }
 
 .download button:hover {
-  background-image: -moz-linear-gradient(0deg, #000000 0%, #111010 100%);
-  background-image: -webkit-linear-gradient(0deg, #000000 0%, #070606 100%);
-  background-image: -ms-linear-gradient(0deg, #000000 0%, #1f1a1b 100%);
+  background-image: -moz-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
+  background-image: -webkit-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
+  background-image: -ms-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: whitesmoke;
 }
@@ -159,15 +153,15 @@ h1{
 
 .contact-container .email a:hover {
   text-decoration: underline;
-  color: #AB3E43;
+  color: #2b8b70;
 }
 
 .contact-container {
-  color: #f0575f;
+  color: #3AC499;
 }
 
 .contact-container a {
-  color: #f0575f;
+  color: #3AC499;
   text-decoration: none;
 }
 
@@ -188,7 +182,7 @@ h1{
 .personal_social li a {
   line-height: 40px;
   width: 40px;
-  background: #f0575f;
+  background: #3AC499;
   border-radius: 5px;
   display: inline-block;
   text-align: center;
@@ -198,10 +192,10 @@ h1{
 
 .personal_social li:hover a {
   color: white;
-  background-image: -moz-linear-gradient(0deg, #50292b 0%, #111010 100%);
-  background-image: -webkit-linear-gradient(0deg, #300d0f 0%, #070606 100%);
-  background-image: -ms-linear-gradient(0deg, #330b0d 0%, #1f1a1b 100%);
-  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-image: -moz-linear-gradient(0deg, #2b8b70 0%, #3AC499 100%);
+  background-image: -webkit-linear-gradient(0deg, #2b8b70 0%, #3AC499 100%);
+  background-image: -ms-linear-gradient(0deg, #2b8b70 0%, #3AC499 100%);
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {
@@ -252,7 +246,7 @@ h1{
   list-style: none;
   width: 4rem;
   height: 4rem;
-  background: #f0575f;
+  background: #3AC499;
   animation: animate 25s linear infinite;
   bottom: -15rem;
 }
@@ -312,7 +306,7 @@ h1{
   animation-duration: 15s;
 }
 
-/* Animación */
+/* Animación 
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -326,3 +320,6 @@ h1{
     border-radius: 50%;
   }
 }
+  */
+
+
