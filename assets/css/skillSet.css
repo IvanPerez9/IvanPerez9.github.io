@@ -31,13 +31,12 @@
   border-radius: 15px;
   margin-bottom: 5px;
   font-size: 14px;
-  color: #3F4650;
+  color: #eee;
   font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.459);
 }
 .bar::before {
   content: attr(data-skill); /* Pone como contenido lo que tenga en el attributo */
-  background-color: #F69FA3;
+  background-color: #2b8b70;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;

@@ -24,7 +24,7 @@
 
     <!-- Theme CSS , 5 for orange -->
     <link id="style" rel="stylesheet" href="assets/css/base.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/navbar.css">
+    <link id="navbar-style" rel="stylesheet" href="assets/css/navbar.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/skillSet.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/toggleDarkLight.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -57,7 +57,7 @@
     </label>
 
     <!--Navbar -->
-    <nav class="navbar navbar-default banner">
+    <nav class="navbar banner">
         <div class="container-fluid ">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -542,15 +542,17 @@
         }
 
         if (theme == 'dark'){
-            changeTheme('assets/css/darkThemeCSS/baseDark.css');
+            changeTheme('assets/css/darkThemeCSS/baseDark.css',  'assets/css/darkThemeCSS/navbarDark.css');
             toggle.checked = false;
         } else {
-            changeTheme('assets/css/base.css')
+            changeTheme('assets/css/base.css', 'assets/css/navbar.css')
             toggle.checked = true;
         }
 
-        function changeTheme(theme){
+        function changeTheme(theme, navbarStyle){
                 let a = document.getElementById('style');
+                let navbarTheme = document.getElementById('navbar-style');
+                navbarTheme.href = navbarStyle
                 a.href = theme;
         }
 
@@ -558,10 +560,10 @@
         function getTheme() {
             bool = !bool;
             if (bool){
-                changeTheme('assets/css/base.css')
+                changeTheme('assets/css/base.css', 'assets/css/navbar.css')
                 localStorage.setItem('data-theme', 'light')
             } else {
-                changeTheme('assets/css/darkThemeCSS/baseDark.css')
+                changeTheme('assets/css/darkThemeCSS/baseDark.css', 'assets/css/darkThemeCSS/navbarDark.css')
                 localStorage.setItem('data-theme' , 'dark')
             }
         }  
