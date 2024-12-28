@@ -24,7 +24,7 @@
 
     <!-- Theme CSS , 5 for orange -->
     <link id="style" rel="stylesheet" href="assets/css/contact.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/navbar.css">
+    <link id="navbar-style" rel="stylesheet" href="assets/css/navbar.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/toggleDarkLight.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -55,7 +55,7 @@
     </label>
 
     <!--Navbar -->
-    <nav class="navbar navbar-default banner">
+    <nav class="navbar banner">
         <div class="container-fluid ">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -152,7 +152,7 @@
                 </ul>
 
                 <div>
-                    <img src="/assets/images/message.png" alt="imgEmail" height="100" width="100" class="imgEmail">
+                    <img src="/assets/images/paper_plane_flying-25.png" alt="imgEmail" height="100" width="100" class="imgEmail">
                 </div>
 
             </div>
@@ -238,15 +238,17 @@
         }
 
         if (theme == 'dark'){
-            changeTheme('assets/css/darkThemeCSS/contactDark.css');
+            changeTheme('assets/css/darkThemeCSS/contactDark.css', 'assets/css/darkThemeCSS/navbarDark.css');
             toggle.checked = false;
         } else {
-            changeTheme('assets/css/contact.css')
+            changeTheme('assets/css/contact.css', 'assets/css/navbar.css')
             toggle.checked = true;
         }
 
-        function changeTheme(theme){
+        function changeTheme(theme, navbarStyle){
                 let a = document.getElementById('style');
+                let navbarTheme = document.getElementById('navbar-style');
+                navbarTheme.href = navbarStyle
                 a.href = theme;
         }
 
@@ -254,10 +256,10 @@
         function getTheme() {
             bool = !bool;
             if (bool){
-                changeTheme('assets/css/contact.css')
+                changeTheme('assets/css/contact.css', 'assets/css/navbar.css')
                 localStorage.setItem('data-theme', 'light')
             } else {
-                changeTheme('assets/css/darkThemeCSS/contactDark.css')
+                changeTheme('assets/css/darkThemeCSS/contactDark.css', 'assets/css/darkThemeCSS/navbarDark.css')
                 localStorage.setItem('data-theme' , 'dark')
             }
         }  
