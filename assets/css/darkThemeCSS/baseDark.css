@@ -21,9 +21,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #545e6c;
-  background-image: -moz-linear-gradient(0deg, #000000 0%, #023047 100%);
-  background-image: -webkit-linear-gradient(0deg, #000000 0%, #023047 100%);
-  background-image: -ms-linear-gradient(0deg, #000000 0%, #023047 100%);
+  background: #181B1E;
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -40,7 +38,7 @@ h6 {
 }
 
 a {
-  color: #f0575f;
+  color: #3AC499;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -49,7 +47,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #ab3e43;
+  color: #2b8b70;
 }
 
 a:focus {
@@ -61,13 +59,11 @@ p {
 }
 
 .wrapper {
-  background: #0c3c53;
+  background: #303235;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
-  -webkit-box-shadow: 2px 2px 2px rgba(182, 167, 167, 0.795);
-  -moz-box-shadow: 2px 2px 2px rgba(182, 167, 167, 0.795);
-  box-shadow: 2px 2px 2px rgba(182, 167, 167, 0.795);
+  box-shadow: 2px 2px 2px rgba(65, 61, 61, 0.795);
 }
 
 .sidebar-wrapper {
@@ -196,7 +192,7 @@ p {
 }
 
 .main-wrapper {
-  background: #023047;
+  background: #303235;
   padding: 60px;
   padding-right: 300px;
   color: whitesmoke;
@@ -206,7 +202,7 @@ p {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  color: #f0575f;
+  color: #3AC499;
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
@@ -226,7 +222,7 @@ p {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #f0575f;
+  background: #3AC499;
   text-align: center;
   padding-top: 8px;
   font-size: 16px;
@@ -249,7 +245,7 @@ p {
 }
 
 .main-wrapper .job-title {
-  color: #f0575f;
+  color: #3AC499;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
@@ -365,7 +361,7 @@ p {
   list-style: none;
   width: 4rem;
   height: 4rem;
-  background: #f0575f;
+  background: #3AC499;
   animation: animate 25s linear infinite;
   bottom: -15rem;
 }

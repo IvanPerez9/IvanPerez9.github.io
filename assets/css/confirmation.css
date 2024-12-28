@@ -1,9 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #545e6c;
-  background-image: -moz-linear-gradient(0deg, #ab3e43 0%, #facfd1 100%);
-  background-image: -webkit-linear-gradient(0deg, #ab3e43 0%, #facfd1 100%);
-  background-image: -ms-linear-gradient(0deg, #ab3e43 0%, #facfd1 100%);
+  background: #2b8b70;
+  background-image: -moz-linear-gradient(0deg, #2b8b70 0%, #2b8b70 100%);
+  background-image: -webkit-linear-gradient(0deg, #2b8b70 0%, #2b8b70 100%);
+  background-image: -ms-linear-gradient(0deg, #2b8b70 0%, #2b8b70 100%);
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -106,7 +107,7 @@ body {
 .boton {
   position: relative;
   color: white;
-  background-color: #f0575f;
+  background-color: #3AC499;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }

@@ -1,5 +1,5 @@
 .banner {
-  background: #fff;
+  background: #303235;
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -10,7 +10,7 @@
 /* languaje */
 
 .dropbtn {
-  background-color: white;
+  background-color: #303235;
   font-family: Lato, sans-serif;
   padding: 16px;
   font-size: 16px;
@@ -25,13 +25,13 @@
 .dropdown-content {
   display: none;
   position: relative;
-  background-color: white;
+  background-color: #303235;
   min-width: 160px;
   border: none;
 }
 
 .dropdown-content input {
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   border: none;
@@ -47,11 +47,15 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: white;
+  background-color: #303235;
 }
 
 .dropbtn span:hover {
   color: #3AC499;
+}
+
+.dropbtn span {
+  color: white;
 }
 
 #currentPage {
@@ -70,4 +74,8 @@
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.dropdown-menu {
+  background-color: #303235;
 }

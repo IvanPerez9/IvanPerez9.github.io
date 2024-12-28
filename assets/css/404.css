@@ -72,13 +72,13 @@ body {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  background: #f0575f;
+  background: #3AC499;
 }
 
 .boton button:hover  {
-  background-image: -moz-linear-gradient(0deg, #f0575f 0%, #f69fa3 100%);
-  background-image: -webkit-linear-gradient(0deg, #f0575f 0%, #f69fa3 100%);
-  background-image: -ms-linear-gradient(0deg, #f0575f 0%, #f69fa3 100%);
+  background-image: -moz-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
+  background-image: -webkit-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
+  background-image: -ms-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   text-decoration: none;
