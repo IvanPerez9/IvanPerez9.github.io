@@ -16,6 +16,7 @@ input[type="checkbox"]{
     border-radius: 20px;
     overflow: hidden;
     transition: ease-in 0.5s;
+    border: 0.1px solid #181B1E;
 }
 
 /* Cambio de color con check */

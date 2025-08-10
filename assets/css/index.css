@@ -75,7 +75,6 @@ body {
   background-image: -moz-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
   background-image: -webkit-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
   background-image: -ms-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
-  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-list .fa {
@@ -189,7 +188,6 @@ body {
   background-image: -moz-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
   background-image: -webkit-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
   background-image: -ms-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
-  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {

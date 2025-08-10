@@ -76,7 +76,6 @@ body {
   background-image: -moz-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
   background-image: -webkit-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
   background-image: -ms-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: whitesmoke;
 }
 
@@ -195,7 +194,6 @@ h1{
   background-image: -moz-linear-gradient(0deg, #2b8b70 0%, #3AC499 100%);
   background-image: -webkit-linear-gradient(0deg, #2b8b70 0%, #3AC499 100%);
   background-image: -ms-linear-gradient(0deg, #2b8b70 0%, #3AC499 100%);
-  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {

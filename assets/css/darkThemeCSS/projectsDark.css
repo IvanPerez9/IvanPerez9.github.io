@@ -244,11 +244,15 @@
   
   .boton {
     position: relative;
-    color: white;
+    color: #181B1E;
     background-color: #3AC499;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
   }
+
+.boton:hover, .boton:focus {
+    color: #fff;
+}
   
   .wrapper_button{
     padding-top: 2rem;
