@@ -32,11 +32,11 @@ Feel free to fork this repository to make your own portfolio, and if you liked t
 
 | Colors      |  Hex                                                                       |
 | ---------- | ------------------------------------------------------------------------- |
-| Red     | ![#f0575f](https://via.placeholder.com/15/f0575f/f0575f.png) `#f0575f` |
-| Light Red     | ![#facfd1](https://via.placeholder.com/15/facfd1/facfd1.png) `#facfd1` |
-| Light Blue  | ![#A8DADC](https://via.placeholder.com/15/A8DADC/A8DADC.png) `#A8DADC` |
-| Dark Blue | ![#023047](https://via.placeholder.com/15/023047/023047.png) `#023047` |
-| Black | ![#000000](https://via.placeholder.com/15/000000/000000.png) `#000000` |
+| Ocean Green     | ![#3AC499](https://placehold.co/15x15/3AC499/3AC499.png) `#3AC499` |
+| Emerald    | ![#2b8b70](https://placehold.co/15x15/2b8b70/2b8b70.png) `#2b8b70` |
+| Isabelline  | ![#F8F3EF](https://placehold.co/15x15/F8F3EF/F8F3EF.png) `#F8F3EF` |
+| Dark Charcoal | ![#303235](https://placehold.co/15x15/303235/303235.png) `#303235` |
+| Eerie Black | ![#181B1E](https://placehold.co/15x15/181B1E/181B1E.png) `#181B1E` |
 
 ---
 
