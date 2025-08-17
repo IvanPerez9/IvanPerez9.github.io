@@ -13,7 +13,7 @@
     <meta name="description" content="Iván Pérez - Portfolio">
 
     <!-- Link-->
-    <link rel="shortcut icon" href="assets/images/resume.png" title="LogoIcon">
+    <link rel="shortcut icon" href="assets/images/cv-green2.png" title="LogoIcon">
     <link
         href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
         rel='stylesheet' type='text/css'>
@@ -24,7 +24,7 @@
 
     <!-- Theme CSS -->
     <link id="style" rel="stylesheet" href="assets/css/index.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/navbar.css">
+    <link id="navbar-style" rel="stylesheet" href="assets/css/navbar.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/toggleDarkLight.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -59,7 +59,7 @@
     </label>
 
     <!--Navbar -->
-    <nav class="navbar navbar-default banner">
+    <nav class="navbar banner">
         <div class="container-fluid ">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -108,7 +108,7 @@
     <div class="wrapper">
 
         <div id="left">
-            <img class="profileImg" src="/assets/images/ivan2.jpg" alt="ivanPerezImage">
+            <img class="profileImg" src="/assets/images/2023ivan.jpg" alt="ivanPerezImage">
 
             <div class="download">
                 <a id="downloadCV" href="./PDFs/IvanPerezHuete_CV.pdf" download="IvanPerezHuete_CV.pdf">
@@ -172,6 +172,7 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js" type="module"></script>
+
     <script>
         
         /* ==== DARK LIGHT THEME ==== */
@@ -184,15 +185,17 @@
         }
 
         if (theme == 'dark'){
-            changeTheme('assets/css/darkThemeCSS/indexDark.css');
+            changeTheme('assets/css/darkThemeCSS/indexDark.css', 'assets/css/darkThemeCSS/navbarDark.css');
             toggle.checked = false;
         } else {
-            changeTheme('assets/css/index.css')
+            changeTheme('assets/css/index.css', 'assets/css/navbar.css')
             toggle.checked = true;
         }
 
-        function changeTheme(theme){
+        function changeTheme(theme, navbarStyle){
                 let a = document.getElementById('style');
+                let navbarTheme = document.getElementById('navbar-style');
+                navbarTheme.href = navbarStyle
                 a.href = theme;
         }
 
@@ -200,15 +203,16 @@
         function getTheme() {
             bool = !bool;
             if (bool){
-                changeTheme('assets/css/index.css')
+                changeTheme('assets/css/index.css', 'assets/css/navbar.css')
                 localStorage.setItem('data-theme', 'light')
             } else {
-                changeTheme('assets/css/darkThemeCSS/indexDark.css')
+                changeTheme('assets/css/darkThemeCSS/indexDark.css', 'assets/css/darkThemeCSS/navbarDark.css')
                 localStorage.setItem('data-theme' , 'dark')
             }
         }  
 
     </script>
+
 </body>
 
 </html>

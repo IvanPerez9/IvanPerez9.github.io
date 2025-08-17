@@ -7,10 +7,7 @@
  body {
     font-family: 'Roboto', sans-serif;
     color: #061e2b;
-    background: #061e2b;
-    background-image: -moz-linear-gradient(0deg, #000000 0%, #023047 100%);
-    background-image: -webkit-linear-gradient(0deg, #000000 0%, #023047 100%);
-    background-image: -ms-linear-gradient(0deg, #000000 0%, #023047 100%);
+    background: #181B1E;
     font-size: 14px;
     padding: 30px;
     -webkit-font-smoothing: antialiased;
@@ -47,7 +44,7 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #023047;
+    background-color: #303235;
     background-clip: border-box;
     border: 1px solid rgb(255, 255, 255);
     border-radius: .25rem;
@@ -137,7 +134,7 @@
     font-size: 2rem;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #f0575f;
+    color: #3AC499;
     text-align: center;
   }
 
@@ -247,11 +244,15 @@
   
   .boton {
     position: relative;
-    color: white;
-    background-color: #f0575f;
+    color: #181B1E;
+    background-color: #3AC499;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
   }
+
+.boton:hover, .boton:focus {
+    color: #fff;
+}
   
   .wrapper_button{
     padding-top: 2rem;

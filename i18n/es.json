@@ -43,10 +43,10 @@
     "title": "Perfil personal",
     "p2": "He desarrollado software en distintos lenguajes, con una preferencia por Java , Python y en menor medida C.",
     "job1": "Desarrollador independiente",
-    "job2": "Desarrollador de Software",
+    "job2": "Ingeniero de Software | Desarrollador Backend",
     "date1": "2016 - Hoy",
     "date2": "Dic 2018 - Dic 2020",
-    "date3": "Feb 2021 - Hoy",
+    "date3": "Sep 2024 - Hoy",
     "company1": "Proyectos personales y colaborativos",
     "company2": "Work4Data | I+D Software Lab",
     "company3": "VIEWNEXT",
@@ -65,7 +65,14 @@
       "p16": "Repositorios reactivos de Spring Data y Maven como sistema para construir el proyecto y MonogoDB y OracleSQL como bases de datos.",
       "p17": "Casos de prueba, tanto unitario como de integración con JUnit y Mockito. Experiencia en SONAR para generar, asegurar y revisar la calidad del código.",
       "p18": "Participación activa en las reuniones y actividades de metodología Scrum como: Incremento del valor del producto, sprint planning, dailies , sprint demos, y retrospectivas.",
-      "p19": "Integración contínua / Entrega contínua usando herramientas como Git, Github, Jenkins, Openshift, Jira y tablero Kanban."
+      "p19": "Integración contínua / Entrega contínua usando herramientas como Git, Github, Jenkins, Openshift, Jira y tablero Kanban.",
+      "p20": "Desarrollador Backend para un importante cliente de retail, trabajando con Java 17/21, arquitectura hexagonal, Spring 6 y Maven para ofrecer soluciones escalables y mantenibles.",
+      "p21": "Responsable del diseño y ejecución de pruebas automatizadas con JUnit, Mockito, Sonar y Grafana para asegurar la calidad y fiabilidad del código.",
+      "p22": "Gestión y optimización de bases de datos con MariaDB y Dbeaver, enfocándose en el rendimiento y la integridad de los datos.",
+      "p23": "Implementación de Integración y Entrega Continua (CI/CD) usando Github Actions y Openshift para pipelines de despliegue eficientes.",
+      "p24": "Seguimiento de proyectos y control de versiones con Github, Jira y Git, asegurando una colaboración y gestión de flujo de trabajo efectiva.",
+      "p25": "Experiencia trabajando en entornos Windows y Linux.",
+      "p26": "Uso de herramientas adicionales como Microsoft Clarity, Swagger, Miro, Lombock y Notion para apoyar el desarrollo y la documentación de procesos."
     }
   },
   "projectsCourses": {
@@ -88,7 +95,11 @@
       "course10": "Utilizacion de docker y kubernetes junto con AWS para contener y desplegar aplicaciones",
       "course11":"Programacion Reactiva con Spring Boot 2 y Spring WebFlux",
       "course12":"Contrucción de aplicaciones reactivas sin bloqueo y asincronas con Spring Boot 2 y Spring WebFlux. Conexion con bases de datos NoSQL (MongoDB) , testeo con JUnit y WebTestClient y consumición de servicios con WebClient y Spring Cloud Eureka.",
-      "course13":"Repaso sobre las versiones 8 y 11 con lo más novedoso, y todo lo necesario a saber sobre las nuevas versiones de java (17/21) de forma teórica y practica."
+      "course13":"Repaso sobre las versiones 8 y 11 con lo más novedoso, y todo lo necesario a saber sobre las nuevas versiones de java (17/21) de forma teórica y practica.",
+      "course14": "Certificación que valida conocimientos en arquitecturas reactivas, diseño orientado a eventos, microservicios y la aplicación de principios de Domain-Driven Design para soluciones empresariales escalables.",
+      "course15": "Certificación que demuestra habilidades avanzadas en procesamiento de datos en tiempo real y análisis de flujos usando Apache Kafka y Kafka Streams, incluyendo mensajería distribuida y arquitecturas escalables orientadas a eventos.",
+      "course16": "Certificación que cubre los fundamentos de GitHub, incluyendo gestión de repositorios, flujos de trabajo colaborativos, estrategias de ramas y prácticas esenciales de control de versiones para el desarrollo moderno de software.",
+      "course17": "Certificación que acredita competencia en inglés a nivel C2, equivalente a una puntuación de 81/100 en el EF SET."
     }
   },
   "projects":{
