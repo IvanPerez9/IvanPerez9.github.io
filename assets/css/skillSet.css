@@ -67,6 +67,12 @@
 .bar.advanced8::before {
     width: calc(80% - 10px);
   }
+.bar.advanced85::before {
+    width: calc(85% - 10px);
+  }
+.bar.advanced9::before {
+    width: calc(90% - 10px);
+  }
 .bar.expert::before {
   width: calc(100% - 10px);
 }
