@@ -1,9 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #545E6C;
-  background-image: -moz-linear-gradient(0deg, #A8DADC 0%, #FACFD1 100%);
-  background-image: -webkit-linear-gradient(0deg, #A8DADC 0%, #FACFD1 100%);
-  background-image: -ms-linear-gradient(0deg, #A8DADC 0%, #FACFD1 100%);
+  background: #F8F3EF;
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -71,7 +69,7 @@ body {
 
 .contact-list a:hover {
   text-decoration: underline;
-  color: #AB3E43;
+  color: #2b8b70;
 }
 
 .personal_text h1 {
@@ -94,7 +92,7 @@ textarea {
 }
 
 .personal_text span {
-  color: #f0575f;
+  color: #3AC499;
 }
 
 .list {
@@ -104,17 +102,17 @@ textarea {
 }
 
 .contact-container #email:hover {
-  color: #AB3E43;
+  color: #2b8b70;
 }
 
 .contact-container {
-  color: #f0575f;
+  color: #3AC499;
   font-size: 18px;
   margin-top: 3rem;
 }
 
 .contact-container a {
-  color: #f0575f;
+  color: #3AC499;
   text-decoration: none;
 }
 
@@ -131,7 +129,7 @@ textarea {
 .enviar {
   position: relative;
   color: white;
-  background-color: #f0575f;
+  background-color: #3AC499;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
@@ -147,10 +145,11 @@ textarea {
 }
 
 .boton button:hover {
-  background-image: -moz-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
-  background-image: -webkit-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
-  background-image: -ms-linear-gradient(0deg, #f0575f 0%, #F69FA3 100%);
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background-image: -moz-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
+  background-image: -webkit-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
+  background-image: -ms-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -205,7 +204,7 @@ textarea {
   list-style: none;
   width: 4rem;
   height: 4rem;
-  background: #f0575f;
+  background: #3AC499;
   animation: animate 25s linear infinite;
   bottom: -15rem;
 }
@@ -265,7 +264,7 @@ textarea {
   animation-duration: 15s;
 }
 
-/* Animación */
+/* Animación 
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -279,3 +278,4 @@ textarea {
     border-radius: 50%;
   }
 }
+  */

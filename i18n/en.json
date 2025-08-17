@@ -44,10 +44,10 @@
     "title": "Personal Profile",
     "p2": "I have developed software in many languages, such as Java, C and Python.",
     "job1": "Freelance Developer",
-    "job2": "Software Developer",
+    "job2": "Software Engineer | Backend Developer",
     "date1": "2016 - Present",
     "date2": "Dec 2018 - Dec 2020",
-    "date3": "Feb 2021 - Present",
+    "date3": "Sep 2024 - Present",
     "company1": "Personal and Collaborative projects",
     "company2": "Work4Data | I+D Software Lab",
     "company3": "VIEWNEXT",
@@ -66,7 +66,14 @@
       "p16": "Reactive Spring Data repositories and Maven as project management tool and MonogoDB and OracleSQL as databases.",
       "p17": "Test cases for unit and integration testing using JUnit and Mockito. Experience in SONAR to generate and review quality of code.",
       "p18": "Assisted in facilitating the Scrum ceremonies such as: Product Increment planning, sprint planning, daily stand ups, sprint demos, and retrospectives.",
-      "p19": "Continuous Integration / Continuous Delivery using tools such as Git, Github, Jenkins, Openshift, Jira and Kanban board."
+      "p19": "Continuous Integration / Continuous Delivery using tools such as Git, Github, Jenkins, Openshift, Jira and Kanban board.",
+      "p20": "Backend Developer for a major retail client, working with Java 17/21, Hexagonal architecture, Spring 6, and Maven to deliver scalable and maintainable solutions.",
+      "p21": "Responsible for designing and executing automated tests using JUnit, Mockito, Sonar, and Grafana to ensure code quality and system reliability.",
+      "p22": "Database management and optimization with MariaDB and Dbeaver, focusing on performance and data integrity.",
+      "p23": "Continuous Integration and Continuous Delivery (CI/CD) implementation using Github Actions and Openshift for efficient deployment pipelines.",
+      "p24": "Project tracking and version control with Github, Jira, and Git, ensuring effective collaboration and workflow management.",
+      "p25": "Experience working in both Windows and Linux environments.",
+      "p26": "Utilized additional tools such as Microsoft Clarity, Swagger, Miro, Lombock, and Notion to support development and documentation processes."
     }
   },
   "projectsCourses": {
@@ -89,7 +96,11 @@
       "course10": "Deploy Docker applications manually, with managed services or with Kubernetes/AWS",
       "course11": "Reactive Programming with Spring Boot 2 and Spring WebFlux",
       "course12": "Building non-blocking and asynchronous reactive applications with Spring Boot 2 and Spring WebFlux. Connecting to NoSQL databases (MongoDB), testing with JUnit and WebTestClient and consuming services with WebClient and Spring Cloud Eureka.",
-      "course13": "Review on versions 8 and 11 with the latest, and everything you need to know about the new versions of java (17/21) in a theoretical and practical way."
+      "course13": "Review on versions 8 and 11 with the latest, and everything you need to know about the new versions of java (17/21) in a theoretical and practical way.",
+      "course14": "Certification validating expertise in reactive architectures, event-driven design, microservices, and the application of Domain-Driven Design principles for scalable enterprise solutions.",
+      "course15": "Certification demonstrating advanced skills in real-time data processing and stream analytics using Apache Kafka and Kafka Streams, including distributed messaging and scalable event-driven architectures.",
+      "course16": "Certification covering the fundamentals of GitHub, including repository management, collaboration workflows, branching strategies, and essential version control practices for modern software development.",
+      "course17": "Certification demonstrating proficiency in English at the C2 level, equivalent to a score of 81/100 on the EF SET."
     }
   },
   "projects":{
