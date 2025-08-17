@@ -15,7 +15,7 @@
        "Tataki de salmon con aguacate",
        "Gnokis con setas",
        "Arroz frito con ternera",
-       "Lasaña de calabacin",
+       "Pastel de calabacin",
        "Ensaladilla rusa",
        "Salmon a la plancha y esparragos",
        "Noodles de arroz y verduras",
@@ -39,7 +39,9 @@
         "Trucha",
         "Ensalada quinoa, atún, cherry, queso, cebolla crunchy",
         "Carne picada y patatas al hornor",
-        "Revuelto de patatas cocidas, huevo y jamón"
+        "Revuelto de patatas cocidas, huevo y jamón",
+        "Bacon queese fries",
+        "Migas de colifor"
     ],
     "dinner":[
        "Fajitas con pimiento y cebolla caramelizada",
@@ -59,6 +61,8 @@
         "Revuelto",
         "Verduras a la plancha",
         "Ensalada Tomate/Pimiento + Atun",
-        "Totilla de patata"
+        "Pastel calabacín (Huevo, taquitos jamón, queso y calabacín)",
+        "Totilla de patata",
+        "Hamburguesa calabacin"
     ]
  }
