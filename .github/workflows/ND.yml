@@ -1,220 +1,38 @@
-name: Teams ND Notification
+name: Send ND Email
 on:
   pull_request:
     types: [closed, labeled]
     branches: [main, master]
 
 jobs:
-  notify-teams-nd:
+  send-email:
     if: |
       github.event.pull_request.merged == true && 
       contains(github.event.pull_request.labels.*.name, 'ND')
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Parse ND Information
-        id: parse_nd
-        uses: actions/github-script@v7
+      - name: Send Email
+        uses: dawidd6/action-send-mail@v3
         with:
-          script: |
-            const prBody = context.payload.pull_request.body || '';
-            const prTitle = context.payload.pull_request.title;
-            
-            // Extraer información del changelog
-            const addedSection = prBody.match(/### Added\s*([\s\S]*?)(?=###|$)/i);
-            const fixedSection = prBody.match(/### Fixed\s*([\s\S]*?)(?=###|$)/i);
-            const changedSection = prBody.match(/### Changed\s*([\s\S]*?)(?=###|$)/i);
-            const removedSection = prBody.match(/### Removed\s*([\s\S]*?)(?=###|$)/i);
-            
-            // Procesar items añadidos
-            let addedItems = '';
-            if (addedSection && addedSection[1]) {
-              const items = addedSection[1]
-                .split('\n')
-                .filter(line => line.trim().startsWith('-'))
-                .map(line => line.trim().replace(/^-\s*/, ''))
-                .filter(item => item.length > 0);
-              addedItems = items.map(item => `• ${item}`).join('\\n');
-            }
-            
-            // Procesar items corregidos  
-            let fixedItems = '';
-            if (fixedSection && fixedSection[1]) {
-              const items = fixedSection[1]
-                .split('\n')
-                .filter(line => line.trim().startsWith('-'))
-                .map(line => line.trim().replace(/^-\s*/, ''))
-                .filter(item => item.length > 0);
-              fixedItems = items.map(item => `• ${item}`).join('\\n');
-            }
+          server_address: smtp-relay.gmail.com
+          server_port: 25
+          username: ivan120695@gmail.com
+          to: ivan120695@gmail.com
+          from: GitHub Actions
+          subject: 📋 Nueva ND - ${{ github.event.pull_request.title }}
+          body: |
+            # 📋 Nueva Nota de Desarrollo
 
-            // Procesar items cambiados
-            let changedItems = '';
-            if (changedSection && changedSection[1]) {
-              const items = changedSection[1]
-                .split('\n')
-                .filter(line => line.trim().startsWith('-'))
-                .map(line => line.trim().replace(/^-\s*/, ''))
-                .filter(item => item.length > 0);
-              changedItems = items.map(item => `• ${item}`).join('\\n');
-            }
-
-            // Procesar items eliminados
-            let removedItems = '';
-            if (removedSection && removedSection[1]) {
-              const items = removedSection[1]
-                .split('\n')
-                .filter(line => line.trim().startsWith('-'))
-                .map(line => line.trim().replace(/^-\s*/, ''))
-                .filter(item => item.length > 0);
-              removedItems = items.map(item => `• ${item}`).join('\\n');
-            }
+            ## Información General
+            - **Título:** ${{ github.event.pull_request.title }}
+            - **Estado:** ✅ Cerrada y fusionada
+            - **Autor:** ${{ github.event.pull_request.user.login }}
+            - **Repositorio:** ${{ github.repository }}
             
-            // Generar resumen automático
-            let summary = `Esta actualización incluye `;
-            const addedCount = addedItems.split('\\n').filter(i => i.trim()).length;
-            const fixedCount = fixedItems.split('\\n').filter(i => i.trim()).length;
-            const changedCount = changedItems.split('\\n').filter(i => i.trim()).length;
-            const removedCount = removedItems.split('\\n').filter(i => i.trim()).length;
+            ## 🔄 Cambios
+            ${{ github.event.pull_request.body }}
             
-            const changes = [];
-            if (addedCount > 0) changes.push(`${addedCount} nueva(s) característica(s)`);
-            if (fixedCount > 0) changes.push(`${fixedCount} corrección(es)`);
-            if (changedCount > 0) changes.push(`${changedCount} modificación(es)`);
-            if (removedCount > 0) changes.push(`${removedCount} eliminación(es)`);
-            
-            if (changes.length > 0) {
-              summary += changes.join(', ') + '.';
-            } else {
-              summary += `mejoras y optimizaciones del sistema.`;
-            }
-            
-            // Añadir información específica basada en el contenido
-            if (prBody.toLowerCase().includes('nd') || prBody.toLowerCase().includes('nota de desarrollo')) {
-              summary += ` Se han incluido notas importantes para el desarrollo.`;
-            }
-            if (prBody.toLowerCase().includes('hotfix')) {
-              summary += ` Incluye correcciones urgentes.`;
-            }
-            if (prBody.toLowerCase().includes('feature') || prBody.toLowerCase().includes('funcionalidad')) {
-              summary += ` Se han añadido nuevas funcionalidades.`;
-            }
-            if (prBody.toLowerCase().includes('performance') || prBody.toLowerCase().includes('rendimiento')) {
-              summary += ` Se ha mejorado el rendimiento del sistema.`;
-            }
-            if (prBody.toLowerCase().includes('security') || prBody.toLowerCase().includes('seguridad')) {
-              summary += ` Se han aplicado mejoras de seguridad.`;
-            }
-            
-            // Formatear fecha
-            const mergedAt = context.payload.pull_request.merged_at;
-            const mergedDate = new Date(mergedAt);
-            const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 
-                           'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
-            const formattedDate = `${mergedDate.getDate()} de ${months[mergedDate.getMonth()]} de ${mergedDate.getFullYear()}, ${mergedDate.toTimeString().split(' ')[0]}Z`;
-            
-            return {
-              addedItems,
-              fixedItems,
-              changedItems,
-              removedItems,
-              summary,
-              formattedDate,
-              title: prTitle,
-              author: context.payload.pull_request.user.login,
-              additions: context.payload.pull_request.additions,
-              deletions: context.payload.pull_request.deletions,
-              changedFiles: context.payload.pull_request.changed_files,
-              commits: context.payload.pull_request.commits,
-              prUrl: context.payload.pull_request.html_url,
-              avatarUrl: context.payload.pull_request.user.avatar_url,
-              repository: context.payload.repository.full_name
-            };
-
-      - name: Send Teams ND Notification
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const ndData = ${{ steps.parse_nd.outputs.result }};
-            
-            // Construir secciones de cambios dinámicamente
-            let changesText = '';
-            
-            if (ndData.addedItems) {
-              changesText += '**✅ Añadido:**\n\n' + ndData.addedItems + '\n\n';
-            }
-            
-            if (ndData.fixedItems) {
-              changesText += '**🐛 Corregido:**\n\n' + ndData.fixedItems + '\n\n';
-            }
-            
-            if (ndData.changedItems) {
-              changesText += '**🔄 Modificado:**\n\n' + ndData.changedItems + '\n\n';
-            }
-            
-            if (ndData.removedItems) {
-              changesText += '**🗑️ Eliminado:**\n\n' + ndData.removedItems + '\n\n';
-            }
-            
-            if (!changesText.trim()) {
-              changesText = '**ℹ️ Información:**\n\nVer detalles en la PR para más información sobre los cambios realizados.';
-            }
-            
-            const message = {
-              "@type": "MessageCard",
-              "@context": "https://schema.org/extensions",
-              "themeColor": "FF6600", // Color naranja para diferenciar de releases
-              "summary": `📋 ND: ${ndData.title}`,
-              "sections": [
-                {
-                  "activityTitle": "📋 Nueva Nota de Desarrollo",
-                  "activitySubtitle": ndData.repository,
-                  "activityImage": ndData.avatarUrl
-                },
-                {
-                  "activityTitle": "📋 Información General",
-                  "facts": [
-                    {"name": "**Título**", "value": ndData.title},
-                    {"name": "**Estado**", "value": "✅ Cerrada y fusionada"},
-                    {"name": "**Autor**", "value": ndData.author},
-                    {"name": "**Fecha de fusión**", "value": ndData.formattedDate}
-                  ]
-                },
-                {
-                  "activityTitle": "🔄 Cambios Principales",
-                  "text": changesText
-                },
-                {
-                  "activityTitle": "📝 Resumen de lo principal",
-                  "text": ndData.summary
-                }
-              ],
-              "potentialAction": [
-                {
-                  "@type": "OpenUri",
-                  "name": "🔗 Ver PR en GitHub",
-                  "targets": [{"os": "default", "uri": ndData.prUrl}]
-                },
-                {
-                  "@type": "OpenUri", 
-                  "name": "📋 Ver Archivos Modificados",
-                  "targets": [{"os": "default", "uri": `${ndData.prUrl}/files`}]
-                }
-              ]
-            };
-            
-            // Enviar a Teams usando fetch
-            const response = await fetch('https://outlook.office.com/webhook/ivan120695@gmail.com', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(message)
-            });
-            
-            if (!response.ok) {
-              throw new Error(`Teams ND notification failed: ${response.status} ${response.statusText}`);
-            }
-            
-
-            console.log('✅ Notificación ND enviada exitosamente a Teams');
+            ## Enlaces
+            - [Ver PR en GitHub](${{ github.event.pull_request.html_url }})
+            - [Ver Archivos Modificados](${{ github.event.pull_request.html_url }}/files)
+          convert_markdown: true
