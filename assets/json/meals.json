@@ -24,7 +24,6 @@
        "Patatas alioli con algo",
        "Cinta de lomo y patatas",
        "San Jacobos o flamenquines",
-       "Albóndigas",
        "Filete y batata frita",
        "Fideos de arroz con calabacin y zanahoria + soja y aceite sesamo",
         "Guisantes con jamon",
@@ -41,7 +40,9 @@
         "Carne picada y patatas al hornor",
         "Revuelto de patatas cocidas, huevo y jamón",
         "Bacon queese fries",
-        "Migas de colifor"
+        "Migas de colifor",
+        "Albondigas",
+        "Tacos"
     ],
     "dinner":[
        "Fajitas con pimiento y cebolla caramelizada",
