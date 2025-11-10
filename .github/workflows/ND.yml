@@ -2,7 +2,7 @@ name: Send ND Email
 on:
   pull_request:
     types: [closed, labeled]
-    branches: [main]
+    branches: [main, master]
 
 jobs:
   send-email:
