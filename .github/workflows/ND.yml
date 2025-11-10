@@ -2,7 +2,7 @@ name: Teams ND Notification
 on:
   pull_request:
     types: [closed, labeled]
-    branches: [main]
+    branches: [main, master]
 
 jobs:
   notify-teams-nd:
@@ -216,4 +216,5 @@ jobs:
               throw new Error(`Teams ND notification failed: ${response.status} ${response.statusText}`);
             }
             
+
             console.log('✅ Notificación ND enviada exitosamente a Teams');
