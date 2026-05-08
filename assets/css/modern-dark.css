@@ -1,0 +1,167 @@
+/* ==================== DARK MODE VARIABLES ==================== */
+html[data-theme="dark"] {
+    --primary-color: #3AC499;
+    --primary-dark: #5DD9C1;
+    --secondary-color: #E8E6E1;
+    --accent-color: #FF6B6B;
+    --accent-light: #FFE66D;
+    
+    --bg-light: #181B1E;
+    --bg-light-alt: #1E2125;
+    --bg-light-secondary: #252A30;
+    
+    --text-light: #E8E6E1;
+    --text-light-secondary: #B8BAC2;
+    --text-light-tertiary: #7f8c8d;
+    
+    --border-light: #303235;
+}
+
+/* ==================== DARK MODE TRANSITIONS ==================== */
+html[data-theme="dark"] body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .theme-toggle {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .lang-btn {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .navbar {
+    background-color: var(--bg-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .nav-toggle span {
+    background-color: var(--text-light);
+}
+
+html[data-theme="dark"] .hero {
+    background: linear-gradient(135deg, #1a1d20 0%, #0f1114 100%);
+}
+
+html[data-theme="dark"] .hero::before {
+    opacity: 0.08;
+}
+
+html[data-theme="dark"] .hero::after {
+    opacity: 0.05;
+}
+
+html[data-theme="dark"] .about {
+    background-color: var(--bg-light);
+}
+
+html[data-theme="dark"] .summary-card {
+    background: linear-gradient(135deg, var(--bg-light-alt), var(--bg-light-secondary));
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .summary-card p {
+    color: var(--text-light-secondary);
+}
+
+html[data-theme="dark"] .timeline::before {
+    background: linear-gradient(180deg, var(--primary-color), transparent);
+}
+
+html[data-theme="dark"] .timeline-dot {
+    background-color: var(--primary-color);
+    border-color: var(--bg-light);
+}
+
+html[data-theme="dark"] .timeline-content {
+    background-color: var(--bg-light-alt);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .skill-category {
+    background-color: var(--bg-light-alt);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .skill-badge {
+    background-color: var(--bg-light-secondary);
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+html[data-theme="dark"] .skill-badge:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+html[data-theme="dark"] .projects {
+    background-color: var(--bg-light-alt);
+}
+
+html[data-theme="dark"] .project-card {
+    background-color: var(--bg-light);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .project-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme="dark"] .project-header {
+    border-bottom-color: var(--border-light);
+}
+
+html[data-theme="dark"] .project-footer {
+    border-top-color: var(--border-light);
+}
+
+html[data-theme="dark"] .projects-footer {
+    border-top-color: var(--border-light);
+}
+
+html[data-theme="dark"] .contact {
+    background: linear-gradient(135deg, #1a1d20 0%, #0f1114 100%);
+}
+
+html[data-theme="dark"] .social-link {
+    background-color: var(--bg-light-alt);
+    color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .social-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+html[data-theme="dark"] .form-group input,
+html[data-theme="dark"] .form-group textarea {
+    background-color: var(--bg-light-secondary);
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+html[data-theme="dark"] .form-group input:focus,
+html[data-theme="dark"] .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(58, 196, 153, 0.15);
+}
+
+html[data-theme="dark"] .form-group input::placeholder,
+html[data-theme="dark"] .form-group textarea::placeholder {
+    color: var(--text-light-tertiary);
+}
+
+html[data-theme="dark"] .form-group input,
+html[data-theme="dark"] .form-group textarea {
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+    box-shadow: 0 4px 12px rgba(58, 196, 153, 0.2);
+}

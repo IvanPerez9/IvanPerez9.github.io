@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iván Pérez - Full Stack Developer & Technical Lead">
+    <title data-i18n="title">Iván Pérez - Portfolio</title>
+    
+    <link rel="shortcut icon" href="assets/images/cv-green2.png" title="LogoIcon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/modern-style.css">
+    <link rel="stylesheet" href="assets/css/modern-dark.css">
+    <link rel="stylesheet" href="assets/css/modern-responsive.css">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="en" title="English">EN</button>
+        <button class="lang-btn" data-lang="es" title="Español">ES</button>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Ivan Pérez</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" data-i18n="navbar.home">Home</a></li>
+                <li><a href="#about" data-i18n="navbar.about">About me</a></li>
+                <li><a href="#projects" data-i18n="navbar.projects">Projects</a></li>
+                <li><a href="#contact" data-i18n="navbar.contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-greeting" data-i18n="hello">Hello! I am</span>
+                <h1 class="hero-title">Iván Pérez</h1>
+                <p class="hero-tagline" data-i18n="tagline">Software Engineer</p>
+                <p class="hero-subtitle">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-i18n="location">Madrid Area, Spain</span>
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span data-i18n="navbar.projects">View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="navbar.contact">Contact</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-avatar">
+                    <img src="assets/images/profile.jpg" alt="Iván Pérez">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                <span data-i18n="personalProfile.title">About Me</span>
+                <span class="title-line"></span>
+            </h2>
+
+            <!-- Summary -->
+            <div class="about-summary">
+                <div class="summary-card">
+                    <h3 data-i18n="summary.title">Career Profile</h3>
+                    <p data-i18n="summary.t1">I am team player software engineer with a can-do attitude, phenomenal time management skills, and a strong user focus. Energetic and deep creative thinker.</p>
+                </div>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="experience-section">
+                <h3 class="subsection-title">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Professional Experience</span>
+                </h3>
+                <div class="timeline">
+                    <!-- Experience Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="personalProfile.job2">Software Engineer | Backend Developer</h4>
+                            <p class="company" data-i18n="personalProfile.company3">VIEWNEXT</p>
+                            <p class="date" data-i18n="personalProfile.date3">Sep 2024 - Present</p>
+                            <ul class="experience-details">
+                                <li data-i18n="personalProfile.details.p20">Backend Developer for a major retail client, working with Java 17/21, Hexagonal architecture, Spring 6, and Maven to deliver scalable and maintainable solutions.</li>
+                                <li data-i18n="personalProfile.details.p21">Responsible for designing and executing automated tests using JUnit, Mockito, Sonar, and Grafana to ensure code quality and system reliability.</li>
+                                <li data-i18n="personalProfile.details.p23">Continuous Integration and Continuous Delivery (CI/CD) implementation using Github Actions and Openshift for efficient deployment pipelines.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="personalProfile.job2">Software Engineer | Backend Developer</h4>
+                            <p class="company" data-i18n="personalProfile.company2">Work4Data | I+D Software Lab</p>
+                            <p class="date" data-i18n="personalProfile.date2">Dec 2018 - Dec 2020</p>
+                            <ul class="experience-details">
+                                <li data-i18n="personalProfile.details.p11">Frontend and Backend development. Work with Spring Boot, AngularJS, Bootstrap, PostgreSQL, OracleSQL, MSSQL.</li>
+                                <li data-i18n="personalProfile.details.p16">Reactive Spring Data repositories and Maven as project management tool and MongoDB and OracleSQL as databases.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="personalProfile.job1">Freelance Developer</h4>
+                            <p class="company" data-i18n="personalProfile.company1">Personal and Collaborative projects</p>
+                            <p class="date" data-i18n="personalProfile.date1">2016 - Present</p>
+                            <ul class="experience-details">
+                                <li data-i18n="personalProfile.details.p1">Android app development simulating Space Invaders with testing tools like Selenium and BDD through Cucumber.</li>
+                                <li data-i18n="personalProfile.details.p2">Collaborating on developing a Telegram bot to automate multiple tasks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-section">
+                <h3 class="subsection-title">
+                    <i class="fas fa-code"></i>
+                    <span>Tech Stack</span>
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Backend</h4>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Java 17/21</span>
+                            <span class="skill-badge">Spring Boot 3</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Flask</span>
+                            <span class="skill-badge">Reactive Programming</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Database</h4>
+                        <div class="skill-badges">
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">MySQL/MariaDB</span>
+                            <span class="skill-badge">Oracle</span>
+                            <span class="skill-badge">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>DevOps & Tools</h4>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">Kubernetes</span>
+                            <span class="skill-badge">Git/GitHub</span>
+                            <span class="skill-badge">GitHub Actions</span>
+                            <span class="skill-badge">Jira</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frontend</h4>
+                        <div class="skill-badges">
+                            <span class="skill-badge">HTML5/CSS3</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Angular</span>
+                            <span class="skill-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Tech Skills</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                <span data-i18n="navbar.projects">Featured Projects</span>
+                <span class="title-line"></span>
+            </h2>
+
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 data-i18n="projects.card3.title">FitURJC</h3>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring</span>
+                            <span class="tag">Angular</span>
+                        </div>
+                    </div>
+                    <p class="project-description" data-i18n="projects.card3.description">A responsive website template designed to simulate a GYM</p>
+                    <ul class="project-details">
+                        <li data-i18n="projects.card3.line1">Worked with Spring FrameWork/Java, Angular 5, MySQL, Bootstrap Template and HTML/CSS.</li>
+                        <li data-i18n="projects.card3.line2">Implemented a REST full integration for Login, Sign up and administrate users, courses and classes inside the gym.</li>
+                        <li data-i18n="projects.card3.line4">Worked in a team of 4, implementing agile methods such as Scrum and Kanban board.</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/IvanPerez9" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 data-i18n="projects.card1.title">Competitive Programming</h3>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                    </div>
+                    <p class="project-description" data-i18n="projects.card1.description">Coding problems</p>
+                    <ul class="project-details">
+                        <li data-i18n="projects.card1.line1">A Repository for Competitive Coding Problems Solutions.</li>
+                        <li data-i18n="projects.card1.line2">Solving problems from 'Acepta el Reto', SPOJ, Kattis and other problem websites.</li>
+                        <li data-i18n="projects.card1.line3">Solving problems from different competitions such as Ada Byron, SWERC or '12 uvas'.</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/IvanPerez9" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 data-i18n="projects.card4.title">My Shell</h3>
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Systems</span>
+                        </div>
+                    </div>
+                    <p class="project-description" data-i18n="projects.card4.description">MINIMUM VIABLE VERSION OF A REAL SHELL</p>
+                    <ul class="project-details">
+                        <li data-i18n="projects.card4.line1">The implemented minishell pretends to works as the original. The idea is to provide a basic personal minishell.</li>
+                        <li data-i18n="projects.card4.line2">The main goal is to have a good understanding of process creation and synchronisation using the C programming language.</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/IvanPerez9" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 4 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 data-i18n="projects.card5.title">VS Code Custom Theme</h3>
+                        <div class="project-tags">
+                            <span class="tag">JSON</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                    <p class="project-description" data-i18n="projects.card5.description">My own customised vscode theme</p>
+                    <ul class="project-details">
+                        <li data-i18n="projects.card5.line1">Halloween inspired theme with mainly orange and purple colours.</li>
+                        <li data-i18n="projects.card5.line2">Available as an extension in the Microsoft market place.</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/IvanPerez9" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 5 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 data-i18n="projects.card2.title">Portfolio</h3>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <p class="project-description" data-i18n="projects.card2.description">Personal web</p>
+                    <ul class="project-details">
+                        <li data-i18n="projects.card2.line1">My personal portfolio which features some of my github projects as well as my resume, technical skills and ways to contact me.</li>
+                        <li data-i18n="projects.card2.line3">Fully responsive, multi-page layout, styled with Bootstrap and CSS and support dark and light theme.</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/IvanPerez9/IvanPerez9.github.io" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 6 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 data-i18n="projects.card6.title">Netflix Scraper</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Selenium</span>
+                        </div>
+                    </div>
+                    <p class="project-description">Web Scraping</p>
+                    <ul class="project-details">
+                        <li data-i18n="projects.card6.line1">Movies and series from Netflix 'My List' that are going to be removed soon.</li>
+                        <li data-i18n="projects.card6.line2">Done with Python and WebScraping with Selenium webdriver.</li>
+                    </ul>
+                    <div class="project-footer">
+                        <a href="https://github.com/IvanPerez9" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-footer">
+                <p>¿Interested in more projects?</p>
+                <a href="https://github.com/IvanPerez9" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    <span>Visit my GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                <span data-i18n="navbar.contact">Get in Touch</span>
+                <span class="title-line"></span>
+            </h2>
+
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p class="contact-intro">Let's create something amazing together! Feel free to reach out.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/IvanPerez9" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ivanperezorellana" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/IvanPerez9Dev" target="_blank" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:your-email@example.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Iván Pérez. All rights reserved.</p>
+            <p>Designed & built with <i class="fas fa-heart"></i> by Iván Pérez</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/translator.js"></script>
+    <script src="assets/js/modern-main.js"></script>
+</body>
+
+</html>
