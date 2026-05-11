@@ -151,6 +151,7 @@
   },
   "skills": {
     "title": "Habilidades & Competencia",
+    "techStack": "Stack Técnico",
     "p1": "Desarrollador backend con pasión por las APIs. Con un gran interés en Estructura de datos, Algoritmia y la resolución de problemas",
     "p2": "Conocimiento sólido sobre los sistemas de control de versiones (Git) y estrategias eficientes de administración de ramas y mergeo.",
     "p3": "Experiencia usando herramientas de desarrollo ágil e integración continua.",

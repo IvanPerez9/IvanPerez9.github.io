@@ -152,6 +152,7 @@
   },
   "skills": {
     "title": "Skills & Proficiency",
+    "techStack": "Tech Stack",
     "p1": "Backend developer with passion for APIs. Great interest in Problem solving, Datastructures and Algorithms.",
     "p2": "Solid working knowledge of source control management systems (i.e. Git) and effective code branching/merging strategies.",
     "p3": "Experience using Agile development methodology and Continuous Integration/Delivery.",

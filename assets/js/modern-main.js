@@ -1,100 +1,135 @@
 import Translator from "./translator.js";
 
 /* ==================== TRANSLATOR ==================== */
-const translator = new Translator({
-    persist: false,
-    languages: ["en", "es"],
-    defaultLanguage: "es",
-    detectLanguage: true,
-    filesLocation: "/i18n"
-});
+let translator = null;
+let translatorReady = false;
 
-translator.load();
+// Initialize translator when DOM is ready
+function initializeTranslator() {
+    try {
+        translator = new Translator({
+            persist: true,
+            languages: ["en", "es"],
+            defaultLanguage: "es",
+            detectLanguage: true,
+            filesLocation: "./i18n"
+        });
+        
+        // Load with saved language or default
+        translator.load();
+        translatorReady = true;
+        
+        console.log('Translator initialized successfully');
+        console.log('Current language:', localStorage.getItem('language') || 'system default');
+        
+        // NOW register the language button event listeners
+        setupLanguageButtons();
+        setInitialLanguageButton();
+        
+    } catch (err) {
+        console.error('Failed to initialize Translator:', err);
+        translatorReady = false;
+    }
+}
 
 /* ==================== LANGUAGE SELECTOR ==================== */
-const langButtons = document.querySelectorAll('.lang-btn');
-langButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        const lang = e.target.getAttribute('data-lang');
-        translator.load(lang);
-        
-        // Update active state
-        langButtons.forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
-        
-        // Update page with new language
-        updatePageContent();
+function setupLanguageButtons() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    console.log('Setting up language buttons, found:', langButtons.length);
+    
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lang = e.target.getAttribute('data-lang');
+            console.log('Language change requested:', lang);
+            
+            if (translatorReady && translator) {
+                translator.load(lang);
+                localStorage.setItem('language', lang);
+                console.log('Language changed to:', lang);
+            } else {
+                console.warn('Translator not ready');
+            }
+            
+            // Update active state
+            langButtons.forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+        });
     });
-});
-
-/* Set initial active language */
-const savedLang = localStorage.getItem('lang') || 'es';
-document.querySelector(`[data-lang="${savedLang}"]`)?.classList.add('active');
-
-/* ==================== THEME TOGGLE ==================== */
-const themeToggle = document.getElementById('themeToggle');
-const htmlElement = document.documentElement;
-
-// Initialize theme from localStorage or system preference
-function initializeTheme() {
-    const savedTheme = localStorage.getItem('theme');
-    let theme = savedTheme;
-    
-    if (!theme) {
-        // Check system preference
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        theme = prefersDark ? 'dark' : 'light';
-    }
-    
-    setTheme(theme);
 }
 
-function setTheme(theme) {
-    htmlElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-    updateThemeIcon(theme);
-}
-
-function updateThemeIcon(theme) {
-    if (theme === 'dark') {
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    } else {
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+function setInitialLanguageButton() {
+    const savedLang = localStorage.getItem('language') || 'en';
+    const initialLangBtn = document.querySelector(`[data-lang="${savedLang}"]`);
+    console.log('Setting initial language button, saved lang:', savedLang);
+    if (initialLangBtn) {
+        initialLangBtn.classList.add('active');
     }
 }
 
-themeToggle.addEventListener('click', () => {
-    const currentTheme = htmlElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
-});
+// Initialize translator when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeTranslator);
+} else {
+    initializeTranslator();
+}
 
-// Initialize theme on page load
-initializeTheme();
+/* ==================== DARK LIGHT THEME ==== */
 
-// Listen for system theme changes
-window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
-    if (!localStorage.getItem('theme')) {
-        const theme = e.matches ? 'dark' : 'light';
-        setTheme(theme);
-    }
-});
+let toggle = document.getElementById('themeToggle');
+
+// Initialize theme from localStorage
+let theme = localStorage.getItem('data-theme');
+if (localStorage.getItem('data-theme') == null) {
+    localStorage.setItem('data-theme', 'light');
+    theme = 'light';
+}
+
+// Apply saved theme
+if (theme == 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    if (toggle) toggle.innerHTML = '<i class="fas fa-sun"></i>';
+} else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    if (toggle) toggle.innerHTML = '<i class="fas fa-moon"></i>';
+}
+
+// Theme toggle handler
+if (toggle) {
+    toggle.addEventListener('click', function() {
+        let currentTheme = document.documentElement.getAttribute('data-theme');
+        let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('data-theme', newTheme);
+        
+        if (newTheme === 'dark') {
+            toggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            toggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+        
+        console.log('Theme changed to:', newTheme);
+    });
+}
 
 /* ==================== NAVBAR MOBILE MENU ==================== */
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav-menu a');
 
-navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    navToggle.classList.toggle('active');
-});
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
+    });
+}
 
 // Close menu when a link is clicked
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
-        navToggle.classList.remove('active');
+        if (navToggle) navToggle.classList.remove('active');
     });
 });
 
@@ -102,7 +137,7 @@ navLinks.forEach(link => {
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav-container')) {
         navMenu.classList.remove('active');
-        navToggle.classList.remove('active');
+        if (navToggle) navToggle.classList.remove('active');
     }
 });
 
@@ -138,7 +173,6 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe project cards and other elements
 document.querySelectorAll('.project-card, .timeline-item, .skill-category, .stat-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
@@ -146,100 +180,24 @@ document.querySelectorAll('.project-card, .timeline-item, .skill-category, .stat
     observer.observe(el);
 });
 
-/* ==================== CONTACT FORM HANDLING ==================== */
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        
-        try {
-            // Show loading state
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Sending...</span>';
-            submitBtn.disabled = true;
-            
-            // Here you can add your form submission logic
-            // For now, just simulate success
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            
-            // Reset form
-            contactForm.reset();
-            submitBtn.innerHTML = '<span>Message sent!</span> <i class="fas fa-check"></i>';
-            
-            // Reset button after 3 seconds
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 3000);
-        } catch (error) {
-            console.error('Form submission error:', error);
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
+/* ==================== NAVBAR SCROLL EFFECT ==================== */
+const navbar = document.querySelector('.navbar');
+if (navbar) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        } else {
+            navbar.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.05)';
         }
     });
 }
 
-/* ==================== PAGE CONTENT UPDATES ==================== */
-function updatePageContent() {
-    // Re-render any dynamic content if needed
-    // This function is called when language changes
-    const event = new CustomEvent('languageChanged');
-    document.dispatchEvent(event);
-}
-
-/* ==================== NAVBAR SCROLL EFFECT ==================== */
-const navbar = document.querySelector('.navbar');
-let lastScrollY = 0;
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
-    } else {
-        navbar.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.05)';
-    }
-    lastScrollY = window.scrollY;
-});
-
-/* ==================== PERFORMANCE: LAZY LOADING ==================== */
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                if (img.dataset.src) {
-                    img.src = img.dataset.src;
-                    img.removeAttribute('data-src');
-                }
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-
-    document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
-    });
-}
-
 /* ==================== ACCESSIBILITY ==================== */
-// Focus management for keyboard navigation
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-        navMenu.classList.remove('active');
-        navToggle.classList.remove('active');
+        if (navMenu) navMenu.classList.remove('active');
+        if (navToggle) navToggle.classList.remove('active');
     }
-});
-
-/* ==================== PAGE TRANSITIONS ==================== */
-window.addEventListener('beforeunload', () => {
-    document.body.style.opacity = '0.8';
-});
-
-// Fade in on page load
-window.addEventListener('load', () => {
-    document.body.style.opacity = '1';
 });
 
 /* ==================== NAVIGATION STATE ==================== */
@@ -260,7 +218,8 @@ function updateActiveNavLink() {
 }
 
 window.addEventListener('scroll', updateActiveNavLink);
-updateActiveNavLink();
+document.addEventListener('DOMContentLoaded', updateActiveNavLink);
 
 /* ==================== INITIALIZATION ==================== */
 console.log('Modern Portfolio loaded successfully!');
+
