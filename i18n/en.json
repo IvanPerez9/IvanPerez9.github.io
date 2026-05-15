@@ -48,6 +48,9 @@
     "date1": "2016 - Present",
     "date2": "Dec 2018 - Dec 2020",
     "date3": "Sep 2024 - Present",
+    "date4": "Feb 2021 - Sep 2024",
+    "date5": "Dec 2023 - Sep 2024",
+    "date6": "Feb 2021 - Dec 2023",
     "company1": "Personal and Collaborative projects",
     "company2": "Work4Data | I+D Software Lab",
     "company3": "VIEWNEXT",
@@ -104,6 +107,14 @@
     }
   },
   "projects":{
+    "card0":{
+      "title": "WatchLog",
+      "description": "Movies, series and books library manager",
+      "languaje": "React, Supabase, Netlify",
+      "line1":"Web application to manage your movies, series and books library. Track watched/read, pending, and in-progress items with automatic TMDB and Google Books synchronization.",
+      "line2":"Frontend built with React. First real project with modern web technologies.",
+      "line3":"Backend with Supabase (PostgreSQL + RLS policies, auth layer). Deployed on Netlify with auto deploys."
+    },
     "card1":{
       "title": "Competitive Programing",
       "description": "Coding problems",

@@ -22,9 +22,8 @@ function initializeTranslator() {
         console.log('Translator initialized successfully');
         console.log('Current language:', localStorage.getItem('language') || 'system default');
         
-        // NOW register the language button event listeners
+        // Register the language button event listeners and initialize state
         setupLanguageButtons();
-        setInitialLanguageButton();
         
     } catch (err) {
         console.error('Failed to initialize Translator:', err);
@@ -43,6 +42,10 @@ function setupLanguageButtons() {
             const lang = e.target.getAttribute('data-lang');
             console.log('Language change requested:', lang);
             
+            // Update button states FIRST before changing language
+            langButtons.forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            
             if (translatorReady && translator) {
                 translator.load(lang);
                 localStorage.setItem('language', lang);
@@ -50,20 +53,16 @@ function setupLanguageButtons() {
             } else {
                 console.warn('Translator not ready');
             }
-            
-            // Update active state
-            langButtons.forEach(b => b.classList.remove('active'));
-            e.target.classList.add('active');
         });
     });
-}
-
-function setInitialLanguageButton() {
+    
+    // Set initial state
     const savedLang = localStorage.getItem('language') || 'en';
-    const initialLangBtn = document.querySelector(`[data-lang="${savedLang}"]`);
-    console.log('Setting initial language button, saved lang:', savedLang);
-    if (initialLangBtn) {
-        initialLangBtn.classList.add('active');
+    const savedBtn = document.querySelector(`[data-lang="${savedLang}"]`);
+    if (savedBtn) {
+        langButtons.forEach(b => b.classList.remove('active'));
+        savedBtn.classList.add('active');
+        console.log('Language button initialized to:', savedLang);
     }
 }
 

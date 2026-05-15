@@ -165,3 +165,71 @@ html[data-theme="dark"] .form-group textarea {
 html[data-theme="dark"] .theme-toggle:hover {
     box-shadow: 0 4px 12px rgba(58, 196, 153, 0.2);
 }
+
+/* ==================== DARK MODE TIMELINE ==================== */
+html[data-theme="dark"] .timeline::before {
+    background: linear-gradient(180deg, var(--primary-color), transparent);
+}
+
+html[data-theme="dark"] .timeline-dot {
+    background-color: var(--primary-color);
+    border-color: var(--bg-light);
+}
+
+html[data-theme="dark"] .timeline-content {
+    background-color: var(--bg-light-alt);
+    border-left-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .timeline-content:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme="dark"] .company-header {
+    border-bottom-color: var(--border-light);
+}
+
+html[data-theme="dark"] .company-name {
+    color: var(--primary-color);
+}
+
+html[data-theme="dark"] .company-period {
+    color: var(--text-light-tertiary);
+}
+
+/* Dark mode nested roles */
+html[data-theme="dark"] .nested-roles::before {
+    background-color: var(--border-light);
+}
+
+html[data-theme="dark"] .nested-dot {
+    background-color: var(--primary-color);
+    border-color: var(--bg-light-alt);
+    box-shadow: 0 0 0 2px var(--bg-light-alt);
+}
+
+html[data-theme="dark"] .nested-role.promoted {
+    background-color: rgba(58, 196, 153, 0.08);
+}
+
+html[data-theme="dark"] .nested-role.promoted .nested-dot {
+    background-color: var(--accent-light);
+    border-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .nested-content h5 {
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .role-date {
+    color: var(--text-light-tertiary);
+}
+
+html[data-theme="dark"] .experience-details li {
+    color: var(--text-light-secondary);
+}
+
+html[data-theme="dark"] .experience-details li::before {
+    color: var(--primary-color);
+}
