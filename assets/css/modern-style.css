@@ -591,14 +591,6 @@ img {
     padding-left: 1.5rem;
 }
 
-.nested-role.promoted {
-    background-color: rgba(58, 196, 153, 0.05);
-    padding: 1rem;
-    border-radius: var(--radius-md);
-    margin-left: -1rem;
-    padding-left: 2.5rem;
-}
-
 .nested-dot {
     position: absolute;
     left: -12px;
@@ -610,14 +602,6 @@ img {
     border-radius: 50%;
     box-shadow: 0 0 0 2px var(--bg-light-alt);
     z-index: 1;
-}
-
-.nested-role.promoted .nested-dot {
-    width: 12px;
-    height: 12px;
-    left: -13px;
-    background-color: var(--accent-light);
-    border-color: var(--primary-color);
 }
 
 .nested-content h5 {

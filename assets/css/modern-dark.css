@@ -209,15 +209,6 @@ html[data-theme="dark"] .nested-dot {
     box-shadow: 0 0 0 2px var(--bg-light-alt);
 }
 
-html[data-theme="dark"] .nested-role.promoted {
-    background-color: rgba(58, 196, 153, 0.08);
-}
-
-html[data-theme="dark"] .nested-role.promoted .nested-dot {
-    background-color: var(--accent-light);
-    border-color: var(--primary-color);
-}
-
 html[data-theme="dark"] .nested-content h5 {
     color: var(--text-light);
 }
