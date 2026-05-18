@@ -139,6 +139,18 @@ html[data-theme="dark"] .social-link:hover {
     color: white;
 }
 
+html[data-theme="dark"] .hero-email {
+    color: var(--text-light-secondary);
+}
+
+html[data-theme="dark"] .hero-email a {
+    color: var(--text-light-secondary);
+}
+
+html[data-theme="dark"] .hero-email a:hover {
+    color: var(--primary-color);
+}
+
 html[data-theme="dark"] .form-group input,
 html[data-theme="dark"] .form-group textarea {
     background-color: var(--bg-light-secondary);

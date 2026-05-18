@@ -219,6 +219,37 @@ function updateActiveNavLink() {
 window.addEventListener('scroll', updateActiveNavLink);
 document.addEventListener('DOMContentLoaded', updateActiveNavLink);
 
+/* ==================== BACK TO TOP BUTTON ==================== */
+function setupBackToTopButton() {
+    const backToTopBtn = document.getElementById('backToTop');
+    if (!backToTopBtn) return;
+
+    // Show/hide button based on proximity to bottom of page
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight;
+        const windowHeight = window.innerHeight;
+        const distanceFromBottom = docHeight - (scrollTop + windowHeight);
+
+        // Show button only when within 500px of the bottom
+        if (distanceFromBottom < 500) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+
+    // Scroll to top when button is clicked
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', setupBackToTopButton);
+
 /* ==================== INITIALIZATION ==================== */
 console.log('Modern Portfolio loaded successfully!');
 
