@@ -236,3 +236,17 @@ html[data-theme="dark"] .experience-details li {
 html[data-theme="dark"] .experience-details li::before {
     color: var(--primary-color);
 }
+
+/* ==================== DARK MODE FOOTER ==================== */
+html[data-theme="dark"] .footer {
+    background-color: var(--bg-light-alt);
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .footer p {
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .footer i {
+    color: var(--accent-color);
+}
