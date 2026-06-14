@@ -176,7 +176,15 @@
     "email": "Enter email address:",
     "subject": "Enter subject:",
     "message": "Enter message:",
-    "send": "Send Message"
+    "send": "Send Message",
+    "placeholderName": "Your name",
+    "placeholderEmail": "Your email",
+    "placeholderMessage": "Your message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent Successfully!",
+    "successMessage": "Thank you for reaching out. I'll get back to you as soon as possible.",
+    "viewProjects": "View My Projects",
+    "sendAnother": "Send Another"
   },
   "confirmation":{
     "emailTitle": "Thank You !",

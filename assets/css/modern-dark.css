@@ -237,6 +237,15 @@ html[data-theme="dark"] .experience-details li::before {
     color: var(--primary-color);
 }
 
+/* ==================== DARK MODE FORM SUCCESS ==================== */
+html[data-theme="dark"] .form-success-message h3 {
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .form-success-message p {
+    color: var(--text-light-secondary);
+}
+
 /* ==================== DARK MODE FOOTER ==================== */
 html[data-theme="dark"] .footer {
     background-color: var(--bg-light-alt);

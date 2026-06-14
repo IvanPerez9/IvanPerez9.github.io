@@ -175,7 +175,15 @@
     "email": "Introduce tu correo electrónico:",
     "subject": "Introduce el asunto:",
     "message": "Introduce el mensaje:",
-    "send": "Enviar mensaje"
+    "send": "Enviar mensaje",
+    "placeholderName": "Tu nombre",
+    "placeholderEmail": "Tu correo electrónico",
+    "placeholderMessage": "Tu mensaje",
+    "sending": "Enviando...",
+    "successTitle": "¡Mensaje enviado correctamente!",
+    "successMessage": "Gracias por contactar. Te responderé lo antes posible.",
+    "viewProjects": "Ver proyectos",
+    "sendAnother": "Enviar otro"
   },
   "confirmation":{
     "emailTitle": "¡Gracias!",

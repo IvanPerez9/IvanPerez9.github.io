@@ -985,6 +985,79 @@ img {
     min-height: 120px;
 }
 
+/* ==================== FORM SUCCESS MESSAGE ==================== */
+.form-success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    animation: slideInUp 0.5s ease forwards;
+}
+
+.form-success-message i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    animation: scaleIn 0.6s ease;
+}
+
+.form-success-message h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-success-message p {
+    color: var(--text-light-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    max-width: 500px;
+}
+
+.form-success-actions {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-success-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all var(--transition-base);
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 /* ==================== FOOTER ==================== */
 .footer {
     background-color: var(--secondary-color);

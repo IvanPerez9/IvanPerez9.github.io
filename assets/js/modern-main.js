@@ -250,6 +250,101 @@ function setupBackToTopButton() {
 
 document.addEventListener('DOMContentLoaded', setupBackToTopButton);
 
+/* ==================== CONTACT FORM ==================== */
+function setupContactForm() {
+    const contactForm = document.getElementById('contactForm');
+    const contactFormContainer = document.getElementById('contactFormContainer');
+    
+    if (!contactForm) return;
+    
+    // Function to update placeholders when language changes
+    function updateFormPlaceholders() {
+        const inputs = contactForm.querySelectorAll('[data-placeholder]');
+        inputs.forEach(input => {
+            const key = input.getAttribute('data-placeholder');
+            if (translator && typeof translator.t === 'function') {
+                input.placeholder = translator.t(key);
+            }
+        });
+    }
+    
+    // Update placeholders initially
+    updateFormPlaceholders();
+    
+    // Listen to language changes - hook into translator's load method
+    const originalLoad = translator.load.bind(translator);
+    translator.load = function(lang) {
+        originalLoad(lang);
+        updateFormPlaceholders();
+    };
+
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalButtonContent = submitButton.innerHTML;
+        
+        try {
+            // Disable button and show loading state
+            submitButton.disabled = true;
+            
+            // Get translated "Sending..." text
+            const sendingText = translator && typeof translator.t === 'function' 
+                ? translator.t('contact.sending') 
+                : 'Sending...';
+            
+            submitButton.innerHTML = `<i class="fas fa-spinner fa-spin"></i> <span>${sendingText}</span>`;
+            
+            // Collect form data
+            const formData = new FormData(contactForm);
+            
+            // Send to 99inbound
+            const response = await fetch('https://app.99inbound.com/api/e/tYC6PXfp', {
+                method: 'POST',
+                body: formData
+            });
+            
+            // Show success message
+            showSuccessMessage(contactFormContainer);
+            
+        } catch (error) {
+            console.error('Error sending form:', error);
+            submitButton.innerHTML = originalButtonContent;
+            submitButton.disabled = false;
+            alert('Error sending message. Please try again.');
+        }
+    });
+}
+
+function showSuccessMessage(container) {
+    const successHTML = `
+        <div class="form-success-message">
+            <i class="fas fa-check-circle"></i>
+            <h3 data-i18n="contact.successTitle">Message Sent Successfully!</h3>
+            <p data-i18n="contact.successMessage">Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            <div class="form-success-actions">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='#projects'">
+                    <span data-i18n="contact.viewProjects">View My Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" onclick="location.reload()">
+                    <span data-i18n="contact.sendAnother">Send Another</span>
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+        </div>
+    `;
+    
+    container.innerHTML = successHTML;
+    
+    // Apply translations to the newly created elements
+    if (translator && typeof translator.updatePageTranslations === 'function') {
+        translator.updatePageTranslations();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', setupContactForm);
+
 /* ==================== INITIALIZATION ==================== */
 console.log('Modern Portfolio loaded successfully!');
 
