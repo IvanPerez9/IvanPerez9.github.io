@@ -15,18 +15,12 @@ function initializeTranslator() {
             filesLocation: "./i18n"
         });
         
-        // Load with saved language or default
         translator.load();
         translatorReady = true;
         
-        console.log('Translator initialized successfully');
-        console.log('Current language:', localStorage.getItem('language') || 'system default');
-        
-        // Register the language button event listeners and initialize state
         setupLanguageButtons();
         
     } catch (err) {
-        console.error('Failed to initialize Translator:', err);
         translatorReady = false;
     }
 }
@@ -34,35 +28,27 @@ function initializeTranslator() {
 /* ==================== LANGUAGE SELECTOR ==================== */
 function setupLanguageButtons() {
     const langButtons = document.querySelectorAll('.lang-btn');
-    console.log('Setting up language buttons, found:', langButtons.length);
     
     langButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             const lang = e.target.getAttribute('data-lang');
-            console.log('Language change requested:', lang);
             
-            // Update button states FIRST before changing language
             langButtons.forEach(b => b.classList.remove('active'));
             e.target.classList.add('active');
             
             if (translatorReady && translator) {
                 translator.load(lang);
                 localStorage.setItem('language', lang);
-                console.log('Language changed to:', lang);
-            } else {
-                console.warn('Translator not ready');
             }
         });
     });
     
-    // Set initial state
     const savedLang = localStorage.getItem('language') || 'en';
     const savedBtn = document.querySelector(`[data-lang="${savedLang}"]`);
     if (savedBtn) {
         langButtons.forEach(b => b.classList.remove('active'));
         savedBtn.classList.add('active');
-        console.log('Language button initialized to:', savedLang);
     }
 }
 
@@ -75,25 +61,29 @@ if (document.readyState === 'loading') {
 
 /* ==================== DARK LIGHT THEME ==== */
 
-let toggle = document.getElementById('themeToggle');
+const toggle = document.getElementById('themeToggle');
+const toggleIcon = toggle ? toggle.querySelector('i') : null;
 
-// Initialize theme from localStorage
 let theme = localStorage.getItem('data-theme');
-if (localStorage.getItem('data-theme') == null) {
+if (theme == null) {
     localStorage.setItem('data-theme', 'light');
     theme = 'light';
 }
 
-// Apply saved theme
-if (theme == 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    if (toggle) toggle.innerHTML = '<i class="fas fa-sun"></i>';
-} else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    if (toggle) toggle.innerHTML = '<i class="fas fa-moon"></i>';
+function setThemeIcon(newTheme) {
+    if (!toggleIcon) return;
+    toggleIcon.classList.remove('fa-moon', 'fa-sun');
+    toggleIcon.classList.add(newTheme === 'dark' ? 'fa-sun' : 'fa-moon');
 }
 
-// Theme toggle handler
+if (theme == 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    setThemeIcon('dark');
+} else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    setThemeIcon('light');
+}
+
 if (toggle) {
     toggle.addEventListener('click', function() {
         let currentTheme = document.documentElement.getAttribute('data-theme');
@@ -101,14 +91,7 @@ if (toggle) {
         
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('data-theme', newTheme);
-        
-        if (newTheme === 'dark') {
-            toggle.innerHTML = '<i class="fas fa-sun"></i>';
-        } else {
-            toggle.innerHTML = '<i class="fas fa-moon"></i>';
-        }
-        
-        console.log('Theme changed to:', newTheme);
+        setThemeIcon(newTheme);
     });
 }
 
@@ -344,7 +327,4 @@ function showSuccessMessage(container) {
 }
 
 document.addEventListener('DOMContentLoaded', setupContactForm);
-
-/* ==================== INITIALIZATION ==================== */
-console.log('Modern Portfolio loaded successfully!');
 

@@ -168,6 +168,12 @@
     "p3": "Experiencia usando herramientas de desarrollo ágil e integración continua.",
     "p4": "Conocimientos generales sobre el ecosistema de Spring (Spring Boot, Spring REST, Spring MVC, Spring Security)"
   },
+  "stats": {
+    "yearsExperience": "Años de Experiencia",
+    "projectsCompleted": "Proyectos Completados",
+    "techSkills": "Habilidades Técnicas",
+    "certifications": "Certificaciones"
+  },
   "contact": {
     "touch1": "Pongámonos en contacto",
     "touch2": "contacto",

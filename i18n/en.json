@@ -169,6 +169,12 @@
     "p3": "Experience using Agile development methodology and Continuous Integration/Delivery.",
     "p4": "General knowledge of Spring and the Spring ecosystem (Spring Boot, Spring REST, Spring MVC, Spring Security)"
   },
+  "stats": {
+    "yearsExperience": "Years Experience",
+    "projectsCompleted": "Projects Completed",
+    "techSkills": "Tech Skills",
+    "certifications": "Certifications"
+  },
   "contact": {
     "touch1": "Let's get in touch",
     "touch2": "touch",
