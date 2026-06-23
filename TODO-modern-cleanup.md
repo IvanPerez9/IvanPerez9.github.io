@@ -12,7 +12,7 @@ Eliminar todo lo relacionado con el diseño clásico (Bootstrap/jQuery) y dejar 
 - [ ] `contact.html` — Página de contacto clásica
 - [ ] `confirmation.html` — Página de confirmación de formulario
 
-## CSS — Borrar (15 archivos)
+## CSS — Borrar (14 archivos)
 
 - [ ] `assets/css/base.css`
 - [ ] `assets/css/navbar.css`
@@ -21,7 +21,7 @@ Eliminar todo lo relacionado con el diseño clásico (Bootstrap/jQuery) y dejar 
 - [ ] `assets/css/contact.css`
 - [ ] `assets/css/skillSet.css`
 - [ ] `assets/css/confirmation.css`
-- [x] `assets/css/404.css` — ~~Rehecho para diseño moderno~~
+- [x] ~~`assets/css/404.css`~~ — Rehecho para diseño moderno
 - [ ] `assets/css/toggleDarkLight.css`
 - [ ] `assets/css/darkThemeCSS/baseDark.css`
 - [ ] `assets/css/darkThemeCSS/navbarDark.css`
@@ -88,7 +88,7 @@ Keys candidatas a eliminar:
 - [ ] `projects.card4`, `projects.card5`, `projects.card6`
 - [ ] `skills.p1`, `skills.p2`, `skills.p3`, `skills.p4` (revisar si moderno las usa)
 - [ ] `confirmation.*`
-- [ ] `404.*` — Se mantiene, usado por 404.html moderno
+- [x] ~~`404.*`~~ — Se mantiene, usado por 404.html moderno
 
 ---
 
@@ -97,7 +97,7 @@ Keys candidatas a eliminar:
 | Categoría | Archivos |
 |---|---|
 | **Modern HTML** | `index-modern.html`, `404.html` |
-| **Modern CSS** | `modern-style.css`, `modern-dark.css`, `modern-responsive.css` |
+| **Modern CSS** | `modern-style.css`, `modern-dark.css`, `modern-responsive.css`, `404.css` |
 | **Modern JS** | `modern-main.js`, `translator.js` |
 | **i18n** | `i18n/en.json`, `i18n/es.json` (limpiados) |
 | **PDFs** | `PDFs/IvanPerezHuete_CV.pdf`, `PDFs/IvanPerezHuete_CV_en.pdf` |
@@ -110,4 +110,3 @@ Keys candidatas a eliminar:
 
 - GroceryList y Weekly son **completamente standalone** — no dependen de Bootstrap/jQuery ni del diseño clásico. Se pueden dejar tal cual.
 - Si se quieren ocultar de buscadores: añadir `<meta name="robots" content="noindex">` en ambos HTMLs.
-- El `404.html` y su CSS se podrían rehacer con el estilo moderno.
