@@ -158,7 +158,9 @@
       "languaje": "Python + WebScraping",
       "line1":"Peliculas y series que van a ser quitadas de 'My list' en Netflix.",
       "line2":"Hecho con Python y el webDriver de Selenium para webScraping."
-    }
+    },
+    "interested": "¿Te interesan más proyectos?",
+    "visitGithub": "Visita mi GitHub"
   },
   "skills": {
     "title": "Habilidades & Competencia",
@@ -196,6 +198,8 @@
     "emailMessage": "Email recibido correctamente."
   },
   "404":{
-    "text":"¡Vaya! Página No Encontrada"
+    "text":"¡Vaya! Página No Encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "goBack": "Volver al Inicio"
   }
 }

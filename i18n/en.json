@@ -159,7 +159,9 @@
       "languaje": "Python + WebScraping",
       "line1":"Movies and series from Netflix 'My List' that are going to be removed soon.",
       "line2":"Done with Python and WebScraping with Selenium webdriver."
-    }
+    },
+    "interested": "¿Interested in more projects?",
+    "visitGithub": "Visit my GitHub"
   },
   "skills": {
     "title": "Skills & Proficiency",
@@ -197,6 +199,8 @@
     "emailMessage": "Your submission has been received."
   },
   "404":{
-    "text":"Oops! Page Not Found"
+    "text":"Oops! Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goBack": "Go Back Home"
   }
 }

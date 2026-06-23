@@ -1,7 +1,7 @@
 /* ==================== DARK MODE VARIABLES ==================== */
 html[data-theme="dark"] {
     --primary-color: #3AC499;
-    --primary-dark: #5DD9C1;
+    --primary-dark: #2dd4a8;
     --secondary-color: #E8E6E1;
     --accent-color: #FF6B6B;
     --accent-light: #FFE66D;
