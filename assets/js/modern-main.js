@@ -95,6 +95,35 @@ if (toggle) {
     });
 }
 
+/* ==================== CV DOWNLOAD ==================== */
+function updateCvLink() {
+    const cvLink = document.getElementById('cvDownload');
+    if (!cvLink) return;
+    
+    const currentLang = localStorage.getItem('language') || 'es';
+    
+    if (currentLang === 'es') {
+        cvLink.href = '/PDFs/IvanPerezHuete_CV.pdf';
+        cvLink.querySelector('span').textContent = 'Descargar CV';
+    } else {
+        cvLink.href = '/PDFs/IvanPerezHuete_CV_en.pdf';
+        cvLink.querySelector('span').textContent = 'Download CV';
+    }
+}
+
+// Update CV link on page load
+document.addEventListener('DOMContentLoaded', updateCvLink);
+
+// Update CV link when language changes
+const originalTranslatorLoad = translator && typeof translator.load === 'function' ? translator.load.bind(translator) : null;
+if (translator) {
+    const origLoad = translator.load.bind(translator);
+    translator.load = function(lang) {
+        origLoad(lang);
+        setTimeout(updateCvLink, 100);
+    };
+}
+
 /* ==================== NAVBAR MOBILE MENU ==================== */
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');

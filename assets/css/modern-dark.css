@@ -6,15 +6,15 @@ html[data-theme="dark"] {
     --accent-color: #FF6B6B;
     --accent-light: #FFE66D;
     
-    --bg-light: #181B1E;
-    --bg-light-alt: #1E2125;
-    --bg-light-secondary: #252A30;
+    --bg-light: #121214;
+    --bg-light-alt: #1a1a1e;
+    --bg-light-secondary: #222226;
     
     --text-light: #E8E6E1;
-    --text-light-secondary: #B8BAC2;
-    --text-light-tertiary: #7f8c8d;
+    --text-light-secondary: #9ca3af;
+    --text-light-tertiary: #6b7280;
     
-    --border-light: #303235;
+    --border-light: #2a2a2e;
 }
 
 /* ==================== DARK MODE TRANSITIONS ==================== */
@@ -36,8 +36,8 @@ html[data-theme="dark"] .lang-btn {
 }
 
 html[data-theme="dark"] .navbar {
-    background-color: var(--bg-light);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(18, 18, 20, 0.9);
+    border-bottom-color: var(--border-light);
 }
 
 html[data-theme="dark"] .nav-toggle span {
@@ -45,15 +45,12 @@ html[data-theme="dark"] .nav-toggle span {
 }
 
 html[data-theme="dark"] .hero {
-    background: linear-gradient(135deg, #1a1d20 0%, #0f1114 100%);
+    background-color: var(--bg-light);
 }
 
-html[data-theme="dark"] .hero::before {
-    opacity: 0.08;
-}
-
+html[data-theme="dark"] .hero::before,
 html[data-theme="dark"] .hero::after {
-    opacity: 0.05;
+    display: none;
 }
 
 html[data-theme="dark"] .about {
@@ -61,8 +58,8 @@ html[data-theme="dark"] .about {
 }
 
 html[data-theme="dark"] .summary-card {
-    background: linear-gradient(135deg, var(--bg-light-alt), var(--bg-light-secondary));
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--bg-light-alt);
+    border-color: var(--border-light);
 }
 
 html[data-theme="dark"] .summary-card p {
@@ -85,18 +82,31 @@ html[data-theme="dark"] .timeline-content {
 
 html[data-theme="dark"] .skill-category {
     background-color: var(--bg-light-alt);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 html[data-theme="dark"] .skill-badge {
-    background-color: var(--bg-light-secondary);
-    color: var(--text-light);
-    border-color: var(--border-light);
+    background-color: rgba(58, 196, 153, 0.1);
+    color: var(--primary-color);
+    border-color: rgba(58, 196, 153, 0.25);
 }
 
 html[data-theme="dark"] .skill-badge:hover {
     background-color: var(--primary-color);
     color: white;
+}
+
+/* ==================== DARK MODE STATS ==================== */
+html[data-theme="dark"] .stat-card {
+    background-color: var(--bg-light-alt);
+    border-color: var(--border-light);
+}
+
+html[data-theme="dark"] .stat-card:hover {
+    border-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .stat-number {
+    color: var(--primary-color);
 }
 
 html[data-theme="dark"] .projects {
@@ -105,11 +115,11 @@ html[data-theme="dark"] .projects {
 
 html[data-theme="dark"] .project-card {
     background-color: var(--bg-light);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 html[data-theme="dark"] .project-card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 html[data-theme="dark"] .project-header {
@@ -125,18 +135,18 @@ html[data-theme="dark"] .projects-footer {
 }
 
 html[data-theme="dark"] .contact {
-    background: linear-gradient(135deg, #1a1d20 0%, #0f1114 100%);
+    background-color: var(--bg-light-alt);
 }
 
 html[data-theme="dark"] .social-link {
     background-color: var(--bg-light-alt);
-    color: var(--primary-color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    color: var(--text-light-secondary);
+    border-color: var(--border-light);
 }
 
 html[data-theme="dark"] .social-link:hover {
-    background-color: var(--primary-color);
-    color: white;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 html[data-theme="dark"] .hero-email {
@@ -161,7 +171,7 @@ html[data-theme="dark"] .form-group textarea {
 html[data-theme="dark"] .form-group input:focus,
 html[data-theme="dark"] .form-group textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(58, 196, 153, 0.15);
+    box-shadow: 0 0 0 2px rgba(58, 196, 153, 0.1);
 }
 
 html[data-theme="dark"] .form-group input::placeholder,
@@ -175,27 +185,26 @@ html[data-theme="dark"] .form-group textarea {
 }
 
 html[data-theme="dark"] .theme-toggle:hover {
-    box-shadow: 0 4px 12px rgba(58, 196, 153, 0.2);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* ==================== DARK MODE TIMELINE ==================== */
 html[data-theme="dark"] .timeline::before {
-    background: linear-gradient(180deg, var(--primary-color), transparent);
+    display: none;
 }
 
 html[data-theme="dark"] .timeline-dot {
     background-color: var(--primary-color);
-    border-color: var(--bg-light);
 }
 
 html[data-theme="dark"] .timeline-content {
     background-color: var(--bg-light-alt);
-    border-left-color: var(--primary-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-color: var(--border-light);
 }
 
 html[data-theme="dark"] .timeline-content:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    border-color: var(--primary-color);
 }
 
 html[data-theme="dark"] .company-header {
@@ -249,11 +258,12 @@ html[data-theme="dark"] .form-success-message p {
 /* ==================== DARK MODE FOOTER ==================== */
 html[data-theme="dark"] .footer {
     background-color: var(--bg-light-alt);
-    color: var(--text-light);
+    color: var(--text-light-secondary);
+    border-top-color: var(--border-light);
 }
 
 html[data-theme="dark"] .footer p {
-    color: var(--text-light);
+    color: var(--text-light-secondary);
 }
 
 html[data-theme="dark"] .footer i {

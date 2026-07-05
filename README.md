@@ -26,17 +26,22 @@ Feel free to fork this repository to make your own portfolio, and if you liked t
 ## 🎨 Features
 
 - Multi-Page Layout (Support i18n)
-- Styled with Bootstrap and Css with easy to customize
+- Styled with vanilla CSS (no Bootstrap/jQuery)
 - Support dark and light theme
-- Responsive look
+- Responsive design
+- CV download with language detection
 
-| Colors      |  Hex                                                                       |
+### Colors
+
+| Color      |  Hex                                                                       |
 | ---------- | ------------------------------------------------------------------------- |
 | Ocean Green     | ![#3AC499](https://placehold.co/15x15/3AC499/3AC499.png) `#3AC499` |
-| Emerald    | ![#2b8b70](https://placehold.co/15x15/2b8b70/2b8b70.png) `#2b8b70` |
-| Isabelline  | ![#F8F3EF](https://placehold.co/15x15/F8F3EF/F8F3EF.png) `#F8F3EF` |
-| Dark Charcoal | ![#303235](https://placehold.co/15x15/303235/303235.png) `#303235` |
-| Eerie Black | ![#181B1E](https://placehold.co/15x15/181B1E/181B1E.png) `#181B1E` |
+| Primary Dark    | ![#1a7a56](https://placehold.co/15x15/1a7a56/1a7a56.png) `#1a7a56` |
+| Background  | ![#FAFAF9](https://placehold.co/15x15/FAFAF9/FAFAF9.png) `#FAFAF9` |
+| Background Alt | ![#F3F2F0](https://placehold.co/15x15/F3F2F0/F3F2F0.png) `#F3F2F0` |
+| Dark BG | ![#121214](https://placehold.co/15x15/121214/121214.png) `#121214` |
+
+**Fonts:** DM Sans (body) + JetBrains Mono (code/accents)
 
 ---
 

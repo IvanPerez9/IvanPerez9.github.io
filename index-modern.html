@@ -8,7 +8,7 @@
     <title data-i18n="title">Iván Pérez - Portfolio</title>
     
     <link rel="shortcut icon" href="assets/images/cv-green2.png" title="LogoIcon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="assets/css/modern-style.css">
@@ -72,6 +72,10 @@
                         <i class="fas fa-envelope"></i>
                         <span data-i18n="navbar.contact">Contact</span>
                     </a>
+                    <a href="/PDFs/IvanPerezHuete_CV_en.pdf" class="btn btn-cv" id="cvDownload" download>
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
@@ -89,9 +93,7 @@
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-line"></span>
                 <span data-i18n="personalProfile.title">About Me</span>
-                <span class="title-line"></span>
             </h2>
 
             <!-- Summary -->
@@ -115,6 +117,7 @@
                         <div class="timeline-content">
                             <div class="company-header">
                                 <h4 class="company-name">KELEA</h4>
+                                <p class="company-period" data-i18n="personalProfile.date3">Sep 2024 - Present</p>
                             </div>
                             
                             <!-- Nested Role -->
@@ -188,6 +191,7 @@
                         <div class="timeline-content">
                             <div class="company-header">
                                 <h4 class="company-name" data-i18n="personalProfile.company2">Work4Data | I+D Software Lab</h4>
+                                <p class="company-period" data-i18n="personalProfile.date2">Dec 2018 - Dec 2020</p>
                             </div>
                             
                             <!-- Nested Role -->
@@ -266,10 +270,10 @@
                     <div class="stat-number">20+</div>
                     <div class="stat-label" data-i18n="stats.techSkills">Tech Skills</div>
                 </div>
-                <div class="stat-card">
+                <a href="https://www.linkedin.com/in/ivan-perez-huete/details/certifications/" target="_blank" class="stat-card stat-link">
                     <div class="stat-number">3</div>
                     <div class="stat-label" data-i18n="stats.certifications">Certifications</div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -278,9 +282,7 @@
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-line"></span>
                 <span data-i18n="navbar.projects">Featured Projects</span>
-                <span class="title-line"></span>
             </h2>
 
             <div class="projects-grid">
@@ -389,9 +391,7 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-line"></span>
                 <span data-i18n="navbar.contact">Get in Touch</span>
-                <span class="title-line"></span>
             </h2>
 
             <div class="contact-content">
@@ -443,7 +443,7 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Iván Pérez</p>
-            <p>Designed & built with <i class="fas fa-heart"></i></p>
+            <p>Built with <i class="fas fa-heart"></i></p>
         </div>
     </footer>
 
