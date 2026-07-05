@@ -46,13 +46,19 @@
     "job2": "Ingeniero de Software | Desarrollador Backend",
     "date1": "2016 - Hoy",
     "date2": "Dic 2018 - Dic 2020",
-    "date3": "Sep 2024 - Hoy",
+    "date3": "Sep 2024 - May 2026",
     "date4": "Feb 2021 - Sep 2024",
     "date5": "Dic 2023 - Sep 2024",
     "date6": "Feb 2021 - Dic 2023",
     "company1": "Proyectos personales y colaborativos",
     "company2": "Work4Data | I+D Software Lab",
     "company3": "VIEWNEXT",
+    "project": {
+      "kelea1": "Plataforma de gestión de empleados: cuadrantes, control horario y gestión de ausencias para una empresa de retail.",
+      "kelea2": "Plataforma de feedback de empleados y movilidad interna para un importante cliente del sector retail.",
+      "viewnext": "Software bancario para la gestión de transacciones, categorización de movimientos en cuentas y productos bancarios.",
+      "work4data": "Software de análisis de riesgo para clientes bancarios, enfocado en la evaluación de carteras inmobiliarias."
+    },
     "details": {
       "p1": "Desarrollo de un 'space invaders' en android y luego aplicar con esta  BDD con Jenkins/Cucumber y diferentes heramientas de testing como Selenium. ",
       "p2": "Colaborando para desarrollar un bot de Telegram que facilita la automatización de tareas.",
@@ -75,7 +81,14 @@
       "p23": "Implementación de Integración y Entrega Continua (CI/CD) usando Github Actions y Openshift para pipelines de despliegue eficientes.",
       "p24": "Seguimiento de proyectos y control de versiones con Github, Jira y Git, asegurando una colaboración y gestión de flujo de trabajo efectiva.",
       "p25": "Experiencia trabajando en entornos Windows y Linux.",
-      "p26": "Uso de herramientas adicionales como Microsoft Clarity, Swagger, Miro, Lombock y Notion para apoyar el desarrollo y la documentación de procesos."
+      "p26": "Uso de herramientas adicionales como Microsoft Clarity, Swagger, Miro, Lombock y Notion para apoyar el desarrollo y la documentación de procesos.",
+      "kelea2": {
+        "p1": "Gestión end-to-end de proyectos, liderando decisiones técnicas de manera autónoma.",
+        "p2": "Diseño de arquitectura backend para nuevos desarrollos y mejoras.",
+        "p3": "Soporte técnico a miembros del equipo, gestión del equipo y mentoria.",
+        "p4": "Coordinación continua con componentes de negocio y stakeholders.",
+        "p5": "Integración activa de IA para tareas técnicas, gestión y documentación."
+      }
     }
   },
   "projectsCourses": {

@@ -827,6 +827,13 @@ img {
     padding: 0 1.75rem;
 }
 
+.project-description:not(.projects .project-description) {
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
 .project-details {
     padding: 1.25rem 1.75rem;
     flex-grow: 1;
