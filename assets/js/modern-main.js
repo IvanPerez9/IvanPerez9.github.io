@@ -216,8 +216,13 @@ function updateActiveNavLink() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-menu a');
     
-    const current = Array.from(sections).find(section => {
-        return section.offsetTop <= window.scrollY + 200;
+    let current = null;
+    const scrollPos = window.scrollY + window.innerHeight / 3;
+    
+    sections.forEach(section => {
+        if (scrollPos >= section.offsetTop) {
+            current = section;
+        }
     });
     
     navLinks.forEach(link => {
@@ -280,16 +285,19 @@ function setupContactForm() {
         });
     }
     
-    // Update placeholders initially
-    updateFormPlaceholders();
+    // Update placeholders after a short delay to ensure translations are loaded
+    setTimeout(updateFormPlaceholders, 300);
     
     // Listen to language changes - hook into translator's load method
-    const originalLoad = translator.load.bind(translator);
-    translator.load = function(lang) {
-        originalLoad(lang);
-        updateFormPlaceholders();
-    };
-
+    if (translator && typeof translator.load === 'function') {
+        const originalLoad = translator.load.bind(translator);
+        translator.load = function(lang) {
+            originalLoad(lang);
+            // Update placeholders after translations load
+            setTimeout(updateFormPlaceholders, 200);
+        };
+    }
+    
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         

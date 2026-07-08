@@ -4,14 +4,21 @@
 
 Static HTML/CSS/JS personal portfolio. **No build tools, no package.json, no tests.**
 
-### Two parallel site versions
+### Portfolio (single-page)
 
-| Version | Base file | CSS | JS | Dependencies |
-|---------|-----------|-----|----|--------------|
-| **Classic** | `index.html`, `about.html`, `projects.html`, `contact.html`, etc. | `assets/css/*.css` + `assets/css/darkThemeCSS/` | `assets/js/main.js` (jQuery) | Bootstrap 3, jQuery, Font Awesome (vendored in `assets/plugins/`) |
-| **Modern** | `index-modern.html` | `assets/css/modern-*.css` (CSS custom properties) | `assets/js/modern-main.js` (vanilla JS) | Font Awesome 6 (CDN), no Bootstrap/jQuery |
+| File | CSS | JS | Dependencies |
+|------|-----|----|--------------|
+| `index.html` | `assets/css/modern-style.css`, `modern-dark.css`, `modern-responsive.css` | `assets/js/modern-main.js` (vanilla JS) | Font Awesome 6 (CDN), DM Sans + JetBrains Mono fonts |
 
-Both share the same i18n system and dark/light toggle mechanism.
+### Standalone apps (not portfolio)
+
+| App | File | CSS | JS |
+|-----|------|-----|----|
+| Weekly meal planner | `weekly.html` | `assets/css/weekly.css` | `assets/js/weekly.js` |
+| Grocery list | `groceryList.html` | `assets/css/grocery.css` | `assets/js/grocery.js` |
+| WhatsApp stats | `whatstats.html` | inline | inline |
+
+All standalone apps use Font Awesome 6 (CDN).
 
 ## Commands
 
@@ -30,15 +37,19 @@ No test/lint/typecheck commands exist. CI `super-linter` job is commented out.
 - HTML elements tagged with `data-i18n="key.subkey"` attributes (dot-path into JSON)
 - **Default language: Spanish (`es`)**
 - Language is persisted to `localStorage` key `"language"`
-- Classic pages reload on language switch (`window.location.reload()`)
-- Classic init (`assets/js/main.js`): `filesLocation: "/i18n"`
-- Modern init (`assets/js/modern-main.js`): `filesLocation: "./i18n"` — the path differs!
-- The `Translator` default config has a bug: `languages: ["en,es"]` (single string item). Both `main.js` and `modern-main.js` correctly pass `languages: ["en", "es"]`.
+- Init (`assets/js/modern-main.js`): `filesLocation: "./i18n"`
+- The `Translator` default config has a bug: `languages: ["en,es"]` (single string item). `modern-main.js` correctly passes `languages: ["en", "es"]`.
 
 ## Dark/Light theme
 
-- **Classic**: CSS file swapping via `assets/css/toggleDarkLight.css`. Dark overrides in `assets/css/darkThemeCSS/`.
-- **Modern**: CSS variables in `modern-dark.css`, toggled via `data-theme` attribute on `<html>`.
+- CSS variables in `modern-dark.css`, toggled via `data-theme` attribute on `<html>`
+
+## Design system
+
+- **Fonts**: DM Sans (body), JetBrains Mono (code/accents)
+- **Primary color**: `#3AC499` (Ocean Green)
+- **Dark BG**: `#121214`
+- **Border radius**: `0.25rem` — `0.75rem` (minimal rounding)
 
 ## Deployment
 
@@ -46,15 +57,11 @@ No test/lint/typecheck commands exist. CI `super-linter` job is commented out.
 - GitHub Actions (`.github/workflows/pagesDeployment.yml`): builds with Jekyll, deploys to GitHub Pages
 - Triggers: daily at 06:00 UTC, push to `master`, manual `workflow_dispatch`
 
-## LESS source files
-
-`assets/less/` contains `.less` source files. These are **source-only** — the compiled CSS lives in `assets/css/`. There is no automated LESS compilation step; compile manually if you edit LESS files.
-
 ## CV PDFs
 
 - `PDFs/IvanPerezHuete_CV_en.pdf` (English)
 - `PDFs/IvanPerezHuete_CV.pdf` (Spanish)
-- The translator switches the download link based on current language.
+- CV download button in hero changes link based on current language.
 
 ## Agent skills (`.agents/skills/`)
 

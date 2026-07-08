@@ -89,12 +89,17 @@
         display: flex !important;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
     }
 
     .nav-logo a {
         font-size: 1rem;
-        order: 1;
     }
 
     .nav-toggle {
@@ -102,8 +107,7 @@
         position: relative;
         z-index: 1001;
         gap: 5px;
-        order: 2;
-        margin-left: auto;
+        order: 1;
     }
 
     .nav-toggle span {
@@ -138,7 +142,6 @@
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
         z-index: 999 !important;
         width: 100% !important;
-        order: 4;
     }
 
     .nav-menu.active {
@@ -153,32 +156,24 @@
 
     .nav-controls {
         display: flex !important;
-        gap: 0.25rem !important;
-        order: 3;
-        position: absolute;
-        top: 0.75rem;
-        right: 50px;
+        gap: 0.35rem !important;
+        order: 2;
     }
 
     .theme-toggle {
-        width: 32px;
-        height: 32px;
-        font-size: 0.9rem;
-        border: 1.5px solid var(--text-light);
+        width: 30px;
+        height: 30px;
+        font-size: 0.85rem;
     }
 
     .lang-btn {
-        width: 28px;
-        height: 28px;
-        font-size: 0.65rem;
-        border: 1.5px solid var(--text-light);
+        width: 26px;
+        height: 26px;
+        font-size: 0.6rem;
     }
 
     .language-selector {
-        top: 15px;
-        right: 15px;
-        gap: 0.3rem;
-        z-index: 1000;
+        gap: 0.2rem;
     }
 
     /* HERO */
