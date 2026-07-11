@@ -23,7 +23,7 @@
     "company2": "Work4Data | I+D Software Lab",
     "project": {
       "kelea1": "Plataforma de gestión de empleados: cuadrantes, control horario y gestión de ausencias para una empresa de retail.",
-      "kelea2": "Plataforma de feedback de empleados y movilidad interna para un importante cliente del sector retail.",
+      "kelea2": "Plataforma de feedback de empleados y movilidad interna para un importante cliente del sector retail. Liderada como Technical Lead supervisando diseño de arquitectura, coordinación de equipo y entrega end-to-end.",
       "viewnext": "Software bancario para la gestión de transacciones, categorización de movimientos en cuentas y productos bancarios.",
       "work4data": "Software de análisis de riesgo para clientes bancarios, enfocado en la evaluación de carteras inmobiliarias."
     },
@@ -52,7 +52,8 @@
         "p2": "Diseño de arquitectura backend para nuevos desarrollos y mejoras.",
         "p3": "Soporte técnico a miembros del equipo, gestión del equipo y mentoria.",
         "p4": "Coordinación continua con componentes de negocio y stakeholders.",
-        "p5": "Integración activa de IA para tareas técnicas, gestión y documentación."
+        "p5": "Integración activa de IA para tareas técnicas, gestión y documentación.",
+        "p6": "Aplicación de la metodología Spec Driven Development (SDD), definiendo especificaciones técnicas antes de escribir código para asegurar alineación y calidad."
       }
     }
   },

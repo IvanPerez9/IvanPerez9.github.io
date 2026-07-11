@@ -23,7 +23,7 @@
     "company2": "Work4Data | I+D Software Lab",
     "project": {
       "kelea1": "Employee management platform: shift scheduling, time tracking, and absence management for a retail company.",
-      "kelea2": "Employee feedback and internal mobility platform for a major retail client.",
+      "kelea2": "Employee feedback and internal mobility platform for a major retail client. Led as Technical Lead overseeing architecture design, team coordination, and end-to-end delivery.",
       "viewnext": "Core banking software for transaction management, categorizing movements across accounts and banking products.",
       "work4data": "Risk analysis software for banking clients, focused on real estate portfolio assessment."
     },
@@ -52,7 +52,8 @@
         "p2": "Designing backend architecture for new developments and improvements.",
         "p3": "Technical support to team members, team management and mentoring.",
         "p4": "Continuous coordination with business components and stakeholders.",
-        "p5": "Active integration of AI for technical tasks, management, and documentation."
+        "p5": "Active integration of AI for technical tasks, management, and documentation.",
+        "p6": "Applied Spec Driven Development (SDD) methodology, defining technical specs before writing code to ensure alignment and quality."
       }
     }
   },
