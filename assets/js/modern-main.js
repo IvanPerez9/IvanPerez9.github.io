@@ -133,6 +133,8 @@ if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
+        const isExpanded = navMenu.classList.contains('active');
+        navToggle.setAttribute('aria-expanded', isExpanded);
     });
 }
 
@@ -140,7 +142,10 @@ if (navToggle) {
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
-        if (navToggle) navToggle.classList.remove('active');
+        if (navToggle) {
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
     });
 });
 
@@ -148,7 +153,10 @@ navLinks.forEach(link => {
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav-container')) {
         navMenu.classList.remove('active');
-        if (navToggle) navToggle.classList.remove('active');
+        if (navToggle) {
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
     }
 });
 
@@ -207,7 +215,10 @@ if (navbar) {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         if (navMenu) navMenu.classList.remove('active');
-        if (navToggle) navToggle.classList.remove('active');
+        if (navToggle) {
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
     }
 });
 

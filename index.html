@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Iván Pérez - Full Stack Developer & Technical Lead">
     <title data-i18n="title">Iván Pérez - Portfolio</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Iván Pérez - Portfolio">
+    <meta property="og:description" content="Full Stack Developer & Technical Lead — Java, Spring Boot, React, and more.">
+    <meta property="og:image" content="https://ivanperez9.github.io/assets/images/2023ivan.jpg">
+    <meta property="og:url" content="https://ivanperez9.github.io/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Iván Pérez - Portfolio">
+    <meta name="twitter:description" content="Full Stack Developer & Technical Lead — Java, Spring Boot, React, and more.">
+    <meta name="twitter:image" content="https://ivanperez9.github.io/assets/images/2023ivan.jpg">
     
     <link rel="shortcut icon" href="assets/images/cv-green2.png" title="LogoIcon">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,13 +30,15 @@
 </head>
 
 <body>
+    <a href="#home" class="skip-link">Skip to content</a>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">Iván Pérez</a>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -290,7 +305,7 @@
                     <div class="stat-number">20+</div>
                     <div class="stat-label" data-i18n="stats.techSkills">Tech Skills</div>
                 </div>
-                <a href="https://www.linkedin.com/in/ivan-perez-huete/details/certifications/" target="_blank" class="stat-card stat-link">
+                <a href="https://www.linkedin.com/in/ivan-perez-huete/details/certifications/" target="_blank" rel="noopener noreferrer" class="stat-card stat-link">
                     <div class="stat-number">3</div>
                     <div class="stat-label" data-i18n="stats.certifications">Certifications</div>
                 </a>
@@ -323,7 +338,7 @@
                         <li data-i18n="projects.card0.line3">Backend with Supabase (PostgreSQL + RLS policies, auth layer). Deployed on Netlify with auto deploys.</li>
                     </ul>
                     <div class="project-footer">
-                        <a href="https://github.com/IvanPerez9/WatchLog" class="project-link" target="_blank">
+                        <a href="https://github.com/IvanPerez9/WatchLog" class="project-link" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -345,7 +360,7 @@
                         <li data-i18n="projects.card2.line3">Fully responsive, multi-page layout, styled with Bootstrap and CSS and support dark and light theme.</li>
                     </ul>
                     <div class="project-footer">
-                        <a href="https://github.com/IvanPerez9/IvanPerez9.github.io" class="project-link" target="_blank">
+                        <a href="https://github.com/IvanPerez9/IvanPerez9.github.io" class="project-link" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -368,7 +383,7 @@
                         <li data-i18n="projects.card3.line4">Worked in a team of 4, implementing agile methods such as Scrum and Kanban board.</li>
                     </ul>
                     <div class="project-footer">
-                        <a href="https://github.com/IvanPerez9" class="project-link" target="_blank">
+                        <a href="https://github.com/IvanPerez9" class="project-link" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -390,7 +405,7 @@
                         <li data-i18n="projects.card1.line3">Solving problems from different competitions such as Ada Byron, SWERC or '12 uvas'.</li>
                     </ul>
                     <div class="project-footer">
-                        <a href="https://github.com/IvanPerez9" class="project-link" target="_blank">
+                        <a href="https://github.com/IvanPerez9" class="project-link" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -399,7 +414,7 @@
 
             <div class="projects-footer">
                 <p data-i18n="projects.interested">¿Interested in more projects?</p>
-                <a href="https://github.com/IvanPerez9" target="_blank" class="btn btn-primary">
+                <a href="https://github.com/IvanPerez9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                     <i class="fab fa-github"></i>
                     <span data-i18n="projects.visitGithub">Visit my GitHub</span>
                 </a>
@@ -419,10 +434,10 @@
                     <p class="contact-intro" data-i18n="contact.intro">Let's create something amazing together! Feel free to reach out.</p>
                     
                     <div class="social-links">
-                        <a href="https://github.com/IvanPerez9" target="_blank" class="social-link" title="GitHub">
+                        <a href="https://github.com/IvanPerez9" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/ivan-perez-huete/" target="_blank" class="social-link" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/ivan-perez-huete/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="mailto:iperezhuete@gmail.com" class="social-link" title="Email">
