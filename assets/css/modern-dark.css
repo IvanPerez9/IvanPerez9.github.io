@@ -1,0 +1,271 @@
+/* ==================== DARK MODE VARIABLES ==================== */
+html[data-theme="dark"] {
+    --primary-color: #3AC499;
+    --primary-dark: #2dd4a8;
+    --secondary-color: #E8E6E1;
+    --accent-color: #FF6B6B;
+    --accent-light: #FFE66D;
+    
+    --bg-light: #121214;
+    --bg-light-alt: #1a1a1e;
+    --bg-light-secondary: #222226;
+    
+    --text-light: #E8E6E1;
+    --text-light-secondary: #9ca3af;
+    --text-light-tertiary: #6b7280;
+    
+    --border-light: #2a2a2e;
+}
+
+/* ==================== DARK MODE TRANSITIONS ==================== */
+html[data-theme="dark"] body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .theme-toggle {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .lang-btn {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .navbar {
+    background-color: rgba(18, 18, 20, 0.9);
+    border-bottom-color: var(--border-light);
+}
+
+html[data-theme="dark"] .nav-toggle span {
+    background-color: var(--text-light);
+}
+
+html[data-theme="dark"] .hero {
+    background-color: var(--bg-light);
+}
+
+html[data-theme="dark"] .hero::before,
+html[data-theme="dark"] .hero::after {
+    display: none;
+}
+
+html[data-theme="dark"] .about {
+    background-color: var(--bg-light);
+}
+
+html[data-theme="dark"] .summary-card {
+    background-color: var(--bg-light-alt);
+    border-color: var(--border-light);
+}
+
+html[data-theme="dark"] .summary-card p {
+    color: var(--text-light-secondary);
+}
+
+html[data-theme="dark"] .timeline::before {
+    background: linear-gradient(180deg, var(--primary-color), transparent);
+}
+
+html[data-theme="dark"] .timeline-dot {
+    background-color: var(--primary-color);
+    border-color: var(--bg-light);
+}
+
+html[data-theme="dark"] .timeline-content {
+    background-color: var(--bg-light-alt);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .skill-category {
+    background-color: var(--bg-light-alt);
+}
+
+html[data-theme="dark"] .skill-badge {
+    background-color: rgba(58, 196, 153, 0.1);
+    color: var(--primary-color);
+    border-color: rgba(58, 196, 153, 0.25);
+}
+
+html[data-theme="dark"] .skill-badge:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ==================== DARK MODE STATS ==================== */
+html[data-theme="dark"] .stat-card {
+    background-color: var(--bg-light-alt);
+    border-color: var(--border-light);
+}
+
+html[data-theme="dark"] .stat-card:hover {
+    border-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .stat-number {
+    color: var(--primary-color);
+}
+
+html[data-theme="dark"] .projects {
+    background-color: var(--bg-light-alt);
+}
+
+html[data-theme="dark"] .project-card {
+    background-color: var(--bg-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .project-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .project-header {
+    border-bottom-color: var(--border-light);
+}
+
+html[data-theme="dark"] .project-footer {
+    border-top-color: var(--border-light);
+}
+
+html[data-theme="dark"] .projects-footer {
+    border-top-color: var(--border-light);
+}
+
+html[data-theme="dark"] .contact {
+    background-color: var(--bg-light-alt);
+}
+
+html[data-theme="dark"] .social-link {
+    background-color: var(--bg-light-alt);
+    color: var(--text-light-secondary);
+    border-color: var(--border-light);
+}
+
+html[data-theme="dark"] .social-link:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+html[data-theme="dark"] .hero-email {
+    color: var(--text-light-secondary);
+}
+
+html[data-theme="dark"] .hero-email a {
+    color: var(--text-light-secondary);
+}
+
+html[data-theme="dark"] .hero-email a:hover {
+    color: var(--primary-color);
+}
+
+html[data-theme="dark"] .form-group input,
+html[data-theme="dark"] .form-group textarea {
+    background-color: var(--bg-light-secondary);
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+html[data-theme="dark"] .form-group input:focus,
+html[data-theme="dark"] .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(58, 196, 153, 0.1);
+}
+
+html[data-theme="dark"] .form-group input::placeholder,
+html[data-theme="dark"] .form-group textarea::placeholder {
+    color: var(--text-light-tertiary);
+}
+
+html[data-theme="dark"] .form-group input,
+html[data-theme="dark"] .form-group textarea {
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* ==================== DARK MODE TIMELINE ==================== */
+html[data-theme="dark"] .timeline::before {
+    display: none;
+}
+
+html[data-theme="dark"] .timeline-dot {
+    background-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .timeline-content {
+    background-color: var(--bg-light-alt);
+    border-color: var(--border-light);
+}
+
+html[data-theme="dark"] .timeline-content:hover {
+    border-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .company-header {
+    border-bottom-color: var(--border-light);
+}
+
+html[data-theme="dark"] .company-name {
+    color: var(--primary-color);
+}
+
+html[data-theme="dark"] .company-period {
+    color: var(--text-light-tertiary);
+}
+
+/* Dark mode nested roles */
+html[data-theme="dark"] .nested-roles::before {
+    background-color: var(--border-light);
+}
+
+html[data-theme="dark"] .nested-dot {
+    background-color: var(--primary-color);
+    border-color: var(--bg-light-alt);
+    box-shadow: 0 0 0 2px var(--bg-light-alt);
+}
+
+html[data-theme="dark"] .nested-content h5 {
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .role-date {
+    color: var(--text-light-tertiary);
+}
+
+html[data-theme="dark"] .experience-details li {
+    color: var(--text-light-secondary);
+}
+
+html[data-theme="dark"] .experience-details li::before {
+    color: var(--primary-color);
+}
+
+/* ==================== DARK MODE FORM SUCCESS ==================== */
+html[data-theme="dark"] .form-success-message h3 {
+    color: var(--text-light);
+}
+
+html[data-theme="dark"] .form-success-message p {
+    color: var(--text-light-secondary);
+}
+
+/* ==================== DARK MODE FOOTER ==================== */
+html[data-theme="dark"] .footer {
+    background-color: var(--bg-light-alt);
+    color: var(--text-light-secondary);
+    border-top-color: var(--border-light);
+}
+
+html[data-theme="dark"] .footer p {
+    color: var(--text-light-secondary);
+}
+
+html[data-theme="dark"] .footer i {
+    color: var(--accent-color);
+}

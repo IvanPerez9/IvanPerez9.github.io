@@ -4,6 +4,7 @@ class Translator {
       this._options = Object.assign({}, this.defaultConfig, options);
       this._lang = this.getLanguage();
       this._elements = document.querySelectorAll("[data-i18n]");
+      this._translations = {};
     }
 
     // Languaje link to download CV button
@@ -54,6 +55,8 @@ class Translator {
       fetch(path)
         .then(res => res.json())
         .then(translation => {
+          // Store translations for t() method
+          this._translations = translation;
           // Transalte elements
           this.translate(translation);
           this.toggleLangTag();
@@ -89,6 +92,11 @@ class Translator {
         }
       }
       this._elements.forEach(replace);
+    }
+
+    // Get translation by key (e.g., "contact.placeholderName")
+    t(key) {
+      return key.split(".").reduce((obj, i) => obj && obj[i], this._translations) || key;
     }
   
     get defaultConfig() {

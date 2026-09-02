@@ -1,163 +1,71 @@
-html {
-  font-size: 24px;
+/* ==================== 404 PAGE ==================== */
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-md);
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: #545e6c;
-  font-size: 14px;
-  padding: 30px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    animation: fadeIn 0.8s ease;
 }
 
-.box {
-  justify-content: center;
-  text-align: center;
-  margin-top: 12rem;
-  min-height: 200px;
-  max-height: 300px;
-}
-
-.text-404 {
-  display: initial;
-  font-size: 5rem;
-  padding-right: 0.5rem;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
-  text-align: center;
-  border-bottom: #000 solid;
-}
-
-.text-not {
-  padding-left: 1rem;
-  font-size: 3rem;
-  animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
-  text-align: center;
-  display: block;
-}
-
-/* */
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-.boton {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.boton button {
-  display: block;
-  width: 20rem;
-  height: 5rem;
-}
-
-.backBtn {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  background: #3AC499;
-}
-
-.boton button:hover  {
-  background-image: -moz-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
-  background-image: -webkit-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
-  background-image: -ms-linear-gradient(0deg, #3AC499 0%, #2b8b70 100%);
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  text-decoration: none;
-  color: #000;
-}
-
-/* Tamaños */
-
-@media only screen and (max-width: 3000px) {
-  .text-404 {
-    font-size: 10rem;
-  }
-  .text-not {
+.error-code {
+    font-family: 'Poppins', sans-serif;
     font-size: 8rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    text-transform: capitalize;
-  }
-  .boton{
-    padding-top: 15rem;
-  }
+    font-weight: 800;
+    color: var(--text-light-tertiary);
+    line-height: 1;
 }
 
-@media only screen and (max-width: 1280px) {
-  .text-404 {
-    font-size: 8rem;
-  }
-  .text-not {
-    font-size: 6rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    text-transform: capitalize;
-  }
-  .boton{
-    padding-top: 5rem;
-  }
+.error-code span {
+    color: var(--primary-color);
 }
 
-@media only screen and (max-width: 995px) {
-  .text-404 {
-    font-size: 6rem;
-  }
-  .text-not {
-    font-size: 5rem;
-    padding-top: 3rem;
-    padding-bottom: 3em;
-    text-transform: capitalize;
-  }
-  .boton{
-    padding-top: 4rem;
-  }
+.error-message {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
 }
 
-@media only screen and (max-width: 700px) {
-  .text-404 {
-    font-size: 6rem;
-  }
-  .text-not {
-    font-size: 5rem;
-    padding-top: 3rem;
-    padding-bottom: 3em;
-    text-transform: capitalize;
-  }
-  .boton{
-    padding-top: 3rem;
-  }
+.error-description {
+    font-size: 1rem;
+    color: var(--text-light-secondary);
 }
 
-@media only screen and (max-width: 400px) {
-  .text-404 {
-    font-size: 5rem;
-  }
-  .text-not {
-    font-size: 4rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    text-transform: capitalize;
-  }
-  .boton{
-    padding-top: 2.5rem;
-  }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 5rem;
+    }
+
+    .error-message {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 4rem;
+    }
+
+    .error-message {
+        font-size: 1.1rem;
+    }
+
+    .error-description {
+        font-size: 0.9rem;
+    }
 }
