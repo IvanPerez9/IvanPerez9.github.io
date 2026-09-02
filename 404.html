@@ -1,48 +1,35 @@
-<html lang="en">
-  <head>
-    <title data-i18n="title">Confirmation From - Ivan Perez </title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Iván Pérez - Portfolio">
+    <title>404 - Page Not Found</title>
 
-    <!-- Link-->
     <link rel="shortcut icon" href="assets/images/cv-green2.png" title="LogoIcon">
-    <link
-        href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
-        rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Theme CSS  -->
-    <link id="style" rel="stylesheet" href="assets/css/404.css">
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  </head>
+    <link rel="stylesheet" href="assets/css/modern-style.css">
+    <link rel="stylesheet" href="assets/css/modern-dark.css">
+    <link rel="stylesheet" href="assets/css/404.css">
+</head>
 
-  <body>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="box">
-          <div class="text-404">4 <span style="color:#3AC499">0</span> 4</div>
-          <br>
-          <div class="text-not" data-i18n="404.text">Oops! Page Not Found</div>
-         <!-- <a onclick="history.back(-1)" class=""> Go Back</a>  Otra forma, otra en confirmation.html -->
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <h1 class="error-code">4<span>0</span>4</h1>
+            <p class="error-message" data-i18n="404.text">Oops! Page Not Found</p>
+            <p class="error-description" data-i18n="404.description">The page you're looking for doesn't exist or has been moved.</p>
+            <a href="index.html" class="btn btn-primary">
+                <i class="fas fa-arrow-left"></i>
+                <span data-i18n="404.goBack">Go Back Home</span>
+            </a>
         </div>
-        <div class="boton">
-          <button class="btn backBtn" id="myButton">Go back <i class="fa fa-undo"></i></button>
-        </div>
-      </div>
     </div>
-    <!-- Javascript -->
-    <script type="text/javascript">
-        document.getElementById("myButton").onclick = function () {
-            location.href = "https://ivanperez9.github.io/";
-        };
-    </script>
-    <!-- custom js -->
-    <script src="assets/js/main.js" type="module"></script>
 
-  </body>
+    <script type="module" src="assets/js/modern-main.js"></script>
+</body>
+
 </html>
